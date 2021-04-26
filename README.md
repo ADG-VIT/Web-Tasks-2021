@@ -1,13 +1,20 @@
 # Web-Learners-2021
 #### Repository to maintain Tasks of ADG Web Developers Team 2021
 
-## Task 1 *(Task Desc)*
-Lorem ipsum dolor sit amet. Ut aliquam placeat ut voluptas illum sit Quis quae et assumenda consectetur. Non quasi minima eos odio pariatur non unde sunt.
+## Task 1 *(Basic Portfolio)*
+Hey guys! You have to develop a Basic Portfolio Website using <b>HTML and CSS only</b> (No frameworks or Libraries to be used). The basic layout of the website is attached below, however, use your innovative minds to come up with a better version of this. Also, it would be awesome if you make it <b>responsive</b> (mobile-friendly).
+<br>
+Assets are provided in the [.Assets Folder](https://github.com/ADG-VIT/Web-Tasks-2021/tree/main/.Assets) under Task 1
+<br><br>
+**Deadline:** 4 May 2021
+<br>
+<i>Happy Coding!!</i>
 
-**Deadline:** Mention Date
+<img src="https://user-images.githubusercontent.com/60514776/116053553-726e4080-a698-11eb-9eb7-5c7f8f4b8e39.png" height="auto" width="60%">
 
-Mention Image
 
+<br>
+<br>
 <p align="center" width="100%">
-   With ❤️ By Apple Developers Group (VIT)  
+   With ❤️ By ADG-VIT's Web Team  
 </p>

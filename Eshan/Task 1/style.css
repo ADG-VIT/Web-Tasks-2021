@@ -23,7 +23,7 @@ nav {
     padding: 0;
     margin: 0;
     overflow: hidden;
-    background-color: rgb(24, 24, 24);
+    background-color:#45A29E;
 }
 
 .navbar li {
@@ -33,7 +33,8 @@ nav {
 
 .navbar a {
     display: block;
-    color: whitesmoke;
+    color:black;
+    font-weight: 600;
     padding: 0.5rem 1rem;
     font-size: 20px;
 }
@@ -46,7 +47,8 @@ nav {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: black;
+    background-image: url("./assets/Bg.jpg");
+    background-color: #cccccc;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,7 +58,8 @@ nav {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color:white;
+    background-image: url("./assets/bg3.jpg");
+    background-color: #cccccc;;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,20 +72,41 @@ nav {
 .homepage h1 {
     margin: 0;
     text-align: center;
+    font-size: 100px;
     color: white;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
 }
+    /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
 
 .homepage h2 {
     margin: 0;
     text-align: center;
-    color: rgb(200, 255, 0);
+    color: #66FCF1;
+    font-size: 75px;
 }
 
 .about {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: midnightblue;
+    background-image: url("./assets/bg2.jpg");
+    background-color: #cccccc;;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,7 +133,8 @@ nav {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: black;
+    background-image: url("./assets/bg4.jpg");
+    background-color: #cccccc;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -164,7 +189,7 @@ nav {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: midnightblue;
+    background-color: #5D001E;
     display: flex;
     align-items: center;
     justify-content: center;

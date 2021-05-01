@@ -35,6 +35,7 @@ body {
 }
 .nav-bar li:hover {
   color: #2723ff;
+  cursor: pointer;
 }
 .intro {
   margin: 1rem;
@@ -60,6 +61,7 @@ p {
   margin: 3rem;
   animation-name: slideIn;
   animation-duration: 2s;
+  
 }
 @keyframes slideIn {
   from {
@@ -90,7 +92,7 @@ p {
 }
 .header img {
   width: 100%;
-  height: 60%;
+  height: 18rem;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
@@ -133,6 +135,7 @@ select:focus {
 .btn button:hover {
   background-color: #272343;
   color: white;
+  cursor: pointer;
 }
 textarea:focus {
   border: 2px solid #272343;
@@ -185,13 +188,13 @@ textarea:focus {
     display: flex;
     justify-content: center;
     align-content: center;
-    padding-right: 4rem;
   }
   .input {
     margin: 0.3rem;
     width: 85%;
     padding: 1rem;
     font-size: 1.2rem;
+    margin-left: auto;
   }
   .input input {
     margin: 0.1rem;
@@ -343,6 +346,7 @@ textarea:focus {
     background-color: #ffffff;
     height: 100%;
     color: #272343;
+    padding: 1rem;
   }
   .right {
     width: 70%;
@@ -403,8 +407,8 @@ textarea:focus {
     border-radius: 5px;
   }
 
-  .left {
-    padding: 1rem;
+  .input{
+    margin-left: 0;
   }
   .left h1 {
     font-size: 2.5rem;

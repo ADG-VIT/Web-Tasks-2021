@@ -169,6 +169,9 @@ textarea:focus {
 .socials i {
   margin: 1rem;
 }
+.socials i:hover{
+  cursor: pointer; 
+}
 
 /* Media Queries */
 

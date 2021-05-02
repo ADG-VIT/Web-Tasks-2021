@@ -1,0 +1,221 @@
+body {
+  text-align: center;
+  margin: 0;
+  background-color: rgb(5, 90, 116);
+}
+.black {
+  background-color: #000;
+  height: 400px;
+  /* position:relative; */
+  margin: 0%;
+}
+.one {
+  float:right;
+}
+.navbar {
+  width: 100%;
+  background-color: rgb(5, 90, 116);
+  overflow: auto;
+  
+}
+
+.navbar a {
+  float: left;
+  padding: 14px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #000000;
+}
+
+.name {
+  text-align: center;
+  color: white;
+  padding-top: 5%;
+}
+.web {
+  color: pink;
+}
+.items {
+  background-color: rgb(5, 90, 116);
+  position: relative;
+  bottom: 20px;
+  text-align: center;
+  margin-top: 7%;
+}
+.items h2 {
+  color: white;
+  text-decoration: underline;
+}
+.cards {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  /* background-color:rgb(2, 2, 2);
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 0%;
+    text-align: center;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+     */
+}
+
+.project-cards {
+  position: relative;
+  width: 200px;
+  height: auto;
+  text-align: center;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  padding: 0px;
+}
+img {
+  height: 175px;
+  width: 200px;
+}
+.top,
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.last {
+  background-color: rgb(5, 90, 116);
+  color: white;
+  position: relative;
+  top: auto;
+  width: 100%;
+  height: 500px;
+}
+.survey {
+  background-color: #000;
+  color: white;
+  align-items: left;
+  text-align: left;
+  position: relative;
+  bottom: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+
+  justify-content: center;
+}
+.sub {
+  background-color: #000;
+  color: white;
+  width: 200px;
+  height: 20px;
+}
+
+.project-cards:hover {
+  box-shadow: 5px 5px 10px grey;
+}
+
+/* .project-cards img{
+    width: 100%;
+} */
+
+.project-cards h3 {
+  font-size: 1rem;
+  margin: auto 0;
+}
+
+/* #full-name,
+#age,
+#email {
+  width: 100%;
+} */
+
+button {
+  background-color: pink;
+}
+.links {
+  display: flex;
+  position: center;
+}
+
+.links a {
+  margin: 0 5px;
+  padding: 3px;
+  color: white;
+}
+
+.links a:hover {
+  opacity: 0.7;
+}
+.img {
+  position: relative;
+  width: auto;
+  height: auto;
+  text-align: center;
+
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  padding: 0px;
+}
+.fav{
+    height:auto;
+    width: 10%;
+    margin: 0%;
+    padding: 0%;
+    margin-left: 25%;
+    justify-content: center;  
+    align-items: center;
+}
+hr{
+    color: pink;
+    height: 0px;
+    position: relative;
+    bottom: 300px;
+}
+.fi{
+    background-color:rgb(5, 90, 116) ;
+    position: relative;
+    bottom: 300px;
+    height: 5px;
+   
+
+    
+}
+
+@media screen and (max-width: 850px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+  body {
+    background: linear-gradient(#09c5d3, #212121);
+    height: 200vh;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+  }
+  .top,
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .project-cards,
+  .items,
+  .cards {
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+  }
+}

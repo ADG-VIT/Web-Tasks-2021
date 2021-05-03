@@ -26,17 +26,20 @@ body {
   color: #272343;
 }
 /* Landing */
-
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: #2723ff;
+}
 .nav-bar li {
   display: inline-block;
   text-decoration: none;
   margin: 1rem;
   font-size: 1.3rem;
 }
-.nav-bar li:hover {
-  color: #2723ff;
-  cursor: pointer;
-}
+
 .intro {
   margin: 1rem;
   margin-top: 5rem;
@@ -75,7 +78,15 @@ p {
 }
 
 /* Projects */
-
+.headerPro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0 0 1rem;
+}
+.headerPro>h1{
+  font-size: 2.5rem;
+}
 .container {
   display: flex;
   justify-content: center;
@@ -178,7 +189,7 @@ textarea:focus {
 @media (min-width: 280px) {
   .card {
     margin: 2rem;
-    height: 18rem;
+    height: 20rem;
     width: 80%;
     background-color: #bae8e8;
     border-radius: 10px;

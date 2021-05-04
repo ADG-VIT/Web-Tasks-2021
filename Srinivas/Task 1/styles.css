@@ -265,10 +265,13 @@ textarea:focus {
     outline: none;
     border: 2px solid #272343;
   }
-  input:not(input[type="checkbox"]):focus + label {
+  input:not(input[type="checkbox"])::placeholder{
+    color: white;
+  }
+  input:not(input[type="checkbox"]):focus + label,input:not(input[type="checkbox"]):not(:placeholder-shown) + label {
     font-size: 1rem;
     line-height: 550%;
-    color: #272343;
+    color: white;
     top: 20%;
   }
   .containerSur {
@@ -354,7 +357,9 @@ textarea:focus {
     flex-wrap: wrap;
     box-shadow: 3px 3px 10px black;
   }
-
+  input:not(input[type="checkbox"]):focus + label,input:not(input[type="checkbox"]):not(:placeholder-shown) + label {
+    color: #272343;
+  }
   .left {
     width: 30%;
     background-color: #ffffff;

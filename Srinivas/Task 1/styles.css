@@ -1,0 +1,458 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #ffffff;
+  background-color: #272343;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/* Section config */
+
+#landing,
+#survey {
+  min-height: 100vh;
+}
+#projects {
+  background-color: white;
+  color: #272343;
+  min-height: 100vh;
+}
+#contact {
+  min-height: 50vh;
+  background-color: white;
+  color: #272343;
+}
+/* Landing */
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: #2723ff;
+}
+.nav-bar li {
+  display: inline-block;
+  text-decoration: none;
+  margin: 1rem;
+  font-size: 1.3rem;
+}
+
+.intro {
+  margin: 1rem;
+  margin-top: 5rem;
+}
+
+.intro h1 {
+  margin-bottom: 0.5rem;
+  font-size: 5rem;
+}
+.intro p {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+.containerL {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 3rem;
+  animation-name: slideIn;
+  animation-duration: 2s;
+  
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    margin-top: 100%;
+  }
+  to {
+    margin-top: 3rem;
+    opacity: 1;
+  }
+}
+
+/* Projects */
+.headerPro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0 0 1rem;
+}
+.headerPro>h1{
+  font-size: 2.5rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card:hover {
+  box-shadow: 3px 3px 10px black;
+  cursor: pointer;
+}
+.footer p:hover {
+  color: #2723ff;
+}
+.header img {
+  width: 100%;
+  height: 18rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.footer {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #272343;
+  background-color: #bae8e8;
+  border-radius: 10px;
+}
+
+/* Survey */
+
+select {
+  font-size: 1.3rem;
+  border-radius: 5px;
+  outline: none;
+}
+select:focus {
+  border: 2px solid #272343;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.btn button {
+  width: 10rem;
+  height: 2.5rem;
+  text-decoration: none;
+  background-color: white;
+  border: none;
+  font-size: 1.3rem;
+  border-radius: 5px;
+}
+
+.btn button:hover {
+  background-color: #272343;
+  color: white;
+  cursor: pointer;
+}
+textarea:focus {
+  border: 2px solid #272343;
+}
+/* Contact */
+
+.extro {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.extro > p {
+  font-size: 1.3rem;
+}
+.containerF {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.containerF h1 {
+  font-size: 3rem;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socials i {
+  margin: 1rem;
+}
+.socials i:hover{
+  cursor: pointer; 
+}
+
+/* Media Queries */
+
+@media (min-width: 280px) {
+  .card {
+    margin: 2rem;
+    height: 20rem;
+    width: 80%;
+    background-color: #bae8e8;
+    border-radius: 10px;
+  }
+  .intro h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .left {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .input {
+    margin: 0.3rem;
+    width: 85%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin-left: auto;
+  }
+  .input input {
+    margin: 0.1rem;
+    border-radius: 5px;
+  }
+  .input select {
+    display: block;
+    margin: 0.1rem;
+    width: 90%;
+    height: 2.5rem;
+    padding: 0 12px;
+  }
+  .inputCheck input {
+    display: inline-block;
+    width: auto;
+    margin-right: 0.5rem;
+  }
+  .checkd {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .inputContainer {
+    position: relative;
+  }
+  .inputLabel {
+    position: absolute;
+    font-size: 1.3rem;
+    line-height: 150%;
+    color: #272343;
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-60%);
+    transition: 0.1s ease-out;
+    pointer-events: none;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="email"] {
+    display: inline-block;
+    font-size: 1.3rem;
+    line-height: 150%;
+    outline: none;
+    border: none;
+    transition: 0.1s ease-out;
+    width: 95%;
+    height: 2.5rem;
+    color: #272343;
+    padding: 4px 12px 0;
+    background: rgba(256, 256, 256, 1);
+  }
+  input:not(input[type="checkbox"]):focus {
+    outline: none;
+    border: 2px solid #272343;
+  }
+  input:not(input[type="checkbox"])::placeholder{
+    color: white;
+  }
+  input:not(input[type="checkbox"]):focus + label,input:not(input[type="checkbox"]):not(:placeholder-shown) + label {
+    font-size: 1rem;
+    line-height: 550%;
+    color: white;
+    top: 20%;
+  }
+  .containerSur {
+    height: 64rem;
+  }
+  .random {
+    margin: 0 0 0 5%;
+  }
+  .inputFifth {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+  .copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .copyright>h3{
+    margin: 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 300px) {
+  .card {
+    height: 22rem;
+  }
+}
+
+@media (min-width: 405px) {
+  .card {
+    height: 18rem;
+    width: 15rem;
+  }
+  .card img {
+    width: 100%;
+    height: 15rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+  }
+  .input input {
+    width: 25rem;
+    height: 2.5rem;
+  }
+  .input select {
+    width: 25rem;
+  }
+  .inputCheck input {
+    display: inline-block;
+    width: auto;
+    border-radius: 5px;
+  }
+  .checkd {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  input[type="text"],
+  .input[type="number"] {
+    width: 25rem;
+  }
+}
+
+@media (min-width: 720px) {
+  /* Test */
+  .containerSur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    background-color: white;
+    width: 75%;
+    height: 60rem;
+    flex-wrap: wrap;
+    box-shadow: 3px 3px 10px black;
+  }
+  input:not(input[type="checkbox"]):focus + label,input:not(input[type="checkbox"]):not(:placeholder-shown) + label {
+    color: #272343;
+  }
+  .left {
+    width: 30%;
+    background-color: #ffffff;
+    height: 100%;
+    color: #272343;
+    padding: 1rem;
+  }
+  .right {
+    width: 70%;
+    background-color: #bae8e8;
+    height: 100%;
+    color: #272343;
+  }
+  .inputFirst {
+    margin: 0.5rem 0 0.5rem 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 10%;
+    padding: 2rem 0;
+  }
+  .inputFirst > div {
+    width: 50%;
+    margin: 0.5rem;
+  }
+  .inputFirst input {
+    height: 2.5rem;
+    width: 100%;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 5px;
+  }
+  .inputSecond {
+    width: 100%;
+    margin: 0.3rem;
+    display: flex;
+    justify-content: left;
+  }
+  .inputSecond > div,
+  .inputSecond > .input,
+  .inputSecond > .input > input {
+    width: 99%;
+  }
+  .inputSecond > .input > input {
+    height: 2.5rem;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .inputThird {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    margin: 0.5rem;
+  }
+  .inputThird>.input{
+    width: 97%;
+  }
+  .input select {
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .input{
+    margin-left: 0;
+  }
+  .left h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .inputFourth {
+    margin: 0.5rem;
+  }
+  .inputFifth {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    padding: 1rem;
+    width: 90%;
+    font-size: 1.3rem;
+    margin: 0;
+    margin-top: -2rem;
+  }
+  textarea {
+    font-size: 1.3rem;
+    font-family: "Roboto", sans-serif;
+    resize: none;
+    color: #272343;
+  }
+  textarea:focus {
+    outline: none;
+  }
+}

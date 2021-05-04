@@ -1,0 +1,263 @@
+.navi{
+    width:100%;
+    margin:0 0 0 0;
+}
+header{
+    background-color :black;
+    width:100%;
+    position:absolute;
+    text-align:center;
+    top:0;
+    font-weight:700;
+    position:fixed;
+}
+nav ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    margin-bottom: 10px;
+}
+nav li{
+    display:inline-block;
+    margin-left:70px;
+    padding-top:23px;
+    position:relative;
+}
+nav a{
+    color: lightgoldenrodyellow;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:18px;
+}
+nav a:hover{
+    color: whitesmoke;
+}
+nav a::before{
+    content: " ";
+    display:block;
+    height:5px;
+    width:100%;
+    background-color:white;
+    position:absolute;
+    top:0;
+    width:0%;
+}
+
+nav a:hover::before{
+    width:100%;
+    transition: all ease-in-out 250ms;
+}
+body{
+    margin:0;
+    text-align:center;
+    font-family: 'Oxygen', sans-serif;
+    color: #40514E;
+    
+}
+h1{
+    margin-top:50px;
+    font-size: 5.62rem;
+    font-family:'Sacramento', cursive;
+    margin-bottom:0;
+    color:#30e3ca;
+}
+h2{
+    margin-top:0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color:#66BFBF;
+    font-weight:normal;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    color:#11999E;
+}
+.top-container{
+    background-color: #eeeeee;
+    margin-top:0;
+   padding-top:100px;
+   margin-bottom:0;
+   padding-bottom:20px;
+}
+.middle-container{
+    margin-top:0;
+    padding-top:0px;
+    background-color:#f9f7f7;
+    margin-bottom: 0;
+}
+.profile{
+    margin:auto;
+    width:50%;
+    padding-top:50px; 
+    padding-bottom:100px; 
+    text-align:left;
+    line-height:2;
+}
+.bottom-container{
+    background-color:black;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+hr{
+    border-style: none;
+    border-top-style: dotted;
+    width:30%;
+    border-width:6px;
+    border-color:grey;
+}    
+.bottom-cloud{
+    
+    position:absolute;
+    left:200px;
+    bottom:200px;
+}
+.top-cloud{
+    position:absolute;
+    right: 300px;
+    top:100px;
+}
+.me{
+    margin:0;
+    height:300px;
+    width:35%; 
+    border-radius:50%;
+    background-color:white ;
+    float:left;
+    margin-right: 30px;
+}    
+.project{    
+    margin:auto;
+    width:50%;
+    padding-top:50px; 
+    padding-bottom:100px; 
+    text-align:left;
+    line-height:2;
+}    
+
+.tribute{
+    height:250px;
+    width:35%;
+    border-radius: 50%;
+    margin-right:30px;
+    float:left;
+}
+
+.rqm{
+    height:250px;
+    width:35%;
+    border-radius: 50%;
+    margin-left:30px;
+    float:right;
+}
+
+.calc{
+    height:250px;
+    width:35%;
+    border-radius: 50%;
+    margin-right:30px;
+    float:left;
+}
+
+
+.map{
+    height:250px;
+    width:35%;
+    border-radius: 50%;
+    margin-left:30px;
+    float:right;
+}
+
+.wiki{
+    height:250px;
+    width:35%;
+    border-radius: 50%;
+    margin-right:30px;
+    float:left;
+}
+
+.tictac{
+    height:250px;
+    width:35%;
+    border-radius: 50%;
+    margin-left:30px;
+    float:right;
+}
+
+.project h3:hover{
+    color:blue;
+}
+
+button{
+    margin:20px;
+    background-color: #11999E;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius:8px;
+}
+a{
+    color:white;
+}
+.projects{
+    padding-top:50px;
+}
+.instagram{
+    width:7.5%;
+    height:7.5%;
+    margin:5px;
+}
+.facebook{
+    width:7.5%;
+    height:7.5%;
+    margin:5px;
+}
+.contact-me{
+    margin:auto;
+    margin-top:20px;
+    line-height:2;
+    text-align:center;
+}
+.last{
+    color:lightgoldenrodyellow;
+}
+.bottom-container p{
+color:lightgoldenrodyellow;
+}
+
+.forms{
+    padding-top: 20px;
+    line-height: 2;
+    background-color:#eeeeee ;
+}
+#submit{
+  margin:20px;
+  background-color: #11999E;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius:8px;
+}
+input[type=text] {
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+select{
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}

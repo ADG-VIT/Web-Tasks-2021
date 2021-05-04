@@ -1,0 +1,285 @@
+html {
+    font: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color:#45A29E;
+}
+
+.navbar li {
+    display: inline;
+    float: left;
+}
+
+.navbar a {
+    display: block;
+    color:black;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    color: rgb(255, 255, 134);
+}
+
+.homepage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("./assets/Bg.jpg");
+    background-color: #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LinkedIn{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("./assets/bg3.jpg");
+    background-color: #cccccc;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge-base LI-profile-badge{
+    position: absolute;
+}
+
+.homepage h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+    /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+.homepage h2 {
+    margin: 0;
+    text-align: center;
+    color: #66FCF1;
+    font-size: 75px;
+}
+
+.about {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("./assets/bg2.jpg");
+    background-color: #cccccc;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about p {
+    color: white;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.about a{
+    color: lemonchiffon;
+    font-style: italic;
+}
+
+.about a:hover{
+    opacity: 0.7;
+}
+
+.work {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("./assets/bg4.jpg");
+    background-color: #cccccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.work h2 {
+    color: white;
+    text-align: center;
+}
+
+.projects {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+}
+
+.project-card {
+    position: relative;
+    width: 10rem;
+    height: 12rem;
+    text-align: center;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 5px;
+}
+
+.project-card:hover {
+    box-shadow: 5px 5px 10px grey;
+}
+
+.project-card img{
+    width: 100%;
+}
+
+.project-card h3{
+    font-size: 1rem;
+    margin: auto 0;
+}
+
+.work button {
+    width: 100%;
+    height: 30px;
+    background-color: pink;
+}
+
+.survey {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #5D001E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.survey h2, .survey p {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.survey form {
+    width: 50%;
+    color: white;
+}
+
+.survey input {
+    width: 100%;
+}
+
+#option {
+    width: 4%;
+}
+
+#feedback-input {
+    width: 100%;
+}
+
+.survey button {
+    width: 100%;
+    height: 30px;
+    background-color: pink;
+}
+
+.contact {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact h1 {
+    color: white;
+}
+
+.contact h3 {
+    color: wheat;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+}
+
+.links a {
+    margin: 0 5px;
+    padding: 3px;
+    color: white;
+}
+
+.links a:hover {
+    opacity: 0.7;
+}
+
+.copyright {
+    width: 100%;
+    bottom: 0;
+}
+
+.copyright hr {
+    background-color: pink;
+    height: 1px;
+    border: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.copyright p {
+    color: white;
+}
+
+@media screen and (max-width: 480px) {
+    .navbar a {
+        font-size: 25px;
+    }
+
+    
+}

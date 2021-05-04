@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ec74f5dd97.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="landing">
+        <div class="containerL">
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Survey</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="intro">
+                <h1>Hey, I'm Srinivas</h1>
+                <p>a web developer</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="headerPro"><h1>Some of my projects...</h1></div>
+        <div class="container">
+            <div class="card">
+                <div class="header">
+                    <img src="./.Assets/Task 1/calc.png" alt="" srcset="">
+                </div>
+                <div class="footer">
+                    <p>Calculator</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="header">
+                    <img src="./.Assets/Task 1/map.jpg" alt="" srcset="">
+                </div>
+                <div class="footer">
+                    <p>Map</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="header">
+                    <img src="./.Assets/Task 1/random-quote-machine.png" alt="" srcset="">
+                </div>
+                <div class="footer">
+                    <p>Random Quote Generator</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="header">
+                    <img src="./.Assets/Task 1/tic-tac-toe.png" alt="" srcset="">
+                </div>
+                <div class="footer">
+                    <p>Tic-Tac-Toe</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="header">
+                    <img src="./.Assets/Task 1/tribute.jpg" alt="" srcset="">
+                </div>
+                <div class="footer">
+                    <p>Tribute</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="header">
+                    <img src="./.Assets/Task 1/wiki.png" alt="" srcset="">
+                </div>
+                <div class="footer">
+                    <p>Wiki</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="survey">
+        <div class="containerSur">
+            <div class="left">
+                <h1>Survey Form</h1>
+            </div>
+            <div class="right">
+                <div class="inputFirst">
+                    <div class="input inputContainer">
+                        <input type="text" name="name" id="nameForm" placeholder="Float">
+                        <label for="nameForm" class="inputLabel">Name</label>
+                    </div>
+                    <div class="input inputContainer">
+                        <input type="number" name="name" id="numberForm" placeholder="Float">
+                        <label for="numberForm" class="inputLabel">Age(optional)</label>
+                    </div>
+                </div>
+                    <div class="inputSecond">
+                    <div class="input inputContainer">
+                        <input type="email" name="name" id="emailForm" placeholder="Float">
+                        <label for="emailForm" class="inputLabel">Email</label>
+                    </div>
+                    </div>
+                
+                <div class="inputThird">
+                    <div class="input">
+                        <label for="selectForm">Which option best describes your current role?</label>
+                        <select name="role" id="selectForm">
+                            <option selected>Choose...</option>
+                            <option>Choice 1</option>
+                            <option>Choice 2</option>
+                            <option>Choice 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputFourth">
+                    <div class="input inputCheck">
+                        <label for="">What would you like to see improved?</label>
+                        <div class="checkd">
+                            <input type="checkbox" name="checks1" id="check1">
+                            <label for="check1">Front-end Projects</label>
+                        </div>
+                        <div class="checkd">
+                            <input type="checkbox" name="checks2" id="check2">
+                            <label for="check2">Back-end Projects</label>
+                        </div>
+                        <div class="checkd">
+                            <input type="checkbox" name="checks3" id="check3">
+                            <label for="check3">Data Visualisation</label>
+                        </div>
+                        <div class="checkd">
+                            <input type="checkbox" name="checks4" id="check4">
+                            <label for="check4">Challenges</label>
+                        </div>
+                        <div class="checkd">
+                            <input type="checkbox" name="checks5" id="check5">
+                            <label for="check5">Open Source Community</label>
+                        </div>
+                        <div class="checkd">
+                            <input type="checkbox" name="checks6" id="check6">
+                        <label for="check6">Videos</label></div>
+                        </div>
+                        <div class="inputFifth">
+                            <label for="textArea">Any suggestions?</label>
+                            <textarea id="textArea" rows="7" cols="50" maxlength="200"></textarea>
+                        </div>
+                        <div class="btn">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="containerF">
+        <div class="extro">
+        <h1>Let's work together...</h1>
+        <p>Coffee or Tea ?</p>
+        </div>
+        <div class="socials">
+            <i class="fab fa-facebook fa-3x"></i>
+            <i class="fab fa-twitter fa-3x"></i>
+            <i class="fab fa-github fa-3x"></i>
+            <i class="fab fa-linkedin fa-3x"></i>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div class="copyright">
+            <h3>***This is just a fake portfolio. All the projects and contact details given are not real</h3>
+            <h3>© Created for Web Developers</h3>
+        </div>
+    </footer>
+</body>
+</html>

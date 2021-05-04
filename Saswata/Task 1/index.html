@@ -12,6 +12,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Roboto:wght@100&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Dancing+Script:wght@700&family=Lobster&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -38,52 +42,54 @@
         </u>
 
     </section>
-    <section>
-        <p>Survery Form</p>
-        <form action="">
-            <label for="name">Name</label>
-            <input type="text" name="name" placeholder="Enter your name" required>
-            <label for="email">Email</label>
-            <input type="email" name="email" placeholder="Enter your email" required>
-            <label for="Age">Age(Optional)</label>
-            <input type="text" name="age" placeholder="Age">
-            <label for="option">Which option best descibes your current role?</label>
-            <select name="role" id="role">
-                <option value="a">Amateur</option>
-                <option value="i">Intermediate</option>
-                <option value="adv">Advanced</option>
-            </select>
-            <label for="ck">What would you like to see improved?</label>
-            <input type="checkbox">
-            <label>Front-end Projects</label>
-            <input type="checkbox">
-            <label>Back-end Projects</label>
-            <input type="checkbox">
-            <label>Data Visualisation</label>
-            <input type="checkbox">
-            <label>Challanges</label>
-            <input type="checkbox">
-            <label>Open Source Community</label>
-            <input type="checkbox">
-            <label>Gitter help rooms</label>
-            <input type="checkbox">
-            <label>Videos</label>
-            <input type="checkbox">
-            <label>City Meetups</label>
-            <input type="checkbox">
-            <label>Wiki</label>
-            <input type="checkbox">
-            <label>Forums</label>
-            <input type="checkbox">
-            <label>Additional Courses</label>
-            <input type="checkbox">
+    <section class="ct-flx">
+        <div> Survery Form </div>
+        <div>
+            <form action="">
+                <label for="name">Name</label> <br>
+                <input type="text" name="name" placeholder="Enter your name" size="50" required><br>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" placeholder="Enter your email" size="50" required><br>
+                <label for="Age">Age(Optional)</label><br>
+                <input type="text" name="age" placeholder="Age" size="50"><br>
+                <label for="option">Which option best descibes your current role?</label><br>
+                <select name="role" id="role">
+                    <option value="a">Amateur</option>
+                    <option value="i">Intermediate</option>
+                    <option value="adv">Advanced</option>
+                </select><br>
+                <label for="ck">What would you like to see improved?</label><br>
+                <input type="checkbox">
+                <label>Front-end Projects</label> <br>
+                <input type="checkbox">
+                <label>Back-end Projects</label><br>
+                <input type="checkbox">
+                <label>Data Visualisation</label><br>
+                <input type="checkbox">
+                <label>Challanges</label><br>
+                <input type="checkbox">
+                <label>Open Source Community</label><br>
+                <input type="checkbox">
+                <label>Gitter help rooms</label><br>
+                <input type="checkbox">
+                <label>Videos</label><br>
+                <input type="checkbox">
+                <label>City Meetups</label><br>
+                <input type="checkbox">
+                <label>Wiki</label><br>
+                <input type="checkbox">
+                <label>Forums</label><br>
+                <input type="checkbox">
+                <label>Additional Courses</label><br>
 
-            <label>Any comments or sugessions?</label>
-            <textarea name="sugg" id="sugg" cols="30" rows="10"></textarea>
 
-            <input type="submit" value="Submit">
+                <label>Any comments or sugessions?</label> <br>
+                <textarea name="sugg" id="sugg" cols="50" rows="5"></textarea> <br>
 
-        </form>
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
     </section>
 </body>
 

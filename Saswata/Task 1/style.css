@@ -82,7 +82,13 @@ ul {
     height: 200px;
     width: 200px;
   }
-  .grid-container {
+  .ct-flx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Crimson Text', serif;;
+  }
+  /* .grid-container {
 
     display: inline-block;
     height: 2e,;
@@ -100,7 +106,7 @@ ul {
     text-align: center;
     padding: 1em 0;
     font-size: 30px;
-  }
+  } */
 
   /* Create two equal columns that floats next to each other */
 /* .column {

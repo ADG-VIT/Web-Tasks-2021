@@ -1,0 +1,293 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #4eb4f885;
+}
+a {
+  text-decoration: none;
+  color: rgb(241, 244, 248);
+}
+
+.navbar {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+  top: 0;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+.kavi {
+  position: relative;
+  bottom: 30px;
+  left: 33px;
+  font-size: 3rem;
+  font-weight: 400;
+}
+.kavi span {
+  color: crimson;
+}
+nav ul {
+  text-decoration: none;
+  display: flex;
+  position: fixed;
+  top: 2px;
+}
+nav ul li {
+  position: relative;
+  top: 2px;
+  text-decoration: none;
+  transform: translateX(100rem);
+  animation: slideIn 0.5s forwards;
+}
+nav ul li:nth-child(1) {
+  animation-delay: 0s;
+}
+nav ul li:nth-child(2) {
+  animation-delay: 0.3s;
+}
+nav ul li:nth-child(3) {
+  animation-delay: 0.6s;
+}
+nav ul li:nth-child(4) {
+  animation-delay: 0.9s;
+}
+nav ul li:nth-child(5) {
+  animation-delay: 1.2s;
+}
+.navbar ul li a {
+  text-decoration: none;
+  position: relative;
+  left: 740px;
+  margin: 0em 0.8em;
+
+  display: flex;
+}
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(70, 200, 252);
+  left: 0;
+  transform: scaleX(0);
+  transition: all 0.5s;
+}
+nav ul li a::after {
+  bottom: 0;
+  transform-origin: inherit;
+}
+nav ul li a:hover::after {
+  transform: scaleX(1);
+}
+@keyframes slideIn {
+  from {
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.homepage {
+  width: 100%;
+  height: 100vh;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 200px;
+}
+.homepage h2 {
+  font-size: 40px;
+  justify-content: center;
+  text-align: center;
+  color: rgb(14, 13, 13);
+  font-family: "Roboto", sans-serif;
+  text-decoration: black;
+  font-weight: bolder;
+}
+.homepage h3 {
+  text-align: center;
+  font-size: 35px;
+  margin: 0;
+
+  color: crimson;
+}
+.aboutpage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(94, 180, 250, 0.973);
+  color: black;
+}
+.aboutpage p {
+  text-align: center;
+  font-family: "Noto Serif", serif;
+  font-style: inherit;
+  font-size: 1.3rem;
+  width: 70%;
+  font-weight: 550;
+  background-color: transparent;
+}
+.projects h1 {
+  text-align: center;
+  color: black;
+}
+.work {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(20px, 0.2fr));
+  position: relative;
+  left: 230px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.work-card {
+  display: grid;
+  grid-template-rows: auto;
+  position: relative;
+  width: 12rem;
+  height: 17rem;
+  text-align: center;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  margin: 70px;
+  padding: 1px;
+}
+
+.work-card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.work-card:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 15px rgb(252, 99, 129);
+}
+
+.work-card footer {
+  height: 30px;
+  background-color: white;
+  color: rgb(29, 29, 29);
+  font-size: 1rem;
+  padding-bottom: 20px;
+  margin: auto 0;
+  border: solid 1px;
+}
+.projects button {
+  position: relative;
+  left: 600px;
+  width: 20%;
+  height: 40px;
+  background-image: linear-gradient(
+    180deg,
+    rgb(252, 124, 156),
+    rgb(185, 184, 184)
+  );
+  border-color: black;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.projects button:hover {
+  color: darkred;
+}
+.form {
+  width: 100%;
+  height: 150vh;
+  background-color: rgba(94, 180, 250, 0.973);
+  align-items: center;
+}
+.form h1 {
+  padding-top: 60px;
+  text-align: center;
+  font-size: 30px;
+}
+.form h3 {
+  text-align: center;
+  font-size: 17px;
+}
+.form form {
+  position: relative;
+  left: 510px;
+  width: 50%;
+  font-family: "Noto Serif", serif;
+  font-size: 17px;
+}
+#option {
+  width: 5%;
+}
+
+.form input {
+  width: 70%;
+}
+#feedback-input {
+  width: 70%;
+}
+.form button {
+  width: 70%;
+  height: 32px;
+  background-image: linear-gradient(
+    180deg,
+    rgb(252, 124, 156),
+    rgb(185, 184, 184)
+  );
+  border-color: black;
+  font-family: inherit;
+  font-weight: 550;
+  font-size: 16px;
+}
+.form button:hover {
+  color: darkred;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.788);
+  width: 100%;
+  height: 40vh;
+  color: aliceblue;
+  text-align: center;
+}
+.social a {
+  width: 100%;
+  margin: 0 50px;
+  text-align: center;
+
+  color: aliceblue;
+}
+.social a:hover {
+  background-color: rgba(255, 89, 89, 0.774);
+}
+@media screen and (max-width: 425px) {
+  .navbar ul li a {
+    float: none;
+    display: block;
+  }
+  .work {
+    position: relative;
+    left: 30px;
+    grid-template-columns: auto;
+  }
+  .form {
+    width: 100%;
+    height: 100vh;
+  }
+  .form form {
+    position: relative;
+    left: 10px;
+  }
+  .footer {
+    width: 100%;
+    height: 30vh;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.651);
+  }
+}

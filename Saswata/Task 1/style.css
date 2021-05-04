@@ -3,7 +3,7 @@ body{
     padding: 0;
 }
 section{
-  height: 800px;
+  height: 100vh;
   margin: 0px;
   padding: 0px;
 }
@@ -12,11 +12,16 @@ section{
 }
 .light p{
   margin: 0px;
+  padding: 2rem;
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
 }
 .dark{
   background-color: #2b2e4a;
   position: relative;
   color: azure;
+
   
 }
 .dark div{
@@ -27,6 +32,7 @@ section{
   margin-right: -50%;
   transform: translate(-50%, -50%)
 }
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -60,9 +66,14 @@ ul {
   }
   h1{
     text-align: center;
+    font-size: 4rem;
+    font-family: 'Dancing Script','Lobster',  cursive;
+
+
   }
   h2{
     text-align: center;
+    font-size: 20px;
   }
   u>p{
     text-align: center;

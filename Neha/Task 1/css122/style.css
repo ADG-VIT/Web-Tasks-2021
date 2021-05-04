@@ -1,0 +1,280 @@
+* {
+  padding : opx;
+  margin: 0px;
+  text-decoration : none;
+  box-sizing: border-box;
+}
+body {
+  font-family:'Montserrat', sans-serif;
+
+}
+nav {
+  background:grey;
+  height:80px;
+  width:100%;
+
+}
+label.logo {
+  color : whitesmoke;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: 100px;
+  font-weight: bold;
+}
+nav ul {
+  float : right;
+  margin-right: 20px;
+}
+nav ul li {
+  display:inline-block;
+  line-height: 80px;
+  border-radius:3px;
+  margin : 0 5px;
+
+}
+nav ul li a {
+  color:white;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+a.active,a:hover {
+    
+     transition : .5s;
+}
+.intro {
+  text-align : center;
+  background-color:teal;
+  margin:0px;
+  padding:200px 200px;
+  line-height:4;
+}
+h2 {
+  text-align: center;
+  padding:100px 50px 50px 100px;
+}
+.grid {
+  margin:80px;
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap:30px;
+  align-items:center;
+}
+  
+.grid > article {
+  background:#eee5e9;
+  border:none;
+  box-shadow:2px,2px,6px,0px,rgba(0,0,0,0.3);
+  border-radius: 20px;
+  text-align:center;
+  width:250px;
+  transition: transform .3s;
+}
+.grid > article:hover {
+  transform:translateY(5px);
+  box-shadow:2px 2px 26px 0px rgba(0,0,0,0.3);
+}
+.grid > article img {
+  width:100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.text {
+  padding:0 20px 20px;
+}
+.text h3 {
+  text-transform:uppercase;
+}
+.text button {
+  background:#ef6f6c;
+  border-radius: 20px;
+  border:none;
+  color:#fff;
+  padding:10px;
+  width:100%;
+  font-weight:600;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width:500px) {
+  .grid {
+    grid-template-columns: repeat(1,1fr);
+  }
+  .grid > article {
+    text-align:center;
+  }
+}
+.button {
+  text-align:center;
+  margin-top:8px;
+  padding:50px 50px;
+}
+.btn {
+  font-family:'Montserrat', sans-serif;
+  font-size:18px;
+  font-weight:bold;
+  background:#1E90FF;
+  width: 160px;
+  padding: 20px;
+  text-align:center;
+  text-decoration:none;
+  text-transform:uppercase;
+  color:#fff;
+  border-radius:5px;
+  cursor:pointer;
+  box-shadow:0 0 10px rgba(0,0,0,0.1);
+  -webkit-transititon-duration:0.3s;
+  transition-duration:0.3s;
+  -webkit-transition-property:box-shadow,transform;
+  transition-property: box-shadow,transform ;
+}
+.btn:hover,.btn:focus,.btn:active {
+  box-shadow:0 0 20px rgba(0,0,0,0.5);
+  -webkit-transform:scale(1.1);
+  transform:scale(1.1);
+}
+.container {
+  background-color:aquamarine;
+}
+.container1 {
+  font-family:'Montserrat', sans-serif;
+  font-weight:400px;
+  line-height:1.6;
+  background-color:#ef6f6c;
+  color:black;
+  margin:0;
+  padding:0 0 60px;
+
+}
+.text-center {
+  text-align:center;
+  padding:50px 50px;
+}
+.description {
+  font-size:1.125rem;
+  margin:1rem auto;
+  
+}
+header{
+  padding:2rem 1rem 1rem 1rem;
+  text-shadow:1px 1px #333333;
+}
+h1 {
+  font-weight:400;
+  line-height:1.2;
+  margin:0;
+  
+}
+form {
+  background:#dcdcdc;
+  padding:2.5rem 0.625rem;
+  border-radius:0.3rem;
+  width:60%;
+  margin:auto;
+
+}
+.form-group {
+  display:flex;
+  flex-direction:column;
+  margin:2rem;
+
+}
+.form-group p {
+  line-height:1;
+  margin:0.5rem 0.1rem;
+}
+
+.form-group p:not(:nth-child(1)) {
+  margin:0.5rem 0;
+}
+.form-label {
+  font-size:1.125rem;
+}
+.form-control {
+  display:block;
+  width:100%;
+  font-size:1rem;
+  height:2.5rem;
+  padding:0.375rem 0.75rem;
+  border-radius:0.3rem;
+  border:1px solid #dddddd;
+  margin-top:0.4rem;
+}
+
+input[type="checkbox"] {
+  width:1rem;
+  height:1rem;
+  margin-right:0.5;
+}
+
+textarea {
+  font-size:1.2rem;
+  padding:0.375rem 0.75rem;
+  width:100%;
+  height:auto;
+  border:none;
+  margin:0.5rem 0;
+}
+
+button {
+  background-color:grey;
+  border:none;
+  cursor:pointer;
+  color:white;
+  padding:0.75rem;
+  font-size:1.125rem;
+}
+
+@media screen and (max-width:1141px) {
+  form {
+    width:80%;
+  }
+}
+
+@media screen and (max-width:540px) {
+  form {
+    width:95%;
+  }
+}
+@media screen and (max-width:440px) {
+  form {
+    padding:0.625rem;
+  }
+
+  .form-group {
+    margin:1rem 0;
+  }
+  .form-group p {
+    line-height:1.4;
+    margin:0.5rem 0.1rem;
+  }
+}
+
+.container3 {
+  background-color:aqua;
+  text-align:center;
+  padding: 50px 50px ;
+}
+.last {
+  
+  line-height:4;
+}
+
+.link-label {
+  margin-top:50px;
+}
+.link {
+  margin:30px;
+}
+.footer {
+  background-color: aqua;
+  text-align:right;
+  
+}
+
+

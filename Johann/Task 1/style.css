@@ -4,7 +4,6 @@
 #aad8d3
 #eeeeee */
 
-
 body{
     margin: 0;
 }
@@ -51,6 +50,7 @@ li a:hover {
 .title p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
+    font-size: 1.5rem;
 }
 
 .projects{
@@ -102,7 +102,10 @@ img:hover{
   font-size: 20px;
   padding: 5px 30px;
   background-color: #aad8d3;
+  font-weight: bold;
+  color: #393e46;
 }
+
 /* ---------------------------------------------------- */
 .survey{
   font-family: 'Ubuntu';
@@ -118,12 +121,13 @@ form{
   padding : 0 25%;
 }
 
-textarea,.button,.name{
+textarea,.button,.details{
   width:100%;
   padding-left: 0;
   padding-right: 0;
   border-right: 0;
   border-left: 0;
+  margin-bottom: 10px;
 }
 /* --------------------------------------- */
 .contact{
@@ -153,6 +157,10 @@ textarea,.button,.name{
   text-decoration: none;
   font-size: 120%;
   font-family: 'Ubuntu';
+}
+
+.icon:hover{
+  color:#393e46
 }
 
 .fab,.fas{

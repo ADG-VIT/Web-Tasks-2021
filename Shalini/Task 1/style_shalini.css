@@ -1,0 +1,276 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.landing{
+    width:100%;
+    height:100vh;
+    position:relative;
+}
+img.back{
+    width:100%;
+    height:100vh;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.navbar{
+    position:relative;
+    width:100%;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:40px;
+    padding-left:60px;
+    padding-right:60px;
+}
+.weby a{
+    text-decoration: none;
+    color:white;
+    font-size:25px;
+    letter-spacing: 1px;
+}
+.navbar ul li {
+    display:inline-block;
+    font-size: 20px;
+    cursor:pointer;
+    padding:10px;
+}
+.navbar ul li :hover{
+    border:2px;
+    color:rgb(247, 129, 129);
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.maintext{
+    position:absolute;
+    text-align:center;
+    color:white;
+    max-width:70%;
+    top:40%;
+    padding-left:350px;
+}
+h1{
+    font-size: 2.6rem;
+}
+.domains{
+    background-color: rgb(5, 5, 104);
+    color:white;
+}
+h2{
+    text-align:center;
+    padding-top:40px;
+    font-size:2.4rem;
+}
+h3{
+    text-align:center;
+    padding-left: 100px;
+    padding-right:100px;
+    font-size: 18px;
+    padding-bottom: 50px;
+}
+.container{
+    margin:40px auto;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    padding-bottom: 50px;
+}
+.card{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-left:0px;
+    padding-right:0px;
+    border: 2px solid white;
+    margin-left: 30px;
+    margin-right:30px;
+    border-radius: 50px;
+    padding-bottom:20px;
+    padding-top:20px;
+}
+img{
+    border:3px solid white;
+}
+.card :hover{
+    background-color: white;
+    color:black;
+}
+form{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background-color: lightskyblue;
+    padding-right:20px;
+    padding-left:20px;
+    padding-top:30px;
+    padding-bottom:20px;
+}
+input{
+    height:30px;
+    width:500px;
+    margin-top:30px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: lightskyblue;
+    color:white;
+}
+.contact{
+    margin-left:200px;
+    margin-right:200px;
+}
+.contactus{
+    background-color: rgb(10, 10, 83);
+    color:white;
+    padding-bottom:30px;
+}
+.contact img{
+    background-color:white;
+}
+button{
+    background-color: mediumblue;
+    padding:10px;
+    border:2px solid white;
+    color:white;
+}
+.checky{
+    width:10px;
+    height:10px;
+    margin-top:0px;
+}
+button:hover{
+    background-color:white;
+    color:black;
+    padding:12px;
+}
+.checking{
+    color:rgb(65, 64, 64)
+}
+textarea{
+    height:30px;
+    width:300px;
+    margin-top:30px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: lightskyblue;
+    color:white;
+}
+.final {
+    color:black;
+    background-color:white;
+}
+.social{
+    text-align: center;
+}
+.thanks{
+    background-color: black;
+    color:white;
+    text-align: center;
+    font-size:1rem;
+}
+@media only screen and (max-width:900px)
+{
+    img{
+        width:80%;
+    }
+    .navbar ul li{
+        margin-right:20px;
+        padding-right:-30px;
+        padding-bottom:-40px;
+    }
+    .weby a{
+        font-size: 15px;
+        padding:0px;
+    }
+    .navbar ul li {
+        font-size: 15px;
+        cursor:pointer;
+        display:inline-block;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .maintext{
+        text-align:left;
+        color:white;;
+        bottom:0px;
+        top:150px;
+        right:200px;
+    }
+    img{
+        background-color: mediumblue;
+    }
+    .container{
+        display:flex;
+        flex-direction: column;
+    }
+    .card{
+        padding-bottom:10px;
+    }
+    p{
+        font-size: 15px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    .final{
+        padding-right: 50px;
+    }
+    h1{
+        font-size: 18px;
+        width:250px;
+        margin-left:-100px;
+        padding-top:100px;
+    }
+    h3{
+        padding:20px;
+    }
+    .maintext p{
+        padding-right:0px;
+        width:300px;
+        margin-right:0px;
+        height:300px;
+        margin-left:-150px;
+        text-align:center;
+        padding-top:10px;
+        margin-bottom:-100px;
+        padding-bottom:-100px;
+    }
+    .aboutus{
+        display:flex;
+        flex-direction:column;
+    }
+    .contact{
+        margin-right:150px;
+        margin-left:0px;
+    }
+    .about{
+        padding-right:30px;
+        padding-left:30px;
+    }
+    .aboutus img{
+        width:100%;
+    }
+    .contact{
+        display:flex;
+        flex-direction:column;
+    }
+    .contactus img{
+        width:362px;
+    }
+    form{
+        padding-right:20px;
+        margin-right:-150px;
+    }
+    .about h1{
+        padding-left:160px;
+        padding-bottom:30px;
+    }
+}
+
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <!-- Fonts Just_another_hand -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Survey</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Home</a></li>
+        </ul>
+    </div>
+    <div class="title">
+        <h1>Hey I am Johann</h1>
+        <p>a web developer</p>
+    </div>
+
+    <!-- ***** PROJECTS ***** -->
+
+    <div class="projects">
+        <h3>These are some of my projects</h3>
+        <div class="img">
+            <img src="images/tribute.jpg" alt="">
+            <p>Tribute Page</p>
+        </div>
+        <div class="img">
+            <img src="images/random-quote-machine.png" alt="">
+            <p>Random Quote Machine</p>
+        </div>
+        <div class="img">
+            <img src="images/calc.png" alt="">
+            <p>JavaScript Calculator</p>
+        </div>
+        <div class="img">
+            <img src="images/map.jpg" alt="">
+            <p>Map Data across the Globe</p>
+        </div>
+        <div class="img">
+            <img src="images/wiki.png" alt="">
+            <p>Wikipedia Viewer</p>
+        </div>
+        <div class="img">
+            <img src="images/tic-tac-toe.png" alt="">
+            <p>Tic Tac Toe Game</p>
+        </div>
+        <br>
+        <button>Show More</button>
+    </div>
+
+    <!-- ***** SURVEY FORM **** -->
+    <div class="survey">
+        <h2>Survey Form</h2>
+        <h3>Thank You for taking your time to help us improve the platform</h3>
+        <form>
+            <label>Name</label>
+            <input class="name" type="text" name="Name" required>
+            <label>Email</label>
+            <input class="name" type="text" name="Name" required>
+            <label>Age(optional)</label>
+            <input class="name" type="text" name="Name" required>
+            <label>Which option best describes your current role ?</label>
+            <select class="name" name="card_type" id="card_type" required>
+                <option value="">Advanced</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">MasterCard</option>
+                <option value="rupay">Rupay</option>
+            </select>
+
+            <p>What would you like to see improved?(Check all that apply)</p>
+            <input type="checkbox">
+            <label>Front-end Projects</label><br>
+            <input type="checkbox">
+            <label>Back-end Projects</label><br>
+            <input type="checkbox">
+            <label>Data Visualisation</label><br>
+            <input type="checkbox">
+            <label>Challenges</label><br>
+            <input type="checkbox">
+            <label>Open Surce Community</label><br>
+            <input type="checkbox">
+            <label>Gitter help rooms</label><br>
+            <input type="checkbox">
+            <label>Videos</label><br>
+            <input type="checkbox">
+            <label>City meetups</label><br>
+            <input type="checkbox">
+            <label>Wiki</label><br>
+            <input type="checkbox">
+            <label>Forum</label><br>
+            <input type="checkbox">
+            <label>Additional Courses</label><br>
+            <br>
+            <p>Any comments or suggestions?<textarea name="address" id="address" rows="10" required></textarea></p>
+            <input class="button" type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- ***** CONTACT ***** -->
+    <div class="contact">
+        <h2>Let's work together....</h2>
+        <p>How do you take your coffee?</p>
+        <div class="icons">
+        <a class="icon" href="http://facebook.com"><i class="fab fa-facebook-square"></i> Facebook</a>
+        <a class="icon" href="https://github.com/Johann-Pinto"><i class="fab fa-github-square"></i> GitHub</a>
+        <a class="icon" href="http://twitter.com"><i class="fab fa-twitter-square"></i> Twitter</a>
+        <a class="icon" href="mailto:johannpinto1102@gmail.com"><i class="fas fa-envelope"></i> Send Mail</a>
+        <a class="icon" href="tel:+917506699373"><i class="fas fa-phone-square-alt"></i> Call me</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><i class="far fa-copyright"></i> 2021 Johann Pinto</p>
+    </div>
+</body>
+
+</html>

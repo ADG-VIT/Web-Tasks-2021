@@ -1,0 +1,190 @@
+/* Color Pallete
+#393e46
+#00adb5
+#aad8d3
+#eeeeee */
+
+
+body{
+    margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #00adb5;
+}
+
+li {
+  float: right;
+  padding-left: 10px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+li a:hover {
+  background-color: #393e46;
+}
+
+.title{
+    padding: 14% 5%;
+    margin: 0;
+    background-color: #393e46;
+    color: #eeeeee;
+    text-align: center;
+}
+.title h1{
+    font-family: 'Just Another Hand', cursive;
+    font-size: 4rem;
+    letter-spacing: 10px;
+}
+.title p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+.projects{
+    background-color: #00adb5;
+    padding: 3% 14% ;
+    text-align: center;
+}
+.projects h3{
+    text-decoration: underline;
+    margin: 0;
+    padding: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+}
+
+.cards{
+  text-align: center;
+}
+
+img{
+  width: 300px;
+  height: 300px;
+  margin-bottom: 0;
+  /* position: relative; */
+}
+.img{
+  width: 300px;
+  display:inline-block;
+  margin:1rem 0;
+  background-color: #393e46;
+}
+.img p{
+  font-family: 'Ubuntu';
+  color: #eeeeee;
+  background-color: #393e46;
+  padding: 1rem 0;
+  margin:0;
+  position: relative;
+  bottom: 5px;
+}
+
+img:hover{
+  position: relative;
+  z-index: 1;
+  opacity: 50%;
+}
+
+.button,button{
+  font-size: 20px;
+  padding: 5px 30px;
+  background-color: #aad8d3;
+}
+/* ---------------------------------------------------- */
+.survey{
+  font-family: 'Ubuntu';
+  color: #eeeeee;
+  background-color: #393e46;
+  margin: 0;
+  padding: 3% 14%;
+  text-align: center;
+}
+
+form{
+  text-align: left;
+  padding : 0 25%;
+}
+
+textarea,.button,.name{
+  width:100%;
+  padding-left: 0;
+  padding-right: 0;
+  border-right: 0;
+  border-left: 0;
+}
+/* --------------------------------------- */
+.contact{
+  padding : 3% 14%;
+  text-align: center;
+  background-color: #00adb5;
+  color: #eeeeee;
+}
+
+.contact h2{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact p{
+  color: #aad8d3;
+  font-style: italic;
+  font-family: 'Caveat', cursive;
+  font-weight: 600;
+  font-size: 2.2em;
+  margin-top: 1rem;
+}
+
+.icon{
+  color: #eeeeee;
+  text-decoration: none;
+  font-size: 120%;
+  font-family: 'Ubuntu';
+}
+
+.fab,.fas{
+  padding-left: 3%;
+  font-size: 120%;
+}
+
+.footer p{
+  background-color: #aad8d3;
+  margin: 0;
+  padding: 1% 3%;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+@media (max-width:814px){
+  form{
+    padding: 0 10%;
+  }
+  .icons{
+    padding-left: 35%;
+  }
+  .icon{
+    display: block;
+    text-align: left;
+    padding : 3px 0;
+  }
+}
+@media (max-width:500px){
+  li{
+    padding: 0;
+  }
+}
+  

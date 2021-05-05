@@ -1,3 +1,8 @@
+html{
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+}
 body{
     margin: 0;
     padding: 0;
@@ -82,13 +87,50 @@ ul {
     height: 200px;
     width: 200px;
   }
-  .ct-flx{
+  #ct-flex{
     display: flex;
-    justify-content: center;
+    
+    background-color: #2b2e4a;
     align-items: center;
+    justify-content: center;
+    color: azure;
     font-family: 'Crimson Text', serif;;
   }
-  .grid-container {
+  #survey{
+    align-self: flex-start;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2rem;
+  }
+
+#foot>p{
+  font-family: 'Itim', cursive;
+}
+#foot>#note{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* .grid-container {
 
     display: inline-block;
     height: 2e,;
@@ -106,7 +148,7 @@ ul {
     text-align: center;
     padding: 1em 0;
     font-size: 30px;
-  }
+  } */
 
   /* Create two equal columns that floats next to each other */
 /* .column {

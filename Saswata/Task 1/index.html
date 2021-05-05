@@ -16,6 +16,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Dancing+Script:wght@700&family=Lobster&family=Roboto:wght@100&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -29,7 +31,7 @@
             <li style="float:right"><a class="active" href="#about">Contact</a></li>
         </ul>
     </nav>
-    <section class="dark">
+    <section class="dark" id="land">
         <div>
             <h1>Hey I'm Saswata</h1>
             <h2><em>a web developer</em></h2>
@@ -40,29 +42,40 @@
         <u>
             <p>These are some of my projects</p>
         </u>
-        <div class="row">
-            <div class="grid-container column">
-                <img src=" ̰/Users/saswatabasu/Desktop/Git/ADG_Git/Web-Tasks-2021/.Assets/Task 1tic-tac-toe.png"
-                    alt="Img Here">
-                <img src="/Users/saswatabasu/Desktop/Git/ADG_Git/Web-Tasks-2021/.Assets/Task 1tribute.jpg"
-                    alt="Img Here">
-                <img src="/Users/saswatabasu/Desktop/Git/ADG_Git/Web-Tasks-2021/.Assets/Task 1random-quote-machine.png"
-                    alt="Img Here">
+        <div class="card" id="card">
+            <h3>These are some of my Projects</h3>
+            <div class="card-collector">
+                <div class="card">
+                    <img src="Assets\tribute.jpg" alt="tribute">
+                    <h4>Tribute Page</h4>
+                </div>
+                <div class="card">
+                    <img src="Assets\random-quote-machine.png" alt="random-quote-machine">
+                    <h4>Random Quote</h4>
+                </div>
+                <div class="card">
+                    <img src="Assets\calc.png" alt="calc">
+                    <h4>Js Calc</h4>
+                </div>
+                <br>
+                <div class="card">
+                    <img src="Assets\map.jpg" alt="map">
+                    <h4>Access Data</h4>
+                </div>
+                <div class="card">
+                    <img src="Assets\wiki.png" alt="wiki">
+                    <h4>Wikipedia Viewer</h4>
+                </div>
+                <div class="card">
+                    <img src="Assets\tic-tac-toe.png" alt="tic-tac-toe">
+                    <h4>Tic-Tac-Toe Game</h4>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="grid-container column">
-                <img src="/Users/saswatabasu/Desktop/Git/ADG_Git/Web-Tasks-2021/.Assets/Task 1calc.png" alt="Img Here">
-                <img src="/Users/saswatabasu/Desktop/Git/ADG_Git/Web-Tasks-2021/.Assets/Task 1map.jpg" alt="Img Here">
-                <img src="/Users/saswatabasu/Desktop/Git/ADG_Git/Web-Tasks-2021/.Assets/Task 1wiki.png" alt="Img Here">
-            </div>
-        </div>
-
     </section>
-    <section class="ct-flx">
-        <div> Survery Form </div>
-        <div>
-            <form action="">
+    <section id="ct-flex">
+        <div id="survey">Survey Form</div>
+        <div id="form">
+            <form>
                 <label for="name">Name</label> <br>
                 <input type="text" name="name" placeholder="Enter your name" size="50" required><br>
                 <label for="email">Email</label><br>
@@ -108,6 +121,27 @@
             </form>
         </div>
     </section>
+    <footer class="light" id="foot">
+        <p>Let's work together</p>
+        <p><em>How do you take your coffee?</em></p>
+        <div>
+            <span class="con-links"><a href="#contact"><i class="fab fa-facebook-square"></i> Facebook <br></a></span>
+            <span class="con-links"><a href="#contact"><i class="fab fa-github-square"></i> Github <br></a></span>
+            <span class="con-links"><a href="#contact"><i class="fab fa-twitter"></i> Twitter <br></a></span>
+            <span class="con-links"><a href="#contact"><i class="fas fa-at"></i> Send a mail <br></a></span>
+            <span class="con-links"><a href="#contact"><i class="fas fa-mobile-alt"></i> Call me </a></span>
+            <hr>
+            <div id="note">
+                <p id="left">
+                    **This is just a fake portfolio. All the project and details guven are not real.
+                </p>
+                <p id="right">
+                    <i class="far fa-copyright"></i> All rights reserved
+                </p>
+            </div>
+
+        </div>
+    </footer>
 </body>
 
 </html>

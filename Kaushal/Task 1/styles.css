@@ -9,15 +9,16 @@ body{
     font-family: sans-serif;
 }  
 .navbar{
-    position: sticky;
-    overflow: hidden;
-    top: 0;
-}
-.navbar,a{
     background-color: rgb(21, 19, 19);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+}
+.navbar a{
+    
     padding: 0.5em 1em 0.5em 0.7em;
     font-size: 1.1em;
     color: azure;
@@ -41,7 +42,7 @@ body{
     color: palevioletred;
 }
 #About{
-    background-color:aquamarine;
+    background-color:aliceblue;
     text-align: center;
     
 }
@@ -89,7 +90,8 @@ body{
     display: inline-block;
     margin: 2% 0 2% 0;
     padding: 0 2% 0 2%;
-    background-color: beige;
+    background-color: black;
+    color: aliceblue;
 }
 
 #Survey .flex-box{
@@ -99,8 +101,22 @@ body{
     color: aliceblue;
 }
 .input-width{
-    width: 100%;
+    width: 90%;
 }
+#Contact .flex-box{
+    flex-direction: column;
+    text-align: center;
+
+}
+.logo{
+    width: 40px;
+    margin: 5px;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+}
+
 @media screen and (min-width : 768px) {
     .flex-box{
         padding: 0 20vw 0 20vw;
@@ -115,7 +131,6 @@ body{
         justify-content: flex-end;
     }
     .navbar a:hover{
-        color: aqua;
-        
+        color: aqua; 
     }
 }

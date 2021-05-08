@@ -27,6 +27,7 @@ header {
   justify-content: space-between;
   align-items: center;
   align-items: baseline;
+  flex-wrap: wrap;
 }
 
 /* Stuff on the left */
@@ -46,7 +47,7 @@ header {
 }
 
 .input > input {
-  height: 2rem;
+  height: 2.2rem;
   width: 100%;
   font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
@@ -66,6 +67,15 @@ input:focus {
   height: 2rem;
   font-size: 1.1rem;
   font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  transition: 0.1s ease-out;
+}
+.btn>button:hover{
+    background-color: #00adb5;
+    color: white;
+    transform: translateY(-0.2rem);
 }
 
 /* Stuff on the right */
@@ -149,6 +159,6 @@ input:not(input[type="date"]):focus + label,
 input:not(input[type="date"]):not(:placeholder-shown) + label {
   font-size: 1rem;
   line-height: 550%;
-  top: -40%;
+  top: -35%;
   color: white;
 }

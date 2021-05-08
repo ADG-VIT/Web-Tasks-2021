@@ -1,0 +1,96 @@
+/* General */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #222831;
+}
+
+/* Title */
+header{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #eeeeee;
+}
+
+/* Body */
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: baseline;
+}
+
+/* Stuff on the left */
+.containerLeft{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 3rem;
+    flex-direction: column;
+}
+
+.input{
+    margin: 2rem;
+    width: 85%;
+}
+
+.input>input{
+    height: 2rem;
+    width: 100%;
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+input:focus{
+    outline: none;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn>button{
+    width: 40%;
+    height: 2rem;
+    font-size: 1.1rem;
+}
+
+/* Stuff on the right */
+
+.containerRight{
+    width: 50%;
+    min-height: 10rem;
+    margin: 3rem;
+}
+
+table{
+    width: 100%;
+}
+th{
+    background-color: #00adb5;
+    font-size: 1.3rem;
+    color: #eeeeee;
+    padding: 0.5rem 0 0.5rem 0;
+}
+#left{
+    border-top-left-radius: 10px;
+}
+#right{
+    border-top-right-radius: 10px;
+}
+td{
+    text-align: center;
+    font-size: 1.1rem;
+    color: #eeeeee;
+    padding: 0.3rem 0 0.3rem 0;
+}

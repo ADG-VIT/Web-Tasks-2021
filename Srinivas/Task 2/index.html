@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Calculator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Expense Calculator</h1>
+    </header>
+    <section id="stuff">
+        <div class="container">
+        <div class="containerLeft">
+            <form action="#">
+                <div class="descript input">
+                    <input type="text" name="Description" id="description" placeholder="Description">
+                </div>
+                <div class="amount input">
+                    <input type="text" name="Money" id="money" placeholder="Amount">
+                </div>
+                <div class="date input">
+                    <input type="date" name="Date" id="date">
+                </div>
+                <div class="btn input">
+                    <button type="button" id="addBtn">Add Income</button>
+                </div>
+            </form>
+        </div>
+        <div class="containerRight">
+            <table id="table">
+                <tr>
+                    <th id="left">Description</th>
+                    <th>Amount</th>
+                    <th id="right">Date</th>
+                </tr>
+                <tr>
+                    <td>Test 1</td>
+                    <td>Test 2</td>
+                    <td>Test 3</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </section>
+
+    <!-- JS file link -->
+    <script src="index.js"></script>
+</body>
+</html>

@@ -10,7 +10,7 @@ Functionality:
 2. The records can be deleted or modified.
 3. There should be a sum total displayed on the page.
 
-You can refer to the layout given below. We specifically did not design the webpage to see your design sense.
+You can refer to the layout given below. We specifically did not design the webpage to see your design sense, so design your webpage accordingly😉.
 <br><br>
 **Deadline:** 18 May 2021
 <br>

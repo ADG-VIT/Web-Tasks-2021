@@ -37,6 +37,7 @@ header{
     align-items: stretch;
     margin: 3rem;
     flex-direction: column;
+    animation: none;
 }
 
 .input{
@@ -49,6 +50,7 @@ header{
     width: 100%;
     font-size: 1.3rem;
     font-family: 'Roboto', sans-serif;
+    padding: 0.1rem 0 0.1rem 0.5rem;
 }
 
 input:focus{
@@ -63,6 +65,7 @@ input:focus{
     width: 40%;
     height: 2rem;
     font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Stuff on the right */
@@ -76,11 +79,14 @@ input:focus{
 table{
     width: 100%;
 }
+
+
 th{
     background-color: #00adb5;
     font-size: 1.3rem;
     color: #eeeeee;
     padding: 0.5rem 0 0.5rem 0;
+    font-family: 'Roboto Mono', monospace;
 }
 #left{
     border-top-left-radius: 10px;
@@ -88,9 +94,27 @@ th{
 #right{
     border-top-right-radius: 10px;
 }
-td{
+.odd>td{
     text-align: center;
     font-size: 1.1rem;
     color: #eeeeee;
     padding: 0.3rem 0 0.3rem 0;
+    font-family: 'Roboto', sans-serif;
+    animation-name: slideIn;
+    animation-duration: 0.7s;
+}
+.even>td{
+    text-align: center;
+    font-size: 1.1rem;
+    background-color: #eeeeee;
+    color: black;
+    padding: 0.3rem 0 0.3rem 0;
+    font-family: 'Roboto', sans-serif;
+    animation-name: slideIn;
+    animation-duration: 0.7s;
+}
+@keyframes slideIn{
+    from{
+        opacity: 0;
+    }
 }

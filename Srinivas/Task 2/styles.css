@@ -1,120 +1,154 @@
 /* General */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: #222831;
+body {
+  background-color: #222831;
 }
 
 /* Title */
-header{
-    margin: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: #eeeeee;
+header {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #eeeeee;
 }
 
 /* Body */
 
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-items: baseline;
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: baseline;
 }
 
 /* Stuff on the left */
-.containerLeft{
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    margin: 3rem;
-    flex-direction: column;
-    animation: none;
+.containerLeft {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin: 3rem;
+  flex-direction: column;
+  animation: none;
 }
 
-.input{
-    margin: 2rem;
-    width: 85%;
+.input {
+  margin: 2.5rem;
+  width: 85%;
 }
 
-.input>input{
-    height: 2rem;
-    width: 100%;
-    font-size: 1.3rem;
-    font-family: 'Roboto', sans-serif;
-    padding: 0.1rem 0 0.1rem 0.5rem;
+.input > input {
+  height: 2rem;
+  width: 100%;
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+  padding: 0.1rem 0 0.1rem 0.5rem;
 }
 
-input:focus{
-    outline: none;
+input:focus {
+  outline: none;
 }
-.btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.btn>button{
-    width: 40%;
-    height: 2rem;
-    font-size: 1.1rem;
-    font-family: 'Roboto', sans-serif;
+.btn > button {
+  width: 40%;
+  height: 2rem;
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Stuff on the right */
 
-.containerRight{
-    width: 50%;
-    min-height: 10rem;
-    margin: 3rem;
+.containerRight {
+  width: 50%;
+  min-height: 10rem;
+  margin: 3rem;
 }
 
-table{
-    width: 100%;
+table {
+  width: 100%;
 }
 
+th {
+  background-color: #00adb5;
+  font-size: 1.3rem;
+  color: #eeeeee;
+  padding: 0.5rem 0 0.5rem 0;
+  font-family: "Roboto Mono", monospace;
+}
+#left {
+  border-top-left-radius: 10px;
+}
+#right {
+  border-top-right-radius: 10px;
+}
+.odd > td {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #eeeeee;
+  padding: 0.3rem 0 0.3rem 0;
+  font-family: "Roboto", sans-serif;
+  animation-name: slideIn;
+  animation-duration: 0.7s;
+}
+.even > td {
+  text-align: center;
+  font-size: 1.1rem;
+  background-color: #eeeeee;
+  color: black;
+  padding: 0.3rem 0 0.3rem 0;
+  font-family: "Roboto", sans-serif;
+  animation-name: slideIn;
+  animation-duration: 0.7s;
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+  }
+}
 
-th{
-    background-color: #00adb5;
-    font-size: 1.3rem;
-    color: #eeeeee;
-    padding: 0.5rem 0 0.5rem 0;
-    font-family: 'Roboto Mono', monospace;
+/* Floating Labels */
+.inputContainer {
+  position: relative;
 }
-#left{
-    border-top-left-radius: 10px;
+.inputLabel {
+  position: absolute;
+  font-size: 1.3rem;
+  line-height: 250%;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.1s ease-out;
+  pointer-events: none;
 }
-#right{
-    border-top-right-radius: 10px;
+
+input[type="text"] {
+  display: inline-block;
+  font-size: 1.3rem;
+  line-height: 550%;
+  outline: none;
+  border: none;
+  transition: 0.1s ease-out;
+  padding-left: 1rem;
 }
-.odd>td{
-    text-align: center;
-    font-size: 1.1rem;
-    color: #eeeeee;
-    padding: 0.3rem 0 0.3rem 0;
-    font-family: 'Roboto', sans-serif;
-    animation-name: slideIn;
-    animation-duration: 0.7s;
+input::placeholder {
+  color: white;
 }
-.even>td{
-    text-align: center;
-    font-size: 1.1rem;
-    background-color: #eeeeee;
-    color: black;
-    padding: 0.3rem 0 0.3rem 0;
-    font-family: 'Roboto', sans-serif;
-    animation-name: slideIn;
-    animation-duration: 0.7s;
-}
-@keyframes slideIn{
-    from{
-        opacity: 0;
-    }
+input:not(input[type="date"]):focus + label,
+input:not(input[type="date"]):not(:placeholder-shown) + label {
+  font-size: 1rem;
+  line-height: 550%;
+  top: -40%;
+  color: white;
 }

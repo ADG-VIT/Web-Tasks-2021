@@ -1,6 +1,24 @@
 # Web-Learners-2021
 #### Repository to maintain Tasks of ADG Web Developers Team 2021
 
+
+## Task 2 *(Expense Tracker)*
+Hey! You have to develop an Expense Tracker using HTML (Forms), CSS (Flexbox) and JS (Event Listeners, DOM Manipulation). Make your website <b> responsive</b>.
+
+Functionality:
+1. The user can enter the expense description, amount and add it into a table below.
+2. The records can be deleted or modified.
+3. There should be a sum total displayed on the page.
+
+You can refer to the layout given below. We specifically did not design the webpage to see your design sense.
+<br><br>
+**Deadline:** 18 May 2021
+<br>
+<i>Happy Scripting!!</i>
+
+<img src="https://user-images.githubusercontent.com/60514776/117531259-55722f80-afff-11eb-84a8-556e2169a9ae.png" height="auto" width="60%">
+
+
 ## Task 1b *(Responsive)*
 Make your Portfolio Website (given in Task 1a) <b>responsive</b> using media queries or flexbox.
 <br><br>

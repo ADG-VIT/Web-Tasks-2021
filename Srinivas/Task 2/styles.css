@@ -127,7 +127,10 @@ th {
     opacity: 0;
   }
 }
-
+.final>td{
+  color: #00adb5;
+  font-weight: 700;
+}
 /* Floating Labels */
 .inputContainer {
   position: relative;

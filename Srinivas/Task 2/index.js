@@ -12,6 +12,7 @@ function createFinal(sum,count) {
   trF.appendChild(td1);
   trF.appendChild(td2);
   (count+1)%2 === 0 ? trF.classList.add("even") : trF.classList.add("odd");
+  trF.classList.add("final");
   table.appendChild(trF);
 }
 

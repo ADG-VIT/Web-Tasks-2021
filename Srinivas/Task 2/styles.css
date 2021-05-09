@@ -165,3 +165,38 @@ input:not(input[type="date"]):not(:placeholder-shown) + label {
   top: -35%;
   color: white;
 }
+
+
+/* Media Queries  */
+
+@media (max-width: 959px){
+  .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .title>h1{
+    text-align: center;
+  }
+  .btn>button{
+    min-width: 8rem;
+  }
+  .containerLeft{
+    width: 60%;
+  }
+  table{
+    width: 90%;
+  }
+}
+
+@media (max-width: 414px){
+  .container{
+    align-items: baseline;
+  }
+}
+
+@media (max-width: 329px){
+  .containerRight{
+    margin: 1rem;
+  }
+}

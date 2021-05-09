@@ -285,6 +285,15 @@ textarea:focus {
     flex-direction: column;
     margin: 1rem;
   }
+  textarea {
+    font-size: 1.3rem;
+    font-family: "Roboto", sans-serif;
+    resize: none;
+    color: #272343;
+  }
+  textarea:focus {
+    outline: none;
+  }
   .copyright{
     display: flex;
     justify-content: space-between;
@@ -301,6 +310,13 @@ textarea:focus {
     height: 22rem;
   }
 }
+
+@media (min-width: 320px) and (max-width: 455px){
+  .headerPro{
+    padding-left: 3rem;
+  }
+}
+
 
 @media (min-width: 405px) {
   .card {

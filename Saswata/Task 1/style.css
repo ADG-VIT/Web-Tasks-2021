@@ -1,9 +1,14 @@
+html{
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+}
 body{
     margin: 0;
     padding: 0;
 }
 section{
-  height: 800px;
+  height: 100vh;
   margin: 0px;
   padding: 0px;
 }
@@ -12,11 +17,16 @@ section{
 }
 .light p{
   margin: 0px;
+  padding: 2rem;
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
 }
 .dark{
   background-color: #2b2e4a;
   position: relative;
   color: azure;
+
   
 }
 .dark div{
@@ -27,6 +37,7 @@ section{
   margin-right: -50%;
   transform: translate(-50%, -50%)
 }
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -60,9 +71,14 @@ ul {
   }
   h1{
     text-align: center;
+    font-size: 4rem;
+    font-family: 'Dancing Script','Lobster',  cursive;
+
+
   }
   h2{
     text-align: center;
+    font-size: 20px;
   }
   u>p{
     text-align: center;
@@ -71,7 +87,50 @@ ul {
     height: 200px;
     width: 200px;
   }
-  .grid-container {
+  #ct-flex{
+    display: flex;
+    
+    background-color: #2b2e4a;
+    align-items: center;
+    justify-content: center;
+    color: azure;
+    font-family: 'Crimson Text', serif;;
+  }
+  #survey{
+    align-self: flex-start;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2rem;
+  }
+
+#foot>p{
+  font-family: 'Itim', cursive;
+}
+#foot>#note{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* .grid-container {
 
     display: inline-block;
     height: 2e,;
@@ -89,7 +148,7 @@ ul {
     text-align: center;
     padding: 1em 0;
     font-size: 30px;
-  }
+  } */
 
   /* Create two equal columns that floats next to each other */
 /* .column {

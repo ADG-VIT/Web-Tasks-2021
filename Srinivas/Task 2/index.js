@@ -2,6 +2,20 @@ const button = document.getElementById("addBtn");
 const table = document.getElementById("table");
 let count = 0;
 let sum = 0;
+let addCount = 1;
+
+
+function respondAddKey(event){
+  const arr = document.getElementsByTagName("td");
+  const l = arr.length;
+  let sum1 = 0;
+  for(let i = 1; i<l-2;i+=3){
+    sum1 += Number(arr[i].innerText);
+  }
+  arr[l-1].innerText = sum1;
+  sum = sum1;
+}
+
 
 function createFinal(sum,count) {
   let trF = document.createElement("tr");
@@ -19,6 +33,20 @@ function createFinal(sum,count) {
 function deleteFinal(count) {
   count > 0 && table.lastChild.remove();
 }
+
+function contentEditable(){
+  const arr = document.getElementsByTagName("td");
+  const l = arr.length;
+  for(let i = 0; i<l-2;i++){
+    arr[i].setAttribute("contentEditable", "true");
+    if(i === addCount){
+      arr[i].addEventListener("keyup", respondAddKey);
+      addCount+=3;
+    }
+  }
+}
+
+
 
 button.addEventListener("click", () => {
   deleteFinal(count);
@@ -43,4 +71,5 @@ button.addEventListener("click", () => {
   amount.value = "";
   date.value = "";
   createFinal(sum,count);
+  contentEditable();
 });

@@ -1,0 +1,137 @@
+
+html {
+    scroll-behavior: smooth;
+
+  }
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}  
+.navbar{
+    background-color: rgb(21, 19, 19);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+}
+.navbar a{
+    
+    padding: 0.5em 1em 0.5em 0.7em;
+    font-size: 1.1em;
+    color: azure;
+    
+} 
+
+#Home{
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.headtext{
+ text-align: center;
+}
+.headtext h3{
+    color: palevioletred;
+}
+#About{
+    background-color:aliceblue;
+    text-align: center;
+    
+}
+#About h2{
+    margin: 0;
+    padding: 3%;
+}
+.flex-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.card{
+    margin: 2em 0 2em 0;
+    width: 80%;
+    height: 80vh;
+    background-color: beige;
+}
+.imagecard{
+    /* height: 32.2em; */
+    height:80%
+    
+}
+.imagecard img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.imgtext{
+    height: 20%;
+    background-color: black;
+    color: aliceblue;
+    position: relative;
+}
+.imgtext h3{
+    color: aliceblue;
+    position: relative;
+    top: 25%;
+    margin-top: 0%;
+
+}
+.show{
+    display: inline-block;
+    margin: 2% 0 2% 0;
+    padding: 1% 2% ;
+    background-color: black;
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+#Survey .flex-box{
+    height: 100vh;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+}
+.input-width{
+    width: 90%;
+}
+#Contact .flex-box{
+    flex-direction: column;
+    text-align: center;
+
+}
+.logo{
+    width: 40px;
+    margin: 5px;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (min-width : 768px) {
+    .flex-box{
+        padding: 0 20vw 0 20vw;
+        
+    }
+    .card{
+        width: 300px;
+        height: 350px;
+        margin: 2px;
+    } 
+    .navbar,a{
+        justify-content: flex-end;
+    }
+    .navbar a:hover{
+        color: aqua; 
+    }
+}

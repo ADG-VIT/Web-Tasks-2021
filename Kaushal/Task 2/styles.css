@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+.item{
+    min-height: 100vh;
+    min-width: 80vw;
+    background-color: aqua;
+}

@@ -4,10 +4,14 @@
   font-family: 'Poppins', sans-serif;
 }
 .header{
-  background-color: #ff4c68;
+  /* background-color: #ff4c68; */
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4.9.30,0.7)),url(ADG_TASKS\TASK_1\OIP.jpg);
+  background-image:
+              linear-gradient(45deg, rgba(
+                145, 146, 122, 0.62), rgba(
+                  217, 91, 132, 0.58)), url("./OIP.jpg");
+
   background-position: center;
   background-size: cover;
   position: relative;
@@ -21,6 +25,8 @@ nav{
   color: #fff;
   font-size: 20px;
 }
+
+
 nav img{
   width:100px;
   height:100px;
@@ -87,7 +93,12 @@ nav img{
   background: #f44336;
   transition: 1s;
 }
-/* @media(max-width:700px) {
+nav .fa{
+  display: none;
+}
+/* responsive_code_home_page*/
+ @media(max-width:700px) /*for devices less than or equal to 700px */
+{
   .text-box h1{
     font-size: 20px;
 
@@ -97,7 +108,7 @@ nav img{
   }
   .nav-links{
     position: absolute;
-    background: #f44336;
+    background: #a83068;
     height:100vh;
     width:200px;
     top: 0;
@@ -105,7 +116,17 @@ nav img{
     text-align: left;
     z-index:2;
   }
-} */
+  nav .fa{
+   display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul{
+    padding: 30px;
+  }
+}
 .about{
   width: 80%;
   margin: auto;
@@ -147,6 +168,12 @@ p{
 }
 .achievements-col:hover{
   box-shadow: 0 0 20px 0px rgba(255, 0, 0, 0.5);
+}
+/* responsive_code_achievements_page*/
+@media(max-width:700px){
+  .row{
+    flex-direction: column;
+  }
 }
 /* ---------projects-------- */
 .projects{
@@ -197,22 +224,15 @@ p{
   opacity: 1;
 
 }
-/* .survey{
-  width: 80%;
-  margin: 100px auto;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7),url(pics\image.jpg));
-  background-position: center;
-  background-size: cover;
-  border-radius: 10px;
-  text-align: center;
-  padding: 100px 0;
-  } */
-  #survey_form{
 
+  #survey_form{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(pics/books.jpg);
+    background-size: 100%;
     padding-top: 70px;
     padding-left: 400px;
     padding-right: 400px;
-    background-color:#ef8172;
+    padding-bottom: 50px;
+    /* background-color:#ef8172; */
     /* align-items:center ; */
     justify-content: center;
     color: azure;
@@ -225,6 +245,7 @@ p{
     font-family: 'Times New Roman', Times, serif;
     padding: 2rem;
   }
+  
 .remark{
   color: #fff;
   font-size: 20px;
@@ -236,6 +257,15 @@ p{
 .btn{
     padding-left: 150px;
 }
+/* responsive_code_survey_page*/
+@media(max-width:700px)
+{
+  #survey_form{
+    padding: 30px;
+    right: -300px;
+    background-size: 100%;
+  }
+}
 .containerF {
   display: flex;
   justify-content: center;
@@ -245,6 +275,7 @@ p{
 .containerF h1 {
   font-size: 3rem;
 }
+
 .socials {
   display: flex;
   justify-content: center;
@@ -268,11 +299,12 @@ p{
 }
 .footer {
   width: 100%;
-  height: 8rem;
+  height: 5rem;
+  font-size: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #272343;
+  color: #cecdd6;
   background-color: #ff4c68;
   border-radius: 10px;
 }

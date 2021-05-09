@@ -6,7 +6,6 @@ let addCount = 1;
 
 
 function respondAddKey(event){
-  console.log(event)
   if(event.key != "Delete"){
   const arr = document.getElementsByTagName("td");
   const l = arr.length;

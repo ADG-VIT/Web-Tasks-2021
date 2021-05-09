@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arjeet's First Website</title>
+    <script src="https://kit.fontawesome.com/7120359625.js" crossorigin="anonymous"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="C:\Users\ARJEET\Desktop\webDev\css\stylesheet.css" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <header>
+      <div class="nav">
+        <a href="#Contact">Contact</a>
+        <a href="#Survey">Survey</a>
+        <a href="#Work">Work</a>
+        <a href="#About">About</a>
+        <a class="active" href="#Home">Home</a>
+      </div>
+    </header>
+
+    <!-- part1 -->
+    <div class="main" id="Home">
+      <h1>Hey I am Arjeet</h1>
+
+      <div id="About">
+        <p>A web developer</p>
+      </div>
+    </div>
+
+    <!-- part2 -->
+
+    <div class="main2" id="Work">
+      <h3 class="heading">These are some of my projects</h3>
+
+      <div class="img">
+        <img src="C:\Users\ARJEET\Desktop\webDev\photos/tribute.jpg" alt="#" />
+        <p>Tribute Page</p>
+      </div>
+
+      <div class="img">
+        <img
+          src="C:\Users\ARJEET\Desktop\webDev\photos/random-quote-machine.png"
+          alt="#"
+        />
+        <p>Random Quote Machine</p>
+      </div>
+
+      <div class="img">
+        <img src="C:\Users\ARJEET\Desktop\webDev\photos/calc.png" alt="#" />
+        <p>JavaScript Calculator</p>
+      </div>
+
+      <div class="img">
+        <img src="C:\Users\ARJEET\Desktop\webDev\photos/map.jpg" alt="#" />
+        <p>Map Data across the Globe</p>
+      </div>
+
+      <div class="img">
+        <img src="C:\Users\ARJEET\Desktop\webDev\photos/wiki.png" alt="#" />
+        <p>Wikipedia Viewer</p>
+      </div>
+
+      <div class="img">
+        <img
+          src="C:\Users\ARJEET\Desktop\webDev\photos/tic-tac-toe.png"
+          alt="#"
+        />
+        <p>Tic Tac Toe Game</p>
+      </div>
+
+      <br />
+      <input class="btn" type="submit" value="Submit" />
+    </div>
+
+    <!-- part3 -->
+    <div class="forms" id="Survey">
+      <h1>Survey Form</h1>
+      <h3>Thank You for taking the time to help us improve the platform</h3>
+      <div class="form">
+      <form action="#">
+        <label for="name" class="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+        /><br>
+
+        <label for="email" class="name">Email</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Enter your Email"
+        /><br>
+
+        <label for="age" class="name">Age(optional)</label>
+        <input type="text" id="age" name="age" placeholder="Age" /><br>
+
+        <label for="role">Which option best describes your current role?</label>
+        <select id="role" name="role">
+          <option value="Beginner">Beginner</option>
+          <option value="Regular">Regular</option>
+          <option value="Professional">Professional</option>
+          <option value="Advanced">Advanced</option>
+        </select><br>
+
+        <p>What would you like to see improved?(Check all that apply)</p>
+
+        <input type="checkbox" id="option" />
+        <label for="option1">Front-end Projects</label><br />
+
+        <input type="checkbox" id="option" />
+        <label for="option2">Back-end Projects</label><br />
+
+        <input type="checkbox" id="option" />
+        <label for="option3">Data visualization</label><br />
+
+        <input type="checkbox" id="option" />
+        <label for="option4">Challenges</label><br />
+
+        <input type="checkbox" id="option" />
+        <label for="option5">Open source community</label><br />
+
+        <input type="checkbox" id="option" />
+        <label for="option6">Gitter help rooms</label><br />
+
+        <input type="checkbox" id="option" />
+        <label for="option7">Videos</label><br />
+        <input type="checkbox" id="option" />
+        <label for="option8">City Meetups</label><br />
+
+        <input type="checkbox" id="option" />
+        <label for="option9">Wiki</label><br />
+
+        <input type="checkbox" id="option" />
+        <label for="option10">Forums</label><br />
+
+        <input type="checkbox" id="option" />
+        <label for="option11">Additional courses</label><br />
+
+        <label for="suggestions">Any comments or suggestions?</label>
+
+        <textarea
+          id="suggestions"
+          name="suggestions"
+          placeholder="Type something.."
+          rows="5" ></textarea>
+        <input class="btn" type="submit" value="Submit" />
+      </form>
+    </div>
+    </div>
+
+    <!-- contact -->
+    <div class="contact" id="Contact">
+      <h1>Let's work together...</h1>
+      <h3>Get to know more about me</h3>
+      <div class="links">
+        <a
+          href="https://www.instagram.com/im.arjeet"
+          class="fab fa-instagram">
+          Instagram</a
+        >
+        <a
+          href="https://www.github.com/arjeet27"
+          class="fa fa-github"
+        >
+          GitHub</a
+        >
+        <a href="https://www.twitter.com" class="fa fa-twitter">
+          Twitter</a
+        >
+        <a
+          href="mailto:anandarjeet27@gmail.com"
+          class="fa fa-envelope"
+        >
+          Send a mail</a
+        >
+        <a href="tel:7004253***" class="fa fa-phone"> Call me</a>
+      </div>
+    </div>
+
+    <div class="portfolio>">
+      <hr />
+      <p class="portf">***This is just a sample portfolio website.</p>
+      <p class="far fa-copyright"> Created for Web Task</p>
+    </div>
+  </body>
+</html>

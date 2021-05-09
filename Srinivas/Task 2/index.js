@@ -6,6 +6,8 @@ let addCount = 1;
 
 
 function respondAddKey(event){
+  console.log(event)
+  if(event.key != "Delete"){
   const arr = document.getElementsByTagName("td");
   const l = arr.length;
   let sum1 = 0;
@@ -14,6 +16,13 @@ function respondAddKey(event){
   }
   arr[l-1].innerText = sum1;
   sum = sum1;
+  } else {
+    sum -= Number(event.path[0].innerText);
+    event.path[1].remove();
+    respondAddKey({key: "Placeholder"});
+    count -= 1;
+    addCount -= 3;
+  }
 }
 
 
@@ -25,7 +34,7 @@ function createFinal(sum,count) {
   td2.innerText = sum;
   trF.appendChild(td1);
   trF.appendChild(td2);
-  (count+1)%2 === 0 ? trF.classList.add("even") : trF.classList.add("odd");
+  trF.classList.add("odd");
   trF.classList.add("final");
   table.appendChild(trF);
 }
@@ -65,7 +74,7 @@ button.addEventListener("click", () => {
   tr.appendChild(td1);
   tr.appendChild(td2);
   tr.appendChild(td3);
-  count % 2 == 0 ? tr.classList.add("even") : tr.classList.add("odd");
+  tr.classList.add("even");
   table.appendChild(tr);
   description.value = "";
   amount.value = "";

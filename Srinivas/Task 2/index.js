@@ -3,7 +3,7 @@ const table = document.getElementById("table");
 let count = 0;
 let sum = 0;
 let addCount = 1;
-
+let first = true;
 
 function respondAddKey(event){
   if(event.key != "Delete"){
@@ -21,6 +21,11 @@ function respondAddKey(event){
     respondAddKey({key: "Placeholder"});
     count -= 1;
     addCount -= 3;
+    (count) => {
+      if(count === 0){
+        first = true;
+      }
+    }
   }
 }
 
@@ -36,10 +41,12 @@ function createFinal(sum,count) {
   trF.classList.add("odd");
   trF.classList.add("final");
   table.appendChild(trF);
+  first = false;
 }
 
 function deleteFinal(count) {
   count > 0 && table.lastChild.remove();
+  (sum === 0 && !first) && table.lastChild.remove();
 }
 
 function contentEditable(){

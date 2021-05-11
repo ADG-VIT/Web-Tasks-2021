@@ -1,0 +1,299 @@
+:root {
+    --primary: #778da9;
+    --dark: #0d1b2a;
+    --light: #e0e1dd;
+    --light-dark: #415a77;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.banner {
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--light);
+    color: var(--dark);
+    margin-bottom: 30px;
+}
+
+.wrapper {
+    margin: 10px 30px;
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.details {
+    box-sizing: border-box;
+    padding: 2rem;
+    background-color: var(--light);
+    color: var(--dark);
+    height: 100%;
+    width: 45%;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 10px;
+}
+
+.details .heading {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.details .expense-form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details .expense-form form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    font-size: 1.5rem;
+}
+
+.details .expense-form form input {
+    width: 60%;
+    background-color: whitesmoke;
+    border: 1px var(--dark) solid;
+    font-size: 1rem;
+    padding: 5px;
+    padding-right: 3rem;
+    border-radius: 10px;
+}
+
+.details .expense-form form button {
+    align-self: flex-start;
+    background-color: var(--dark);
+    color: var(--light);
+    border: none;
+    font-size: 1.5rem;
+    padding: 10px 50px;
+    box-shadow: var(--shadow);
+}
+
+.display {
+    box-sizing: border-box;
+    padding: 2rem;
+    background-color: var(--light);
+    color: var(--dark);
+    min-height: 100%;
+    width: 51%;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 10px;
+}
+
+.display .heading {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 1.15rem;
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.dashboard .price-plate {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dashboard .price-plate span {
+    font-weight: bold;
+}
+
+.dashboard .price-plate button {
+    background-color: red;
+    color: var(--light);
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    border: none;
+}
+
+.display .board {
+    margin: 1rem 0rem;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.display .sum {
+    font-size: 2rem;
+    background-color: var(--light-dark);
+    color: var(--light);
+    text-align: center;
+    width: 100%;
+}
+
+.display .board .dashboard .price-plate .price {
+    font-weight: normal;
+}
+
+@media (max-width: 900px) {
+    .banner {
+        font-size: 1.5rem;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    .details {
+        padding: 1rem;
+    }
+    .details .heading {
+        font-size: 1.5rem;
+    }
+    .display .heading {
+        font-size: 1.5rem;
+    }
+    .details .expense-form form {
+        font-size: 1.25rem;
+    }
+    .details .expense-form form input {
+        width: 80%;
+        font-size: 0.85rem;
+        padding: 3px;
+        padding-right: 2rem;
+        border-radius: 8px;
+    }
+    .details .expense-form form button {
+        font-size: 1.25rem;
+        padding: 7px 40px;
+    }
+    /*  */
+    .display {
+        padding: 1rem;
+    }
+    .display .heading {
+        font-size: 1.5rem;
+    }
+    .dashboard {
+        padding: 0.5rem;
+    }
+    .dashboard .price-plate button {
+        margin-top: 0.45rem;
+        font-size: 1.25rem;
+    }
+    .display .board {
+        margin: 0.85rem 0rem;
+    }
+    .display .sum {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .banner {
+        font-size: 1.5rem;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .wrapper {
+        height: 100%;
+        margin: 5px 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .details {
+        margin-bottom: 10px;
+        padding: 1rem;
+        height: 300px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-radius: 10px;
+        font-size: 0.85rem;
+    }
+    .details .heading {
+        font-size: 1.5rem;
+    }
+    .details .expense-form form input {
+        width: 90%;
+        font-size: 1rem;
+        padding: 2px;
+        padding-right: 1rem;
+    }
+    .details .expense-form form button {
+        font-size: 1.25rem;
+        padding: 5px 30px;
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    .display {
+        margin-bottom: 10px;
+        padding: 1.5rem;
+        height: 100%;
+        width: 100%;
+    }
+    .display .heading {
+        font-size: 1.5rem;
+    }
+    .dashboard {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    .dashboard .price-plate {
+        width: 100%;
+        align-items: center;
+    }
+    .dashboard .price-plate button {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        width: 100%;
+    }
+    .display .board {
+        margin: 0.75rem 0rem;
+        display: grid;
+        grid-gap: 0.25rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .display .sum {
+        font-size: 1.5rem;
+    }
+}

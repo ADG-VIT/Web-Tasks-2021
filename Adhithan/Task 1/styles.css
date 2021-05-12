@@ -1,0 +1,232 @@
+/* MAIN WEBSITE */
+/* NAVBAR */
+.nav1 {
+    background-color: #FF1C52;
+    overflow: hidden;
+  }
+  .nav1 a 
+  {
+    float: left;
+    color: #f0c449;
+    font-family: 'Montserrat', 'Segoe UI';
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .nav1 a:hover
+  {
+    background:#000000 ;
+    color: #F0C449;
+  }
+  
+  .nav1 a.active {
+    background-color: #000000;
+    color: #F0C449;
+  }
+  
+  body{
+    text-align: center;
+    margin: 0;
+  }
+  section
+  {
+    margin: 0;
+  }
+  
+  img
+  {
+    height:300px;
+    width: 400px;
+  }
+  
+  .c
+  {
+    padding: 50px 10px;
+  }
+  
+  .btn1 {
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: Georgia;
+    color: #F0FFFF;
+    font-size: 22px;
+    background: #3498db;
+    padding: 10px 25px 10px 25px;
+    text-decoration: none;
+    border: none;
+  }
+  
+  .btn1:hover {
+    background: #F0C449;
+    text-decoration: none;
+    border: none;
+  }
+  
+  .colored-section
+  {
+    background-color: #FF1C52;
+    color: #F0FFFF;
+  }
+  
+  .black-section
+  {
+    background-color: #F0FFFF;
+    color: #F0C449;
+  }
+  
+  .b
+  {
+    padding: 250px 30px 250px 30px;
+  }
+  
+  .d
+  {
+    padding: 50px 50px;
+  }
+  
+  .img-div
+  {
+    display: inline-block;
+    background-color: #000000;
+    margin: 12px;
+  }
+  
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+  }
+  
+  input[type=submit] {
+    margin-bottom: 16px;
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 15px;
+    background: #3498db;
+    padding: 7px;
+    text-decoration: none;
+    width: 100%;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    background: #F0C449;
+    text-decoration: none;
+    border: none;
+  }
+  
+  .d p
+  {
+    text-decoration: none;
+    text-align: left;
+    padding: 6px 0px;
+    margin: 0;
+  }
+  .container {
+    padding: 10px 50px;
+    text-align: left;
+  }
+  
+  .container1 {
+    text-align: left;
+    display: block;
+  }
+  
+  .e
+  {
+    padding: 50px 10px;
+  }
+  
+  
+  .icon
+  {
+    display:inline-block;
+  }
+  
+  .e p
+  {
+    display:inline-block;
+    margin-right: 25px;
+  }
+  
+  hr
+  {
+    background: pink;
+    margin: 0;
+  }
+  
+  
+  
+  /* Fonts */
+  
+  h1
+  {
+    font-family: 'Roboto', sans-serif;
+    font-size: 250%;
+    margin: 0;
+  }
+  
+  p
+  {
+    font-family: 'Itim', cursive;
+    font-size: 200%;
+  }
+  
+  
+  .d p,h2,label
+  {
+    font-family: 'Itim', cursive;
+    font-size: 100%;
+  }
+  
+  h2
+  {
+    font-family: 'Roboto', sans-serif;
+    font-size: 200%;
+    margin:0;
+    padding-bottom: 20px;
+  }
+  
+  
+  .f
+  {
+    padding: 10px;
+  }
+  
+  
+  .f-p
+  {
+    display: inline-block;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  
+  h5
+  {
+    font-family: 'Itim', cursive;
+    font-size: 120%;
+    margin-top: 30px;
+  }
+  
+  @media(min-width: 100px)
+  {
+    .d
+    {
+      padding: 50px 350px;
+    }
+  }

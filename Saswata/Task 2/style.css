@@ -1,0 +1,98 @@
+
+
+   /* .container{
+    max-width: 700px;
+  }  */
+  
+  @media(min-width: 1200px) 
+  {
+    .container{
+      max-width: 700px;
+    }
+    body{
+   
+      
+      background: url(maxresdefault.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+    }
+    #mas{
+      position: relative;
+      top:130px;
+      left:-20px;
+  }
+  }
+
+  @media(min-width: 992px) and (max-width: 1199px)
+  {
+    .container{
+      max-width: 400px;
+    }
+    body{
+   
+      
+      background: url(maxresdefault.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+    }
+    #mas{
+      position: relative;
+      top:130px;
+      left:-20px;
+  }
+  }
+
+  @media(min-width:0px) and (max-width: 992px)   
+  {
+    .container{
+      max-width: 270px;
+    }
+    body{
+   
+      
+      background: url(maxresdefault.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+    }
+    #mas{
+      position: relative;
+      top:130px;
+      left:-20px;
+  }
+  }
+  
+  input[type=text],
+  input[type=text]:focus{
+    color: rgb(155, 37, 37);
+    border: none;
+    background: rgba(0,0,0,0.2);
+    max-width: 700px;
+  }
+  .todos li{
+    background: #bba9a9;
+    background-blend-mode: lighten;
+  }
+  .delete{
+    cursor: pointer;
+  }
+  
+
+  span
+  {
+      color:rgb(57, 57, 68);
+  }
+
+  #uu
+  {
+    color:rgb(88, 84, 74);
+    font-size: 20px;
+  }

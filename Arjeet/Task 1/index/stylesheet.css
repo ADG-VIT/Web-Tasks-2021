@@ -1,0 +1,140 @@
+header {
+  background-color: #121212;
+  overflow: hidden;
+  margin: 0;
+  
+
+}
+.nav a {
+  margin: 0;
+  color: #ffffff;
+  font-size: 13px;
+  text-decoration: none;
+  float: right;
+  text-align: center;
+  padding: 10px 10px;
+
+}
+
+.nav a:hover {
+  background-color: azure;
+  color: #000000;
+}
+
+body {
+  text-align: center;
+  margin: 0px;
+}
+
+#Home {
+  margin: 0;
+  text-align: center;
+}
+
+#about {
+  margin: 0;
+}
+
+.main {
+  align-items: center;
+  background-color: azure;
+  margin: 0;
+  height: 300px;
+  width: 100%;
+}
+
+.main h1 {
+  margin: 0;
+  padding: 50px;
+}
+
+.main2 {
+  padding: 50px 10px;
+  display: inline-block;
+}
+.img {
+  width: 30%;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  background-color: whitesmoke;
+  display: inline-block;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+.img img{
+  width: 20rem;
+  height: 20rem;
+
+}
+
+.btn{
+  margin:20px;
+  background-color: #11999E;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+border-radius:8px;
+align-items: center
+}
+
+.forms {
+  background-color: #db866d;
+  text-align: center;
+  margin: 0px;
+}
+
+.forms h1 h3 {
+  text-align: center;
+}
+
+.form {
+  width: 40%;
+  color: white;
+  text-align: justify;
+  margin: auto;
+}
+
+.form label.name{
+  display: block;
+}
+
+.contact {
+  margin-top: 0px;
+  background-color: #121212;
+  color: white;
+}
+
+.contact h1 {
+  margin: 0px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: azure;
+  padding: 5px;
+}
+
+hr {
+  margin: 0px;
+}
+
+.main2 p{
+  margin: 0 auto;
+}
+
+@media (max-width:814px){
+  .forms{
+    padding: 0 10%;
+  }
+
+  .img{
+    display: block;
+    text-align: center;
+  }
+}

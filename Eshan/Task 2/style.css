@@ -1,0 +1,135 @@
+html {
+    font: 62.5%;
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.homepage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("./assets/Bg.jpg");
+    background-size: cover;
+    background-color: #cccccc;
+    /* display: flex; */
+    justify-content: center;
+}
+
+.homepage h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 65px;
+    font-family: 'Itim', cursive;
+    color: #78dad8;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid wheat; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .1em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+    /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes animated-cursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
+
+  .homepage h3 {
+    margin: 50px;
+    text-align: left;
+    font-size: 55px;
+    font-family: 'Itim', cursive;
+    color: #e7ff7e;
+  }
+.homepage h2 {
+    font-family: 'Itim', cursive;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    color: #db9fa6;
+    font-size: 45px;
+}
+
+.homepage table{
+    font-family: 'Akaya Kanadaka', cursive;
+    font-weight: 400;
+    margin: 20;
+    text-align: left;
+    color: #e2dadb;
+    font-size: 30px;
+}
+
+#c1{
+    width: 1000px;
+}
+
+#c2{
+    width: 1000px;
+}
+
+.survey {
+    font-family: 'Akaya Kanadaka', cursive;
+    font-size: 20px;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.survey form {
+    width: 50%;
+    color: white;
+}
+
+.survey input {
+    width: 100%;
+}
+
+
+#feedback-input {
+    width: 100%;
+}
+
+.survey button {
+    width: 100%;
+    height: 37px;
+    border-radius: 5px;
+    background-color: pink;
+}
+
+.survey button:hover{
+    background-color: rgb(255, 131, 152);
+}
+
+#langlink{
+    border-color: transparent;
+}
+
+.copyright {
+    width: 100%;
+    bottom: 0;
+}
+
+#copyright p {
+    color: white;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+

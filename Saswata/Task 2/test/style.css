@@ -9,11 +9,26 @@ body {
     font-size: 200%;
     color: white;
     margin: 0px;
-    background: url(moon-2048727_1920.jpg);
-
+    background: url(moon-2048727_1920.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+   
+}
+.dec{
+    align-self: flex-start;
+    
+}
+img{
+    height: 200px;
+    width: 200px;
+    align-self: flex-end;
 }
 
 .container{
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,4 +40,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.info{
+    display: flex;
+    font-size: 50%;
+    margin: 20%;
+    flex-wrap: wrap;
+    align-content: space-between;
 }

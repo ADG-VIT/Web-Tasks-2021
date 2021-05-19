@@ -119,9 +119,9 @@ form
   -moz-border-radius: 15;
   border-radius: 15px;
   text-shadow: 1px 1px 3px #666666;
-  -webkit-box-shadow: 0px 1px 3px #666666;
-  -moz-box-shadow: 0px 1px 3px #666666;
-  box-shadow: 0px 1px 3px #666666;
+  -webkit-box-shadow: 0 1px 3px #666666;
+  -moz-box-shadow: 0 1px 3px #666666;
+  box-shadow: 0 1px 3px #666666;
   font-family: Georgia;
   color: #000000;
   font-size: 18px;
@@ -152,23 +152,21 @@ form
 }
 
 
-@media screen and (max-width: 1100px)
+.expense2
 {
-  .row
-  {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0;
-  }
+  display: flex;
 }
 
-@media screen and (max-width: 590px)
+#expense1
 {
-  .btn
-  {
-    width: 50%;
-  }
+  margin-left: 25px;
 }
+
+.expense3
+{
+  margin-left: 25px;
+}
+
 
 /* OUTPut */
 .output
@@ -191,7 +189,7 @@ form
   font-weight: 600;
   font-size: 25px;
   margin: 0 10px 10px 10px;
-  width: 50%;
+  width: 70%;
 }
 
 .commodity .clear
@@ -208,9 +206,9 @@ form
   -moz-border-radius: 15;
   border-radius: 15px;
   text-shadow: 1px 1px 3px #666666;
-  -webkit-box-shadow: 0px 1px 3px #666666;
-  -moz-box-shadow: 0px 1px 3px #666666;
-  box-shadow: 0px 1px 3px #666666;
+  -webkit-box-shadow: 0 1px 3px #666666;
+  -moz-box-shadow: 0 1px 3px #666666;
+  box-shadow: 0 1px 3px #666666;
   font-family: Georgia;
   color: #000000;
   font-size: 18px;
@@ -232,9 +230,9 @@ form
   -moz-border-radius: 15;
   border-radius: 15px;
   text-shadow: 1px 1px 3px #666666;
-  -webkit-box-shadow: 0px 1px 3px #666666;
-  -moz-box-shadow: 0px 1px 3px #666666;
-  box-shadow: 0px 1px 3px #666666;
+  -webkit-box-shadow: 0 1px 3px #666666;
+  -moz-box-shadow: 0 1px 3px #666666;
+  box-shadow: 0 1px 3px #666666;
   font-family: Georgia;
   color: #000000;
   font-size: 18px;
@@ -262,4 +260,44 @@ form
   background-image: -o-linear-gradient(top, #ffffff, #ffffff);
   background-image: linear-gradient(to bottom, #ffffff, #ffffff);
   text-decoration: none;
+}
+
+
+@media screen and (max-width: 1100px)
+{
+  .row
+  {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
+
+
+@media screen and (max-width: 590px)
+{
+  .btn
+  {
+    width: 50%;
+  }
+  .expense2
+  {
+    flex-direction: column;
+  }
+  #expense1
+  {
+    margin-left: 0;
+  }
+  .expense3
+  {
+    margin-left: 0;
+  }
+  .commodity .clear
+  {
+    width: 50%;
+  }
+  .commodity .modify
+  {
+    width: 50%;
+  }
 }

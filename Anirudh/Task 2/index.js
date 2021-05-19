@@ -1,6 +1,6 @@
 let count=0
 let mod_count=-1;
-
+let sum=0;
 function xyz()
 {
   const a=document.querySelector("#item");
@@ -9,14 +9,21 @@ function xyz()
   if(mod_count===-1)
   {
     const d=document.querySelector("#output");
-    d.innerHTML=d.innerHTML+ "<div class='commodity'>" + '<button type="button" name="button" id="clear" class="clear" onclick="abc('+count+')">clear</button>' +'<button type="button" name="button" id="modify" class="modify" onclick="def('+count+')">modify</button>' + 'Description:    ' + a.value +'<br>'+ 'Expense Amount:    '+ b.value+'<br>' + 'Date:    ' + c.value +'<br>'+  '<br>'+ "</div>";
+    d.innerHTML=d.innerHTML+ "<div class='commodity'>" + "<div class='expense2'>"+'<button type="button" name="button" id="clear" class="clear" onclick="abc('+count+')">clear</button>' +'<button type="button" name="button" id="modify" class="modify" onclick="def('+count+')">modify</button>' + "</div>" + "<div class='expense2'>" + 'Description:    ' + "<div class='expense3'>" + a.value + " </div> " +"</div>"+ "<div class='expense2'>" + 'Expense Amount:    '+ "<div id='expense1'>"  + b.value+ "</div>" + "</div>"  + "<div class='expense2'>" + 'Date:    ' + "<div class='expense3'>" + c.value + "</div>" + "</div>" +'<br>'+  '<br>'+ "</div>";
+    sum=sum+ parseInt(b.value);
+    let temp=document.querySelectorAll('.headings')[1];
+    temp.innerHTML="<h2>Output:</h2>" + "<br>" + "<h2>Sum:" + sum + "</h2>";
     count=count+1;
   }
   else
   {
-    console.log(mod_count);
     let e=document.querySelectorAll('.commodity');
-    e[mod_count].innerHTML='<button type="button" name="button" id="clear" class="clear" onclick="abc('+mod_count+')">clear</button>' +'<button type="button" name="button" id="modify" class="modify" onclick="def('+mod_count+')">modify</button>' + 'Description:    ' + a.value +'<br>'+ 'Expense Amount:    '+ b.value+'<br>' + 'Date:    ' + c.value +'<br>'+  '<br>';
+    let f=document.querySelectorAll("#expense1");
+    sum=sum-parseInt(f[mod_count].innerHTML);
+    e[mod_count].innerHTML="<div class='expense2'>"+'<button type="button" name="button" id="clear" class="clear" onclick="abc('+mod_count+')">clear</button>' +'<button type="button" name="button" id="modify" class="modify" onclick="def('+mod_count+')">modify</button>' + "</div>" + "<div class='expense2'>" +'Description:    ' + "<div class='expense3'>" + a.value + "</div>" +"</div>"+"<div class='expense2'>"+ 'Expense Amount:    '+ "<div id='expense1'>" + b.value+"</div>" + "</div>" + "<div class='expense2'>" + 'Date:    ' + "<div class='expense3'>" + c.value + "</div>" + "</div>" + '<br>'+  '<br>';
+    sum=sum+parseInt(b.value);
+    let temp=document.querySelectorAll('.headings')[1];
+    temp.innerHTML="<h2>Output:</h2>" + "<br>" + "<h2>Sum:" + sum + "</h2>";
     mod_count=-1;
   }
 
@@ -27,7 +34,11 @@ function xyz()
 function abc(i)
 {
   let e=document.querySelectorAll('.commodity');
-  e[i].innerHTML="";
+  let f=document.querySelectorAll("#expense1");
+  sum=sum-parseInt(f[i].innerHTML);
+  let temp=document.querySelectorAll('.headings')[1];
+  temp.innerHTML="<h2>Output:</h2>" + "<br>" + "<h2>Sum:" + sum + "</h2>";
+  e[i].innerHTML="<div id='expense1'></div>";
 }
 
 

@@ -10,6 +10,7 @@ body {
     color: white;
     margin: 0px;
     background: url(moon-2048727_1920.jpg) no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,4 +40,12 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.info{
+    display: flex;
+    font-size: 50%;
+    margin: 20%;
+    flex-wrap: wrap;
+    align-content: space-between;
 }

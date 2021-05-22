@@ -31,15 +31,7 @@ p {
   font-size: large;
   border: 1px solid black;
 }
-.vl {
-  border-left: 2px solid black;
-  height: 80px;
 
-  position: absolute;
-  align-items: center;
-  left: 680px;
-  top: 240px;
-}
 .income-expense {
   border: 2px solid black;
   padding: 0 10px;

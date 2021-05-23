@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="expensecalc.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+              <div class="col-12 pt-3">
+                <h3 class="mb-4 text-center">Budget App</h3>
+                <div class="row">
+                  <div class="col-md-6 my-3">
+                    <form id="budget-form" class="budget-form">
+                      <h5 class="">Please Enter Your Budget</h5>
+                      <div class="form-group">
+                        <input type="number" class="form-control budget-input" id="budget">
+                      </div>
+                      <button type="submit" class="btn budget-submit">
+                        Add Budget
+                      </button>
+                    </form>
+                  </div>
+                  <div class="col-md-6 my-3">
+                    <form id="expense-form" class="expense-form">
+                      <h5 class="">Please Enter Your Expense Title</h5>
+                      <div class="form-group">
+                        <input type="text" class="form-control expense-input" id="expense">
+                      </div>
+                      <h5 class="">Please Enter Expense Amount</h5>
+                      <div class="form-group">
+                        <input type="number" class="form-control expense-input" id="amount">
+                      </div>
+                      <button type="submit" class="btn expense-submit">
+                        Add Expense
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="row justify-content-center">
+              <div class="col-md-10">
+                <div class="row my-3">
+                  <div class="col-4 text-center mb-2">
+                    <h6 class="text-uppercase info-title">budget</h6>
+                    <h4 class="text-uppercase mt-2 budget" id="total_budget">
+                      <span>₹ </span><span id="budget-amount">0</span>
+                    </h4>
+                  </div>
+                  <div class="col-4 text-center">
+                    <h6 class="text-uppercase info-title">expenses</h6>
+                    <h4 class="text-uppercase mt-2 expense" id="total_expense">
+                      <span>₹ </span><span id="expense-amount">0</span>
+                    </h4>
+                  </div>
+                  <div class="col-4 text-center">
+                    <h6 class="text-uppercase info-title">balance</h6>
+                    <h4 class="text-uppercase mt-2 balance" id="total_balance">
+                      <span>₹ </span><span id="balance-amount">0</span>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-8 my-3">
+                <h2 class="mb-4 text-center">Expense List</h2>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Expense Title</th>
+                      <th>Expense Amount</th>
+                    </tr>
+                  </thead>
+                  <tbody id="expenselist"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        <script src="expensetrac.js" async defer></script>
+    </body>
+</html>

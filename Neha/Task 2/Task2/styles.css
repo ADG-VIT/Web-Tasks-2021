@@ -1,0 +1,185 @@
+* {
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body {
+  background-color:burlywood;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:20px;
+
+}
+
+h1 {
+  text-align: center;
+  padding-top:3rem;
+  color:chocolate;
+}
+
+.container {
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  padding-top:3rem;
+}
+
+.budget_numbers {
+  display:flex;
+  justify-content: space-between;
+  width:70%;
+  max-width:700px;
+  margin: 1rem 0 3rem;
+}
+
+.number {
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  background-color:cornsilk;
+  padding:10px;
+  border-radius:15px;
+}
+
+.amount_container {
+  display:flex;
+
+}
+
+#amount_earned,#earned_symbol {
+  color:green;
+}
+
+#amount_spent,#spent_symbol {
+  color:red;
+
+}
+.input_area input {
+  border:none;
+  padding:10px;
+  border-radius:15px;
+  outline:none;
+
+}
+.input_area #description{
+  width:330px;
+  
+}
+
+.input_area #amount {
+     width:70px;
+     text-align:center;
+    
+}
+/*remove arrows */
+.input_area input::-webkit-outer-spin-button,
+.input_area input::-webkit-inner-spin-button{
+  -webkit-appearance:none;
+}
+
+.buttons_area {
+  margin:10px 0 3rem;
+}
+.button1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+.buttons_area #add_income,
+.buttons_area #add_expense{
+  border:none;
+  padding:10px 20px;
+  color:white;
+  border-radius:15px;
+  outline:none;
+  cursor:pointer;
+}
+
+#add_income {
+  background-color:green;
+}
+#add_expense {
+  background-color: crimson;
+}
+
+.items_container {
+  display:flex;
+  justify-content:space-between;
+  align-items: flex-start;
+  width:70%;
+  max-width:700px;
+}
+  
+#income_container h2 {
+  color: green;
+
+}
+#expenses_container h2 {
+  color: red;
+}
+.items_container .container {
+  width:49%;
+  border-radius:15px;
+}
+.container  .item {
+  width:100%;
+  background-color:white;
+  border-radius:15px;
+  margin: 5px 0;
+  display:flex;
+  justify-content: space-between;
+  padding: 5px 40px 5px 30px;
+  position:relative;
+}
+
+.item_income,
+.item_expense{
+  display:flex;
+}
+
+.income span , .income p {
+  color:green;
+}
+.expense span , .expense p {
+  color:red;
+}
+
+.item .fas {
+  position:absolute;
+  top:0;
+  right:0;
+  height:100%;
+  width:30px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  background-color: red;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius:15px ;
+  cursor:pointer;
+  transform:translateX(30px);
+  opacity:0;
+}
+
+.item:hover .fas {
+  animation:showDelete;
+  animation-duration:0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showDelete {
+  0%{
+      transform:translateX(30px);
+  }
+  100%{
+      transform:translateX(0);
+      opacity:1;
+  }
+}

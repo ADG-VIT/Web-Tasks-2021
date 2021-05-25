@@ -26,9 +26,6 @@ function eventLis() {
       amount.value === null
     ) {
       alert("Any field cannot be left empty");
-    } else if (amount.value.match(isAlpha)) {
-      amount.value = "";
-      alert("Only numbers are accepted in Amount ");
     } else {
       newNote.push(name.value);
       newNote.push(expenseDate.value);

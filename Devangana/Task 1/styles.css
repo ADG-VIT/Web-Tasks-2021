@@ -1,0 +1,73 @@
+
+h1{
+    color: white;
+ margin-top: 0px;
+}
+h3
+{
+    color:white;
+    margin-top: 0px ;
+}
+h2
+{
+    color:white;
+    margin-top: 0px ;
+}
+p
+{
+    color:rgb(170, 40, 83);
+}
+.top
+{
+   
+    padding-left: 95%;
+margin-top: 0px;
+   height: 40px;
+   
+ background-color: rgb(77, 156, 182);
+}
+.first
+{
+    padding: 300px;
+    height: 200px;
+   background-color: black;
+}
+.middle
+{
+    
+    padding-top: 10%;
+    height: 600px;
+    background-color: rgb(77, 156, 182);
+}
+.last
+{
+   
+    height: 700%;
+    padding-top: 10%;
+    background-color: black;
+}
+.bottom
+{
+    padding-top: 5%;
+    height: 125px;
+    background-color: rgb(77, 156, 182);
+}
+body{
+    margin: 0px;
+    
+    padding: 0px;
+}
+img
+{
+width: 200px;
+height: 200px;
+}
+table
+{
+    color: white;
+  background-color: black;
+}
+form
+{
+    color: white;
+}

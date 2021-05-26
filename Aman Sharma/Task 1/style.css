@@ -1,0 +1,100 @@
+body{
+  background-image: radial-gradient(black,darkblue);
+}
+h1{
+  color:red;
+  align: "center";
+}
+table{
+  margin:auto;
+}
+
+.img0{
+  border-radius: 100%;
+  width:50%;
+  align:"left";
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  animation: mymove 3s;
+  animation-fill-mode: forwards;
+
+}
+@keyframes mymove {
+  from {right: 20px;}
+  to {left: 0px;}
+}
+.img1{
+  border-radius: 100%;
+  width:400px;
+  align:"center";
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.img2{
+  border-radius: 100%;
+  width:400px;
+  align:"center";
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.img3{
+  border-radius: 100%;
+  width:400px;
+  align:"center";
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.start{
+  color:white;
+}
+.intro{
+  color:white;
+  text-align:"center";
+}
+
+td{
+  text-align:left;
+  color: white;
+}
+tr:hover {
+  background-color: pink;
+  text-align: left;
+}
+input {
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 80px;
+  border-bottom: 2px solid red;
+
+}
+textarea {
+  width: 80%;
+  height: 120px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+select {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+form{
+  color:yellow;
+  margin: auto;
+}

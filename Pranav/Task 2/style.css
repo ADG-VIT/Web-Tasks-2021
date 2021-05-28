@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{background-color: rgba(83, 95, 209, 0.507);color: white;}
+ul {
+    list-style-type:none;
+
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .5em;
+}
+.searchform{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 1.25em;
+
+}
+
+.delete{
+    padding: 6px;
+    border-radius: 4px;
+    background: #9361bf;
+
+}
+
+.delete:hover{
+    background: #333;
+    color: white;
+    cursor:pointer;
+}
+
+
+.liclass{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+
+}
+
+#searchbar{
+    padding: .25rem;
+}
+
+.style{
+    background: rgba(255,255,255,0.2); 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.headerbox{
+    display: flex;
+    justify-content: space-between;
+}

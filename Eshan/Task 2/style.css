@@ -1,29 +1,33 @@
-html {
-    font: 62.5%;
-    background-color: black;
-    scroll-behavior: smooth;
+body
+{
+  background-color: #000000;
+  background-image: url("./assets/b2.jpg");
+  background-size: cover;
+  background-color: #cccccc;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-body {
-    margin: 0;
-    padding: 0;
+.headings
+{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 
-.homepage {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-image: url("./assets/Bg.jpg");
-    background-size: cover;
-    background-color: #cccccc;
-    /* display: flex; */
-    justify-content: center;
-}
-
-.homepage h1 {
+.headings h1
+{
     margin: 0;
     text-align: center;
-    font-size: 65px;
+    font-size: 75px;
     font-family: 'Itim', cursive;
     color: #78dad8;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -31,105 +35,317 @@ body {
     white-space: nowrap; /* Keeps the content on a single line */
     letter-spacing: .1em; /* Adjust as needed */
     animation: 
-      typing 3.5s steps(40, end),
+      typing 3.5s ,
       blink-caret .75s step-end infinite;
 }
     /* The typing effect */
   @keyframes typing {
     from { width: 0 }
-    to { width: 100% }
+    to { width: 20% }
   }
   
   /* The typewriter cursor effect */
   @keyframes animated-cursor{
     from{border-right-color: rgba(255,255,255,.75);}
     to{border-right-color: transparent;}
-  }
+}
 
-  .homepage h3 {
-    margin: 50px;
-    text-align: left;
-    font-size: 55px;
-    font-family: 'Itim', cursive;
-    color: #e7ff7e;
-  }
-.homepage h2 {
+.headings h2
+{
     font-family: 'Itim', cursive;
     font-weight: 600;
     margin: 0;
     text-align: center;
-    color: #db9fa6;
+    color: #e67986;
     font-size: 45px;
 }
-
-.homepage table{
-    font-family: 'Akaya Kanadaka', cursive;
-    font-weight: 400;
-    margin: 20;
-    text-align: left;
-    color: #e2dadb;
-    font-size: 30px;
+#special{
+    color: #78dad8;
 }
 
-#c1{
-    width: 1000px;
-}
+.container-form
+{
 
-#c2{
-    width: 1000px;
-}
-
-.survey {
-    font-family: 'Akaya Kanadaka', cursive;
-    font-size: 20px;
-    position: relative;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-
-.survey form {
-    width: 50%;
-    color: white;
-}
-
-.survey input {
-    width: 100%;
-}
-
-
-#feedback-input {
-    width: 100%;
-}
-
-.survey button {
-    width: 100%;
-    height: 37px;
-    border-radius: 5px;
-    background-color: pink;
-}
-
-.survey button:hover{
-    background-color: rgb(255, 131, 152);
-}
-
-#langlink{
     border-color: transparent;
+  width: 70%;
 }
 
-.copyright {
+.form
+{
+  padding: 20px;
+}
+
+.container
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.row
+{
+  display: flex;
+  padding: 12px;
+}
+
+.submit-row
+{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+
+label
+{
+  padding: 12px 12px 12px 0;
+}
+
+.col-1
+{
+  width: 25%;
+  display: flex;
+  align-items:center;
+  height: 100%;
+  margin-top: 6px;
+}
+
+.col-2
+{
+  width: 75%;
+  height: 100%;
+  margin-top: 6px;
+}
+
+.row:after
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input[type=text],input[type=number],input[type=date]
+{
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+form
+{
+  font-family: "Itim", cursive;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.btn {
+  margin: 5px;
+  width: 30%;
+  background: #ffffff;
+  background-image: -webkit-linear-gradient(top, #ffffff, #c362e9);
+  background-image: -moz-linear-gradient(top, #ffffff, #c362e9);
+  background-image: -ms-linear-gradient(top, #ffffff, #c362e9);
+  background-image: -o-linear-gradient(top, #ffffff, #c362e9);
+  background-image: linear-gradient(to bottom, #ffffff, #c362e9z);
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  text-shadow: 1px 1px 3px #666666;
+  -webkit-box-shadow: 0 1px 3px #666666;
+  -moz-box-shadow: 0 1px 3px #666666;
+  box-shadow: 0 1px 3px #666666;
+  font-family: Georgia;
+  color: #000000;
+  font-size: 18px;
+  padding: 8px 15px 8px 15px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #ffffff;
+  background-image: -webkit-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -ms-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -o-linear-gradient(top, #ffffff, #ffffff);
+  background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+  text-decoration: none;
+}
+
+.col-submit
+{
+  display: flex;
+  justify-content: center;
+}
+
+.col-reset
+{
+  display: flex;
+  justify-content: center;
+}
+
+
+.expense2
+{
+  display: flex;
+}
+
+#expense1
+{
+  margin-left: 25px;
+}
+
+.expense3
+{
+  margin-left: 25px;
+}
+
+
+/* OUTPut */
+.output
+{
+  width: 70%;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.commodity
+{
+  display: flex;
+  flex-direction: column;
+  font-family: "Itim", cursive;
+  font-weight: 600;
+  font-size: 25px;
+  margin: 0 10px 10px 10px;
+  width: 70%;
+}
+
+.commodity .clear
+{
+  margin: 5px;
+  width: 30%;
+  background: #ffffff;
+  background-image: -webkit-linear-gradient(top, #ffffff, #c362e9);
+  background-image: -moz-linear-gradient(top, #ffffff, #c362e9);
+  background-image: -ms-linear-gradient(top, #ffffff, #c362e9);
+  background-image: -o-linear-gradient(top, #ffffff, #c362e9);
+  background-image: linear-gradient(to bottom, #ffffff, #c362e9);
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  text-shadow: 1px 1px 3px #666666;
+  -webkit-box-shadow: 0 1px 3px #666666;
+  -moz-box-shadow: 0 1px 3px #666666;
+  box-shadow: 0 1px 3px #666666;
+  font-family: Georgia;
+  color: #000000;
+  font-size: 18px;
+  padding: 8px 15px 8px 15px;
+  text-decoration: none;
+}
+
+.commodity .modify
+{
+  margin: 5px;
+  width: 30%;
+  background: #ffffff;
+  background-image: -webkit-linear-gradient(top, #ffffff, #c362e9);
+  background-image: -moz-linear-gradient(top, #ffffff, #c362e9);
+  background-image: -ms-linear-gradient(top, #ffffff, #c362e9);
+  background-image: -o-linear-gradient(top, #ffffff, #c362e9);
+  background-image: linear-gradient(to bottom, #ffffff, #c362e9);
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  text-shadow: 1px 1px 3px #666666;
+  -webkit-box-shadow: 0 1px 3px #666666;
+  -moz-box-shadow: 0 1px 3px #666666;
+  box-shadow: 0 1px 3px #666666;
+  font-family: Georgia;
+  color: #000000;
+  font-size: 18px;
+  padding: 8px 15px 8px 15px;
+  text-decoration: none;
+}
+
+.commodity .clear:hover
+{
+  background: #ffffff;
+  background-image: -webkit-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -ms-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -o-linear-gradient(top, #ffffff, #ffffff);
+  background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+  text-decoration: none;
+}
+
+.commodity .modify:hover
+{
+  background: #ffffff;
+  background-image: -webkit-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -ms-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -o-linear-gradient(top, #ffffff, #ffffff);
+  background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+  text-decoration: none;
+}
+
+#copyright {
+    margin-top: 100px;
+    align-items: center;
     width: 100%;
     bottom: 0;
 }
 
+
 #copyright p {
     color: white;
-    font-size: 15px;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 
+@media screen and (max-width: 1100px)
+{
+  .row
+  {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
+
+
+@media screen and (max-width: 590px)
+{
+  .btn
+  {
+    width: 50%;
+  }
+  .expense2
+  {
+    flex-direction: column;
+  }
+  #expense1
+  {
+    margin-left: 0;
+  }
+  .expense3
+  {
+    margin-left: 0;
+  }
+  .commodity .clear
+  {
+    width: 50%;
+  }
+  .commodity .modify
+  {
+    width: 50%;
+  }
+}

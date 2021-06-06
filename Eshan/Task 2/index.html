@@ -1,119 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css" />
+    <title>Expense Tracker</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
-    <title>Expense Tracker</title>
-</head>
-<body>
-    <div id="home" class="homepage">
-        <div class="container">
-            <br>
-            <div class="items">
-                <h1>Expense Tracker!!!</h1>
-                <br>
-                <h2>Unable to figure out where all your money is draining out ...tension not we have got you covered...😎😎</h2>
-                <br>
-                <br>
-                <br>
-                <p>
-                    <table>
-                        <tr>
-                            <td id="c1">
-                                <table>
-                                    <tr>
-                                        <td>1. Coffee- Rs.45</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>Date- 20/05/2021</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2. Lunch- Rs.150</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>Date- 12/05/2021</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3. Laptop- Rs.70000</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>Date- 10/05/2021</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4. Fridge- Rs.35000</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>Date- 15/04/2021</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5. BMW- Rs.4500</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>Date- 14/03/2021</td>
-                                    </tr>
-                                </table>
-                            </p>
-                            <h3>
-                                Total = Rs. 109695
-                            </h3>
-                            </td>
-                            <td id="c2">
-                                <div id="survey" class="survey">
-                                    <form action="#">
-                                        <br>
-                                        <br>
-                                        <br>
-                                        <label for="Expense Name">Expense Name</label><br>
-                                        <input type="text" id="Expense-name" name="Expense-name"><br><br>
-                                        <label for="Desc">Description</label><br>
-                                        <input type="text" id="Desc" name="Desc"><br><br>
-                                        <label for="Money">Money</label><br>
-                                        <input type="text" id="Money" name="Money"><br><br>
-                                        <label for="date">Date</label><br>
-                                        <input type="text" id="date" name="date"><br><br>
-                                        <a href="submit.html" id="langlink"><button type="button">Add!</button></a>
-                                        <br>
-                                        <br>
-                                    </form>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-            </div>
-        </div>
-        <br>
-        
-        <div id="copyright">
-            <p>Expense Tracker - Track All your expenses at one Place <br> © All Rights Reserved. <br>Created with brains</p>
-        </div>
+  </head>
+  <body>
+    <div class="headings">
+      <h1>Forms</h1>
+      <h2>Don't know where your all Money is getting drained!!! Worry not we have got you covered 😃😃😃</h2>
     </div>
-    
-<script src="logic.js" charset="utf-8"></script>
-</body>
+  <div class="container-form">
+    <form class="form" action="" method="post">
+      <fieldset>
+        <legend>Information:</legend>
+        <div class="container">
+          <div class="row">
+            <div class="col-1">
+              <label for="item">Description:</label>
+            </div>
+            <div class="col-2">
+              <input type="text" name="item" value="" id="item" placeholder="Description..." required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <label for="amount">Expense Amount:</label>
+            </div>
+            <div class="col-2">
+              <input type="number" name="amount" value="" id="amount" placeholder="Expense Amount"  required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <label for="date">Date:</label>
+            </div>
+            <div class="col-2">
+              <input type="date" name="date" value="" id="date"  required>
+            </div>
+          </div>
+          <div class="submit-row">
+            <div class="col-submit">
+              <input type="button" class="btn" name="submit" value="submit" onclick="xyz()">
+              <input type="reset" class="btn" name="reset" value="reset">
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
+  <div class="output" id="output">
+    <div class="headings">
+        <h2 id="special">'Expense Database'</h2>
+      <h2 id="special">Money Spent:0</h2>
+    </div>
+  </div>
+  <div id="copyright" class="copyright">
+    <p>© All Rights Reserved.</p>
+    <p>Created with 🧠🧠</p>
+</div>
+  <script src="./logic.js" charset="utf-8"></script>
+  </body>
+
+
 </html>

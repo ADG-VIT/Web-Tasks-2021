@@ -1,6 +1,23 @@
 # Web-Learners-2021
 #### Repository to maintain Tasks of ADG Web Developers Team 2021
 
+## Task 3 *(Quiz with API)*
+Hi! You have to develop a Quiz Website where the questions will be fetched from an API.
+
+Functionality:
+1. A Registration Page where user enters the basic details.
+2. Questions (1 on each Page) with a Timer. Once the time is up, the quiz (or the question) ends and the result is shown.
+
+We would like you to design your website as an exact replica of the given design.
+<br><br>
+**API URL:** https://task-3-api.herokuapp.com/questions
+<br>
+**Figma Design:** https://www.figma.com/file/GpZYuLb1n1RZn0FDw1Zct0/Task-3?node-id=0%3A1
+<br><br>
+**Deadline:** 25 June 2021
+<br>
+<i>Happy Exploring!!</i>
+
 
 ## Task 2 *(Expense Tracker)*
 Hey! You have to develop an Expense Tracker using HTML (Forms), CSS (Flexbox) and JS (Event Listeners, DOM Manipulation). Make your website <b> responsive</b>.

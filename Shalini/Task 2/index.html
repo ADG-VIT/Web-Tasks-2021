@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill in the form :)</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="task2.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="headings">
+      <h1>Forms</h1>
+      <h2>Expense</h2>
+    </div>
+  <div class="container-form">
+    <form class="form" action="" method="post">
+      <fieldset>
+        <div class="container">
+          <div class="row">
+            <div class="col-1">
+              <label for="item">Description:</label>
+            </div>
+            <div class="col-2">
+              <input type="text" name="item" value="" id="item" placeholder="Description..." required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <label for="amount">Expenses:</label>
+            </div>
+            <div class="col-2">
+              <input type="number" name="amount" value="" id="amount" placeholder="Expense Amount"  required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <label for="date">Date:</label>
+            </div>
+            <div class="col-2">
+              <input type="date" name="date" value="" id="date"  required>
+            </div>
+          </div>
+          <div class="submit-row">
+            <div class="col-submit">
+              <input type="button" class="btn" name="submit" value="submit" onclick="xyz()">
+            </div>
+            <div class="col-reset">
+              <input type="reset" class="btn" name="reset" value="reset">
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
+  <div class="output" id="output">
+    <div class="headings">
+      <h2>Output:</h2>
+    </div>
+
+  </div>
+  <script src="Task2.js" charset="utf-8"></script>
+  </body>
+
+
+</html>

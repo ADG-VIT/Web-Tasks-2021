@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <section id="q">
+      <div class="container">
+        <div class="head">
+          <h4 id="id">Question 1</h4>
+        </div>
+        <div class="question">
+          <h2 id="Question">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            ipsam harum nihil alias deleniti repellat dolorum tempore architecto
+            quidem quos!
+          </h2>
+        </div>
+        <div class="answer">
+          <form action="/quiz" method="post">
+            <div class="option">
+              <input type="radio" name="option" id="option1" />
+              <label for="option1">Option 1</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="option" id="option2" />
+              <label for="option2">Option 2</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="option" id="option3" />
+              <label for="option3">Option 3</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="option" id="option4" />
+              <label for="option4">Option 4</label>
+            </div>
+          </form>
+        </div>
+        <div class="footer">
+          <div class="footContainer">
+            <div class="timer">
+              <h3 id="time">10:00 minutes left</h3>
+            </div>
+            <hr id="ruler">
+            <div class="btn">
+              <button type="button" id="prev">Previous</button>
+              <button type="button" id="next">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <section id="form">
+        <form action="/register" method="post" autocomplete="off">
+            <div class="heading">
+                <h1>Give us some details</h1>
+            </div>
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                <span class="invalid-span" id="0">This is a required field</span>
+            </div>
+            <div class="form-group">
+                <label for="age">Your Age:</label>
+                <input type="text" name="age" id="age" placeholder="Enter Your Age">
+                <span class="invalid-span" id="1">This is a required field</span>
+            </div>
+            <div class="form-group">
+                <label for="Gender">Gender:</label>
+                <select name="gender" id="Gender">
+                    <option value="" disabled selected>Choose Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <span class="invalid-span" id="select-span">This is a required field</span>
+            </div>
+            <div class="form-group">
+                <label for="name">Email Id:</label>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email Id">
+                <span class="invalid-span" id="2">This is a required field</span>
+            </div>
+            <div class="form-group btn">
+                <button type="submit" id="3">Start The Quiz &#129046;</button>
+            </div>
+        </form>
+    </section>
+
+    <script src="./register.js"></script>
+</body>
+</html>

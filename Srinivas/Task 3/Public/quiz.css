@@ -7,17 +7,20 @@
 body {
   background-color: #f2efeb;
 }
+.container{
+  width: 50rem;
+}
 #q {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-.container {
+.option {
   width: 50rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: left;
   align-items: baseline;
 }
 
@@ -71,6 +74,7 @@ body {
 
 label{
     font-size: 1.2rem;
+    margin-left: 0.5rem;
 }
 
 
@@ -142,41 +146,37 @@ label{
   }
 }
 
+/* Result */
+#topper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-/* Check */
-.container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-  }
-  
-  /* Create a custom radio button */
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-    border-radius: 50%;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .container:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
-  
-  /* When the radio button is checked, add a blue background */
-  .container input:checked ~ .checkmark {
-    background-color: #2196F3;
-  }
-  
-  /* Create the indicator (the dot/circle - hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  .option{
-      position: relative;
-  }
+.res{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.res-head{
+  font-size: 1.5rem;
+}
+
+.res-end{
+  margin-top: 2rem;
+}
+
+.res-end button{
+  background-color: orange;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.2rem;
+}
+.res-end button:hover {
+  box-shadow: 3px 3px 10px orange;
+}

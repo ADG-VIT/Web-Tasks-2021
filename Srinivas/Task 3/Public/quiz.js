@@ -1,4 +1,4 @@
-const arr = [];
+const Check = [0,0,0,0,0,0,0,0,0,0];
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
     setInterval(function () {
@@ -38,6 +38,7 @@ window.onload = function () {
         handleQuestions(data);
         startTimer(fiveMinutes, display);
         spinner.style.display = "none"
+        console.log(obj);
     })
 };
 
@@ -51,16 +52,64 @@ function handleQuestions(arr){
     document.getElementById("option4").innerText = arr[count].optionD;
 }
 
+const ans = document.querySelectorAll(".ans");
+
 document.getElementById("prev").addEventListener("click", (e)=>{
     if(count != 0){
         count -= 1;
     }
+    ans.forEach((i)=>{
+        i.checked = false;
+    })
     handleQuestions(obj)
+    if(count == 9){
+        document.getElementById("next").innerText = "Submit";
+    } else {
+        document.getElementById("next").innerText = "Next";
+    }
 })
 
 document.getElementById("next").addEventListener("click", (e)=>{
-    if(count != 9){
-        count += 1;
+    count += 1;
+    if(count <=9){
+        ans.forEach((i)=>{
+            i.checked = false;
+        })
+        handleQuestions(obj);
     }
-    handleQuestions(obj);
+    if(count == 9){
+        console.log(count)
+        document.getElementById("next").innerText = "Submit";
+    } else if(count < 9) {
+        document.getElementById("next").innerText = "Next";
+    }
+
+    if(count == 10){
+        changeStuff();
+    }
 })
+
+// const xml = new XMLHttpRequest();
+// xml.open("POST", "/set");
+// xml.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+// xml.send();
+
+
+ans.forEach((i)=>{
+    i.addEventListener("click", (e)=>{
+        const numQ = document.getElementById("id").innerText;
+        Check[Number(numQ.split("Question ")[1])-1] = e.target.id;
+    })
+});
+
+
+function changeStuff(){
+    var total = 0;
+    for(var i = 0; i<10 ;i++){
+        if(Check[i] == obj[i].correctOption){
+            total++;
+        }
+    }
+    const bruh = document.getElementsByTagName("body");
+    bruh[0].innerHTML = `<section id="topper"><div class="res"><div class="res-head"><h1>You Scored<br>${total}<br>out of 10</h1></div><div class="res-end"><form action="/res" method="post"><button type="submit">I wanna try again</button></form></div></div></section>`;
+}

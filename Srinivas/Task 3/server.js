@@ -32,4 +32,9 @@ app.route("/register")
 app.route("/quiz")
 .get((req,res)=>{
     res.sendFile(__dirname + "/Public/quiz.html")
-})
+});
+
+app.route("/res")
+.post((req,res)=>{
+    res.redirect("/");
+});

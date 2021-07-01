@@ -29,25 +29,23 @@
         <div class="answer">
           <form action="/quiz" method="post">
             <div class="option">
-              <input type="radio" name="option"  />
-              <label for="option1" id="option1">Option 1</label>
-              <span class="checkmark"></span>
+              <input type="radio" name="option" class="ans" id="A" />
+              <label for="option1Q" id="option1">Option 1</label>
             </div>
             <div class="option">
-              <input type="radio" name="option"  />
+              <input type="radio" name="option"  class="ans" id="B" />
               <label for="option2" id="option2">Option 2</label>
             </div>
             <div class="option">
-              <input type="radio" name="option"  />
+              <input type="radio" name="option"  class="ans" id="C" />
               <label for="option3" id="option3">Option 3</label>
             </div>
             <div class="option">
-              <input type="radio" name="option"  />
+              <input type="radio" name="option"  class="ans" id="D" />
               <label for="option4" id="option4">Option 4</label>
             </div>
-          </form>
-        </div>
-        <div class="footer">
+          </div>
+          <div class="footer">
           <div class="footContainer">
             <div class="timer">
               <h3 id="time">10:00 minutes left</h3>
@@ -58,6 +56,7 @@
               <button type="button" id="next">Next</button>
             </div>
           </div>
+        </form>
         </div>
       </div>
     </section>

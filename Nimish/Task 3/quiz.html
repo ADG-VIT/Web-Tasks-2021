@@ -1,0 +1,38 @@
+<div class="quiz-container">
+    <div class="question">
+        <h2 class="question-number">Question <span id="question-number">#</span></h2>
+        <form id="quiz-options">
+            <label for="question" id="question-text" class="question-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec magna ut quam dapibus maximus blandit in sem. Etiam elementum euismod pretium.
+            </label><br><br>
+            <div class="quiz-option">
+                <input onclick="radioClicked()" id="radioA" type="radio"  name="options" class="option" value="A">
+                <label id="optionA" for="radioA">Option A</label>
+            </div>
+            <div class="quiz-option">
+                <input onclick="radioClicked()" id="radioB" type="radio" name="options" class="option" value="B">
+                <label id="optionB" for="radioB">Option B</label>
+            </div>
+            <div class="quiz-option">
+                <input onclick="radioClicked()" id="radioC" type="radio" name="options" class="option" value="C">
+                <label id="optionC" for="radioC">Option C</label>
+            </div>
+            <div class="quiz-option">
+                <input onclick="radioClicked()" id="radioD" type="radio" name="options" class="option" value="D">
+                <label id="optionD" for="radioD">Option D</label>
+            </div>
+        </form>
+    </div>
+        
+    <div class="quiz-handler">
+        <h2 class="time-left"><span id="time">3:45</span> mins left</h2>
+        <div class="home-line" id="quiz-line">
+            <div class="circle"></div>
+            <hr>
+        </div>
+        <div class="quiz-buttons">
+            <button type="button" id="previous-button" onclick="previousQuestion()">Previous</button>
+            <button type="button" id="next-button" onclick="nextQuestion()">Next</button>
+        </div>
+    </div>
+</div>

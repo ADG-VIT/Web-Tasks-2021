@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Expense Tracker</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+        <h1>Track your expenses here!</h1>
+        <div class="top">
+            <p class="total">Total Expense = Rs. </p>
+            <p class="total" id="amt">0</p>
+            <form action="" method="post" enctype="text/plain" id="form">
+                <input type="text" name="Name" placeholder="Description..." required>
+                <input type="number" name="Expense" placeholder="Expense amount..." required>
+                <input type="date" name="Date" required>
+                <input type="submit" id="add" value="Add Expense" class="delete">
+            </form>
+        </div>
+        <h2>Your Past Expenses</h2>
+        <div id="exp">
+            
+        </div>
+        <script src="javascript.js" charset="utf-8"></script>
+    </body>
+
+</html>

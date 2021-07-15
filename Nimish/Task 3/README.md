@@ -8,5 +8,7 @@ Task 3 (Quiz with API)
 * The score is displayed at the end of 10 minutes or by clicking the `submit` button
 * Added a `Error 404` page in case the api is inactive along with `console.error`
 * The user information from the form is preserved as `userData` along with the score at the end of the quiz
+* `userData` is stored in the localStorage
+* The previous highest score is rendered when the user visits the website for multiple times (using localStorage)
 
 ### [Click here](https://nimishjn.github.io/ADG-WebDev-Task3/) to view the deployed website

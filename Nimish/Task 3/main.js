@@ -51,6 +51,16 @@ async function getapi() {
     });
 }
 
+window.addEventListener("DOMContentLoaded", async function() {
+    if(localStorage.getItem("userData") !== null) {
+        userData = JSON.parse(localStorage.getItem("userData"));
+        await renderScorePage();
+    } else {
+        await renderHomePage();
+    }
+        
+}, false);
+
 async function fetchHtmlAsText(url) {
     return await (await fetch(url)).text();
 }
@@ -62,6 +72,10 @@ async function apiError() {
     document.getElementById('score-button').onclick = () => {
         location.reload();
     };
+}
+
+async function renderHomePage() {
+    document.querySelector('body').innerHTML = await fetchHtmlAsText("./home.html");
 }
 
 async function renderFormPage() {
@@ -149,6 +163,18 @@ async function quizOnSubmit() {
     userData.score = questionHandler.getFinalScore();
     // console.log(userData.score);
     // console.log("Quiz submitted!");
+    await renderScorePage();
+    await updateLocalStorage();
+}
+
+async function updateLocalStorage() {
+    let oldUserData = JSON.parse(localStorage.getItem("userData"));
+    if(userData.score > oldUserData.score) {
+        localStorage.setItem("userData", JSON.stringify(userData));
+    }
+}
+
+async function renderScorePage() {
     document.querySelector('body').innerHTML = await fetchHtmlAsText("./score.html");
     document.getElementById('score').innerHTML = userData.score.toString();
 }

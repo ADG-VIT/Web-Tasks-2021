@@ -14,6 +14,10 @@ body{
     justify-content: center;
 }
 
+.quiz{
+    margin: auto 15%;
+}
+
 .home a, .register button, .result a{
     font-weight: bold;
     font-size: 1.5rem;

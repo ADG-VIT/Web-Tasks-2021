@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div class="register">
+        <h2>Give us some details</h2>
+        <form action="quiz.html">
+            <div class="details">
+                <label>Your Name : </label>
+                <input type="text" name="Name" placeholder="Description..." required>
+            </div>
+            <div class="details">
+                <label>Your Age : </label>
+                <input type="text" placeholder="Description..." name="age">
+            </div>
+            <div class="details">
+                <label>Gender : </label>
+                <select name="role" id="role" required>
+                    <option value=""hidden>Choose Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="details">
+                <label>E-mail Id : </label>
+                <input type="text" name="email" placeholder="Description..." required>
+            </div>
+            <button class = "reg" type="submit">START THE QUIZ <i class="far fa-long-arrow-alt-right"></i></button>
+            <!-- <a id="reg" class="reg" href="quiz.html" style="text-align: center;" onclick="return SubmitForm(this.form)">START THE QUIZ <i class="far fa-long-arrow-alt-right"></i></a> -->
+        </form>
+    </div>
+</body>
+
+</html>

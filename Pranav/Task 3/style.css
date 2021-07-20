@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color:rgba(228, 224, 220, 0.884);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.h1-qtext {
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.textindex {
+  font-weight: 350;
+  font-size: 22px;
+  margin-bottom: 82px;
+}
+
+
+input:focus, textarea:focus, select:focus{
+  outline: none;
+}
+
+
+.btn{
+  padding: 2rem 0;
+  width: 30rem;
+  border: none;
+  border-radius: 10px;
+  background: rgb(252, 158, 18);
+  font-weight: 400;
+  font-size: 18px;
+  color: rgb(255, 255, 255); 
+}
+
+
+.btn:hover  {
+  border: 3px solid rgb(252, 158, 18);
+  background: transparent;
+  cursor: pointer;
+}
+
+
+.h1-head {
+  margin-bottom: 3.5rem;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+
+label {
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: .7rem;
+}
+
+input,select {
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  border: none;
+  border-radius: 12px;
+  background:rgb(192, 189, 183);
+  padding: 0px 20px;
+}
+
+
+.container form select option {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+

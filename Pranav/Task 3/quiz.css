@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color:rgba(228, 224, 220, 0.884);
+  background-position: fixed;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+
+.options {
+  border: 2px solid black;
+  width: 50%;
+}
+
+
+#result {
+  border-top: 2px solid black;
+  color: black;
+  height: 3rem;
+}
+
+.display {
+  display: none;
+}
+
+.response {
+  pointer-events: none;
+}
+button {
+  display: block;
+  width: 100%;
+}
+.op {
+  border: 2px solid black;
+  padding: 20px;
+}
+
+.header {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.btn{
+  padding: 1.25rem 0;
+  width: 15rem;
+  border: none;
+  border-radius: 10px;
+  background: rgb(252, 158, 18);
+  font-weight: 400;
+  font-size: 18px;
+  color: rgb(255, 255, 255); 
+}
+
+
+.btn:hover  {
+  border: 3px solid rgb(252, 158, 18);
+  background: transparent;
+  cursor: pointer;
+}
+
+.question-quiz{
+  font-weight: 500;
+  font-size: 32px;
+}
+
+#question{
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 20px;
+  
+}
+
+input{
+  appearance: none;
+  width: 17px;
+  height: 17px;
+  background: rgba(209, 207, 203, 0.829);
+  border-radius: 50%;
+} 
+
+input:checked {
+  background: rgb(252, 158, 18);
+}
+
+label {
+  font-weight: 400;
+  margin-left: 20px;
+
+}
+
+
+
+
+
+

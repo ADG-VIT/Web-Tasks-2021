@@ -9,10 +9,6 @@ body{
   
 }
 
-#h{
-  margin-top: 226px;
-}
-
 .home div:nth-child(1){
     width: 201px;
   height: 44px;
@@ -46,11 +42,6 @@ button{
     font-size: 20px;
     background-color: #FF9900;
     color: #F2EFEB;
-    border: 0px;
-}
-
-button:hover{
-  box-shadow: 2px 2px 10px rgb(233, 167, 44);
 }
 
 .container-r{
@@ -72,35 +63,9 @@ font-size: 18px;
 #r-d-1{
     font-size: 32px;
     margin-bottom: 42px;
-    margin-top: 170px;
 }
 
-.container-r>label{
+.container-r>form>div>label{
     align-self: flex-end;
-    font-size: 18px;
 }
-
-input,select{
-  margin: 0.25rem 0 0.5rem 0;
-  background-color: rgba(128, 128, 128, 0.3);
-  height: 2.5rem;
-  width: 100%;
-  border-radius: 10px;
-  padding: 0 0 0 0.5rem;
-  border: 0px;
-}
-
-option{
-  background-color: white;
-}
-
-input:focus, select:focus{
-  outline: none;
-}
-
-#start{
-  margin-top: 67px;
-}
-
-
 

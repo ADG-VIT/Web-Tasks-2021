@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="ee.css">
+</head>
+
+<body>
+    <div class="banner">Expense Tracker (Harsh - 20BCE0198)</div>
+    <div class="wrapper">
+        <div class="details">
+            <div class="heading">Expense Details</div>
+            <div class="expense-form">
+                <form action="#">
+                    <label for="description">Description</label>
+                    <input type="text" placeholder="Enter item description here..." name="description" id="description" required>
+
+                    <label for="amount">Amount</label>
+                    <input type="text" placeholder="Enter the Cost in INR here..." name="amount" id="amount" required>
+
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="date" required>
+
+                    <button type="submit" id="formsubmit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="display">
+            <div class="heading">Dashboard</div>
+            <div class="board"></div>
+            <div class="sum"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

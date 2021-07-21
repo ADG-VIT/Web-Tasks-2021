@@ -26,6 +26,8 @@ app.route("/register")
             gender: req.body.gender,
             email: req.body.email
         }
+
+        console.log(User);
         res.redirect("/question");
     });
 

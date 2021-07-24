@@ -33,7 +33,7 @@
 | Sanjana Ghose     | Task 1          |
 | Saswata Basu      | Task 3          |
 | Satyam Raj        | Task 0          |
-| Saumya Verma      | Task 0          |
+| Saumya Verma      | Task 1          |
 | Shalini Mishra    | Task 2          |
 | Sneha Jayshri     | Task 3          |
 | Srinivas Varanasi | Task 3          |

@@ -1,0 +1,61 @@
+body {
+    background-color: beige;
+    padding: 2%;
+}
+
+.radio {
+    margin: 3% auto;
+}
+
+.holder {
+    display: none;
+    margin: 3% auto;
+    width: 60%;
+}
+
+#answerStatus {
+    text-align: center;
+    margin: 4% auto;
+}
+
+.correct {
+    color: green;
+}
+
+.wrong {
+    color: red;
+}
+
+#loading {
+    margin: 16%;
+    text-align: center;
+}
+
+#time {
+    display: inline-block;
+    margin: 2px 8px;
+}
+
+.dot-hr {
+    border-bottom: none;
+    border-top: dotted black 8px;
+    display: inline-block; 
+    width: 8px;
+}
+
+.side-hr {
+    border-bottom: none;
+    border-top: solid black 2px;
+    display: inline-block; 
+    width: 64px;
+}
+
+.timeholder {
+    margin-right: 2%;
+    display: inline-block;
+    text-align: center;
+}
+
+.button {
+    color: white;
+}

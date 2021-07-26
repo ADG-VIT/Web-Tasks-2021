@@ -1,0 +1,11 @@
+body {
+    background-color: beige;
+    padding: 2%;
+}
+
+.button {
+    display: block;
+    margin: 8% auto;
+    color: white;
+    width: 50%;
+}

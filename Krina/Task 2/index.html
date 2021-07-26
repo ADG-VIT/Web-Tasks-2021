@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>expense tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="C:\Users\91832\OneDrive\Desktop\web dev\expense tracker\style.css">
+  </head>
+  <body>
+    <h2>Expense Tracker</h2>
+    <div class="container">
+      <div class="bal">
+        <h4>Your balance</h4>
+        <h1 id="balance">Rs 0.0</h1>
+      </div>
+      <div class="inc-exp-container">
+        <div class="income" id="income">
+          </div>
+          <div class="expense" id="expense">
+      </div>
+      </div>
+    </div>
+    <div class="">
+      <h3>Add New Transaction</h3>
+    </div>
+    <form id="form" >
+      <div class="form-control">
+        <label for="Text">Description</label>
+        <input type="text" id="text" name="" value="" placeholder="Ener Description">
+      </div>
+      <div class="form-control">
+        <label for="amount">Amount of Transaction<br> (negative- expense, positive-income)</label>
+        <input type="number" id="amount"name="" value="" placeholder="Amount">
+      </div>
+        <div class="form-control">
+          <label for="date">Date of Transaction</label>
+          <input type="date" id="date" name="date" value="">
+      </div>
+      <button class="btn">Add </button>
+    </form>
+    <h3>History</h3>
+    <div class="history">
+      <ul class="list" id="list">
+        <li class="minus">
+          Cash   <span>-$400</span><button class="delete-btn">x</button>
+        </li>
+      </ul>
+    </div>
+    <script src="C:\Users\91832\OneDrive\Desktop\web dev\expense tracker\script.js" charset="utf-8"></script>
+  </body>
+</html>

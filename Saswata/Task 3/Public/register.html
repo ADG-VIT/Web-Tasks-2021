@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Register</title>
+</head>
+
+<body>
+    <div id="r-d-1">
+        Give us some details
+    </div>
+    <section class="container-r">
+        <form action="/register" method="POST" , :{"accept"},:{"application/json"} ,:{"contenttype:)id="reg">
+
+            <div>
+                <label for="name">Your Name:</label><br>
+                <input type="text" name="name" placeholder="Enter your Name">
+            </div>
+
+            <div>
+                <label for="age">Your Age:</label><br>
+                <input type="text" name="age" placeholder="Enter your Age">
+            </div>
+
+            <div>
+                <label for="gender">Choose your gender:</label><br>
+                <select name="gender">
+                    <option value="" disabled selected>Choose Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="other">Do not wish to specify</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="email">E Mail Id:</label><br>
+                <input type="email" placeholder="Enter your E Mail Id">
+            </div>
+
+            <div>
+                <button id="start" onclick="javascript:location.href='./question.html'">
+                    Start The Quiz -->
+                </button>
+
+            </div>
+        </form>
+    </section>
+
+
+</body>
+
+</html>

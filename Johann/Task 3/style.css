@@ -1,0 +1,214 @@
+body{
+    background-color: #F2EFEB;
+    color: #2C2C2C;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home,.register,.quiz, .result{
+    height: 95vh;
+    margin: auto 30%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.quiz{
+    margin: auto 15%;
+}
+
+.home a, .register button, .result a{
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    margin-top: 10%;
+    align-self: center;
+    width: 55%;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    background-color:#FF9900;
+}
+
+
+/* HOME */
+.home h2{
+    margin: 20px;
+    font-size: 2rem;
+}
+.home p{
+    margin: 20px;
+    font-size: 1.4rem;
+}
+
+/* REGISTER */
+.details{
+    width: 56%;
+    display: block;
+    align-self: center;
+    font-size: 1.5rem;
+    margin: 8px auto;
+}
+
+.register h2{
+    font-size: 2.2rem;
+}
+
+form{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.details input,.details select{
+    margin-top: 3px;
+    padding: 5px 10px;
+    background-color:#CCCBC9;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    align-self: left;
+    width: 100%;
+    text-decoration: none;
+        -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 50px;
+    font-size: 1.1rem;
+}
+
+/* QUIZ */
+.quiz{
+    text-align: left;
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    margin: 6px auto;
+}
+
+.options input{
+    align-self: auto;
+}
+.quiz h3{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 2% 0;
+}
+.quiz p{
+    margin: 1.3% 0;
+}
+.quiz p, .quiz label{
+    font-size: 1.5rem;
+}
+.quiz form{
+    text-align: left;
+    display: inline-block;
+}
+.quiz input{
+    margin-right: 2%;
+    display: inline-block;
+    position: relative;
+    top: 7px;
+}
+
+.container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+.container h4{
+    font-size: 1.2rem;
+    align-self: center;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.quiz button{
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    margin: auto 10px;
+    width: 50%;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    background-color:#FF9900;
+}
+
+/* RESULT */
+.result h2{
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 500;
+}
+.score{
+    margin: 0;
+    font-size: 10rem;
+}
+
+@media (max-width:1025px) {
+    .home,.register,.quiz, .result{
+        margin: auto 15%;
+    }
+}
+
+@media (max-width:550px){
+    .container{
+        align-self: center;
+        width: 70%;
+    }
+    .quiz button{
+        width: 60%;
+    }
+    .register{
+        margin: auto 0;
+    }
+}
+
+@media(max-width:420px){
+    .container{
+        width: 90%;
+    }
+    .details{
+        width: 69%;
+    }
+    .home,.result{
+        margin: auto 0;
+    }
+}
+
+@media(max-width:330px){
+    .quiz h3{
+        font-size: 1.5rem;
+    }
+    .quiz p, .quiz label{
+    font-size: 1.2rem;
+    }
+    .home h2, .register h2{
+        font-size: 1.5rem;
+    }
+    .home p{
+        font-size: 1.2rem;
+    }
+    .details{
+        font-size: 1rem;
+    }
+    .details input,.details select{
+        font-size: 0.8rem;
+        height: 40px;
+    }
+    .home a, .register button, .result a{
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <link rel="stylesheet" href="newstyle.css">
+
+</head>
+
+<body>
+    <div class="con">
+        <section id="quiz">
+            <div class="ctn">
+                <h3 id="qNo">Question 1</h3>
+            </div>
+            <div class="Question">
+                <h2 id="q"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                    ipsam harum nihil alias deleniti repellat dolorum tempore architecto
+                    quidem quos!</h2>
+            </div>
+            <br><br>
+            <div id="opt">
+                <form action="/question" method="POST">
+
+                    <div class="ans">
+                        <input type="radio" name="option" class="ans1" id="A" />
+                        <label for="option1Q" id="option1">Option 1</label>
+                    </div>
+                    <div class="ans">
+                        <input type="radio" name="option" class="ans1" id="A" />
+                        <label for="option1Q" id="option2">Option 2</label>
+                    </div>
+                    <div class="ans">
+                        <input type="radio" name="option" class="ans1" id="A" />
+                        <label for="option1Q" id="option3">Option 3</label>
+                    </div>
+                    <div class="ans">
+                        <input type="radio" name="option" class="ans1" id="A" />
+                        <label for="option1Q" id="option4">Option 4</label>
+                    </div>
+                    <div class="timer">
+                        <h4 id="clock">10:00 minutes left</h4>
+                    </div>
+                    <hr id="line" width="150px" style="margin-right: 218px;margin-top: -30px;">
+                    <div class="btn">
+                        <button type="button" id="prev">Previous</button>
+                        <button type="button" id="next">Next</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>

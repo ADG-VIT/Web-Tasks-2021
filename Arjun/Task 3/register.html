@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Quizzer</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/register.css">
+    </head>
+    <body>
+        <h3>Give us some details</h3>
+        <form action="/register" method="POST" class="holder">
+            <div class="mb-3">
+                <label for="inputName" class="form-label"><strong>Your Name:</strong></label>
+                <input type="text" class="input form-control form-control-lg" id="inputName" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+              <label for="inputAge" class="form-label"><strong>Your Age:</strong></label>
+              <input type="number" class="input form-control form-control-lg" id="inputAge" placeholder="Enter your age">
+            </div>
+            <label for="genderSelect" class="form-label"><strong>Gender:</strong></label><br>
+            <select id="genderSelect" class="input form-select selector form-select-lg mb-3" aria-label=".form-select-lg example">
+                <option selected>Choose Gender</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                <option value="3">Prefer not to say</option>
+            </select>    
+            <div class="mb-3">
+                <label for="inputEmail" class="form-label"><strong>Email Id:</strong></label>
+                <input type="email" class="input form-control form-control-lg" id="inputEmail" placeholder="Enter your Email Id">
+            </div>
+            <button type="submit" class="btn button btn-warning btn-lg">START THE QUIZ --></button>
+          </form>
+    </body>
+</html>    

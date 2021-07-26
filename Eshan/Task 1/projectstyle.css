@@ -1,0 +1,44 @@
+.homepage h1 {
+    margin-bottom:25px ;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Itim', cursive;
+    color: #78dad8;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid wheat; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+    /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes animated-cursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
+.homepage h2 {
+    font-family: 'Itim', cursive;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    color: #da4859;
+    font-size: 60px;
+}
+
+
+
+@media(max-width:1200px){
+  .homepage h1{
+      font-size:55px;
+  }
+  .homepage h2{
+    font-size: 50px;
+  }
+}

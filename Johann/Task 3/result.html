@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div class="result">
+        <h2>You Scored </h2>
+        <p class="score"></p>
+        <h2>Out of 10</h2>
+        <a href="quiz.html"> I WANNA TRY AGAIN</a>
+    </div>
+</body>
+<script>
+    var score = sessionStorage.getItem("score");
+    document.querySelector("p").innerHTML=score;
+</script>
+
+</html>

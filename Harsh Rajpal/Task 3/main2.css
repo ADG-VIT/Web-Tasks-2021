@@ -1,0 +1,143 @@
+.Head1{
+position: absolute;
+width: 289px;
+height: 44px;
+left: 576px;
+top: 170px;
+
+font-family: Sedan;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 44px;
+letter-spacing: 0.01em;
+
+color: #2C2C2C;
+
+}
+.input1{
+ position: absolute;
+width: 97px;
+height: 25px;
+left: 533px;
+top: 256px;
+
+font-family: Sedan;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+
+letter-spacing: 0.01em;
+
+color: #2C2C2C;
+}
+.name{
+position: absolute;
+width: 375px;
+height: 50px;
+left: 533px;
+top: 281px;
+
+background: #CCCBC9;
+border-radius: 12px;
+}
+.age{
+    position: absolute;
+width: 79px;
+height: 25px;
+left: 533px;
+top: 348px;
+
+font-family: Sedan;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+
+letter-spacing: 0.01em;
+
+color: #2C2C2C;
+
+}
+.agevalue{
+position: absolute;
+width: 375px;
+height: 50px;
+left: 533px;
+top: 373px;
+
+background: #CCCBC9;
+border-radius: 12px;
+}
+.gender{
+    position: absolute;
+width: 65px;
+height: 25px;
+left: 533px;
+top: 440px;
+
+font-family: Sedan;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+
+letter-spacing: 0.01em;
+
+color: #2C2C2C;
+
+}
+.select{
+    
+    position: absolute;
+    width: 375px;
+    height: 50px;
+    left: 533px;
+    top: 465px;
+    
+    background: #CCCBC9;
+    border-radius: 12px;
+}
+.eId{
+position: absolute;
+width: 81px;
+height: 25px;
+left: 533px;
+top: 532px;
+
+font-family: Sedan;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+
+letter-spacing: 0.01em;
+
+color: #2C2C2C;
+
+}
+.email{
+position: absolute;
+width: 375px;
+height: 50px;
+left: 533px;
+top: 557px;
+
+background: #CCCBC9;
+border-radius: 12px;
+}
+.start-quiz{
+position: absolute;
+width: 375px;
+height: 55px;
+left: 533px;
+top: 674px;
+
+background: #FF9900;
+border-radius: 12px;
+}

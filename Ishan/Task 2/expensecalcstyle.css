@@ -1,0 +1,59 @@
+h3 {
+    font-size: 2.6rem;
+    color: #34656d;
+  }
+h2 {
+    font-size: 2.6rem;
+    color: #34656d;
+  }
+.budget-form {
+    border: 0.15rem solid #34656d;
+    padding: 1rem;
+    border-radius: 0.25rem;
+  }
+.expense-form {
+    border: 0.15rem solid black;
+    padding: 1rem;
+    border-radius: 0.25rem;
+  }
+.budget-submit {
+    background: transparent;
+    border: 0.1rem solid #34656d;
+    color: #34656d;
+  }
+.expense-submit {
+    background: transparent;
+    border: 0.1rem solid black;
+    color: black;
+  }
+.expense-submit:hover {
+    background: black;
+    color: white;
+  }
+.budget-submit:hover {
+    background: #34656d;
+    color: white;
+  }
+  
+.budget-input {
+    border: 0.1rem solid #34656d;
+  }
+.expense-input {
+    border: 0.1rem solid black;
+  }
+.expense-amount,
+.expense-title {
+    color: black;
+  }
+.budget {
+    font-size: 2.6rem;
+    color: #34656d;
+  }
+.expense {
+    font-size: 2.6rem;
+    color: red;
+  }
+.balance {
+    font-size: 2.6rem;
+    color: black;
+  }

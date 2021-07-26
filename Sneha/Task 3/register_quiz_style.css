@@ -1,0 +1,88 @@
+ *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    html {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    body {
+        background-color: #F2EFEB;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    
+    .container {
+        width: 700px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .container .heading {
+        text-transform: capitalize;
+        font-size: 1.5rem;
+    }
+    
+    .container form {
+        height: 70%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .container form .input {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+    }
+    
+    .container form input {
+        width: 100%;
+        padding: 10px;
+        background-color: #CCCBC9;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    .container form select {
+        width: 100%;
+        padding: 10px;
+        background-color: #CCCBC9;
+        border: none;
+        border-radius: 10px;
+        color: #2C2C2C;
+    }
+    
+    .container form .input label {
+        align-self: flex-start;
+    }
+    
+    .container .btn {
+        background-color: #FF9900;
+        color: #F2EFEB;
+        text-decoration: none;
+        padding: 10px 40px;
+        border-radius: 10px;
+        transition: all 100ms ease-in-out;
+    }
+    
+    .container .btn:hover {
+        background-color: #9c5e00;
+    }
+    
+    .container .btn:active {
+        background-color: #1d1100;
+    }

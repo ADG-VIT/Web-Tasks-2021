@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Savings Calculator</title>
+
+    <link rel="stylesheet" href="INDEX1.CSS" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1 id="head1">Expense Calculator</h1>
+
+    <h3 class="harsh">
+      Add positive values for earnings and Add negative values for expenses.
+    </h3>
+
+    <form>
+      <input
+        type="text"
+        id="eventDesc"
+        placeholder="Description of transaction"
+      />
+      <input type="number" id="amt" placeholder="Rs." />
+      <input type="date" id="transdate" />
+      <button id="Button"><i class="fa fa-plus-circle fa-3x"></i></button>
+    </form>
+
+    <div id="table">
+      <div id="leftover">
+        Money Left -> &nbsp;Rs: &nbsp;<span id="balance">0</span>
+      </div>
+      <div id="gain">
+        Money Earned-> &nbsp;Rs: &nbsp;<span id="saving">0</span>
+      </div>
+      <div id="loss">Money Spent -> &nbsp;Rs: &nbsp;<span id="expen">0</span></div>
+    </div>
+
+    <table id="transactions">
+      <tr>
+        <th></th>
+        <th class="des">Description</th>
+        <th class="des">Amount</th>
+        <th class="des">Date</th>
+      </tr>
+    </table>
+
+    <script src="index1.js"></script>
+  </body>
+</html>

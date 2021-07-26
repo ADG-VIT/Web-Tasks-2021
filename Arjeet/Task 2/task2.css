@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(100, 250, 255);
+  margin: 30px;
+}
+
+.title {
+  margin: 30px;
+  font-size: 3rem;
+}
+
+.imp {
+  display: flex;
+}
+#total,
+#spend,
+#earn {
+  padding: 20px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#total {
+  background-color: #ffd900;
+  margin: 15px;
+}
+
+#earn {
+  background-color: rgb(255, 255, 255);
+  margin: 15px;
+}
+
+#spend {
+  background-color: rgb(0, 255, 34);
+  margin: 15px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+.forms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 17px auto;
+  border: 2px solid #000;
+  font-size: 24px;
+  border-radius: 20px;
+  background-color:antiquewhite;
+}
+
+input {
+  border-radius: 10px;
+  margin: 10px auto 25px;
+  width: 75%;
+  height: 30px;
+  display: flex;
+  text-align: center;
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.error {
+  background: red;
+  color: white;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #bbff00;
+  color: #000;
+  border: 0;
+  display: block;
+  width: 350px;
+  height: 50px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin: 35px auto;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 28px;
+  text-align: left;
+}

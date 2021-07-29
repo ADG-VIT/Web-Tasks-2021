@@ -1,0 +1,119 @@
+
+h1, h2 {
+    color: #2d5797;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+  }
+  
+  h2 {
+    margin: 20px 0;
+    font-weight: 100;
+  }
+  
+  body {
+    background: #87b951;
+  }
+  
+  table {
+    text-align: left;
+    width: 640px;
+    margin: 30px auto;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+  }
+  table th {
+    padding: 10px;
+  }
+  table tr:nth-child(odd) {
+    background-color: #F5F7FA;
+  }
+  table td {
+    padding: 10px 15px;
+    color: #434A54;
+  }
+  
+  .amount {
+    color: #DA4453;
+    text-align: right;
+  }
+  
+  #button {
+    position: relative;
+    top: 0;
+    color: #F5F7FA;
+    padding: 20px;
+    text-align: center;
+    line-height: 24px;
+    width: 200px;
+    background-color: #4FC1E9;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: auto;
+    box-shadow: 0 3px #4A89DC;
+    transition: 0.1s ease;
+  }
+  #button:active {
+    position: relative;
+    box-shadow: 0 0px #4A89DC;
+    top: 3px;
+    box-shadow: 0 0;
+  }
+  
+  #form-box {
+    width: 650px;
+    margin: 30px auto;
+    padding-left: 15px;
+  }
+  
+  form {
+    color: rgb(204, 19, 19);
+    margin: auto;
+  }
+  form select, form input {
+    margin-bottom: 25px;
+    color: #434A54;
+    padding: 10px;
+    width: 200px;
+    border-radius: 3px;
+    border: 0;
+  }
+  form selectactive, form inputactive {
+    border: 1px solid #4FC1E9;
+    transition: 0.2s ease;
+  }
+  form div {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  form span {
+    font-size: 1.3em;
+    font-weight: 100;
+    display: inline-block;
+    width: 100px;
+  }
+  
+  #type {
+    width: 50px;
+  }
+  
+  #date {
+    width: 141px;
+  }
+  
+  #amount {
+    width: 100px;
+  }
+  
+  #if-empty {
+    text-align: center;
+  }
+  
+  .center {
+    margin: auto;
+    text-align: center;
+  }
+  

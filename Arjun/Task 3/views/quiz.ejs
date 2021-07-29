@@ -8,26 +8,25 @@
         <link rel="stylesheet" href="/css/quiz.css">
     </head>
     <body>
-        <h2 id="loading">Loading quiz...</h2>
         <div class="holder">
-            <h4 id="questionNum">Question 1</h4><br>
-            <h5 id="question">Question</h5>
-            <form>
+            <h4 id="questionNum">Question <%= quizData.questionId %></h4><br>
+            <h5 id="question"><%= quizData.question %> _____________.</h5>
+            <form action="/quiz" method="POST">
                 <div class="form-check radio">
                     <input class="form-check-input" type="radio" name="options" id="radio1" value="A">
-                    <label class="form-check-label" for="radio1" id="optionA">Option A</label>
+                    <label class="form-check-label" for="radio1" id="optionA"><%= quizData.optionA %></label>
                 </div>
                 <div class="form-check radio">
                     <input class="form-check-input" type="radio" name="options" id="radio2" value="B">
-                    <label class="form-check-label" for="radio2" id="optionB">Option B</label>
+                    <label class="form-check-label" for="radio2" id="optionB"><%= quizData.optionB %></label>
                 </div>
                 <div class="form-check radio">
                     <input class="form-check-input" type="radio" name="options" id="radio3" value="C">
-                    <label class="form-check-label" for="radio3" id="optionC">Option C</label>
+                    <label class="form-check-label" for="radio3" id="optionC"><%= quizData.optionC %></label>
                 </div>
                 <div class="form-check radio">
                     <input class="form-check-input" type="radio" name="options" id="radio4" value="D">
-                    <label class="form-check-label" for="radio4" id="optionD">Option D</label>
+                    <label class="form-check-label" for="radio4" id="optionD"><%= quizData.optionD %></label>
                 </div>
                 <div style="text-align: right;">
                     <div class="timeholder">
@@ -36,13 +35,25 @@
                     </div>
                     <div style="display: block;">    
                         <button type="reset" class="btn button btn-warning btn-lg">Clear</button>
-                        <button id="nextButton" type="button" class="btn button btn-warning btn-lg">Next</button>
+                        <button id="nextButton" type="submit" class="btn button btn-warning btn-lg"><%= button %></button>
                     </div>        
                 </div>    
             </form>
-            <h4 id="answerStatus"></h4>
         </div>    
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="/js/quiz.js" charset="utf-8"></script>
+        <script charset="utf-8">
+            var time = 20;
+            timer = setInterval(() => {
+                time--;
+                if (time < 10)
+                    $("#time").text("00:0" + time);
+                else 
+                    $("#time").text("00:" + time);
+                if (time == 0) {
+                    clearInterval(timer);
+                    $("form").submit();
+                }    
+            }, 1000);        
+        </script>
     </body>
 </html>

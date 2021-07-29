@@ -8,27 +8,8 @@ body {
 }
 
 .holder {
-    display: none;
     margin: 3% auto;
     width: 60%;
-}
-
-#answerStatus {
-    text-align: center;
-    margin: 4% auto;
-}
-
-.correct {
-    color: green;
-}
-
-.wrong {
-    color: red;
-}
-
-#loading {
-    margin: 16%;
-    text-align: center;
 }
 
 #time {

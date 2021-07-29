@@ -8,9 +8,11 @@
         <link rel="stylesheet" href="/css/results.css">
     </head>
     <body>
-        <h3>You scored</h3>
-        <h2>8</h2>
-        <h3>out of 10</h3>
-        <button onclick="location.href ='/register'" class="btn button btn-warning btn-lg">I WANNA TRY AGAIN</button>
+        <div class="holder">
+            <h3>You scored</h3>
+            <h2><%= score %></h2>
+            <h3>out of <%= total %></h3>
+            <button onclick="location.href ='/quiz'" class="btn button btn-warning btn-lg">I WANNA TRY AGAIN</button>
+        </div>
     </body>
 </html>    

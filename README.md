@@ -8,19 +8,19 @@
 | Aman Sharma       | Task 1          |
 | Anirudh Vadera    | Task 3          |
 | Anushka Bukkawar  | Task 1          |
-| Arjeet Anand      | Task 1          |
-| Arjun Sivaraman   | Task 2          |
-| Chanthrika R L    | Task 2          |
+| Arjeet Anand      | Task 2          |
+| Arjun Sivaraman   | Task 3          |
+| Chanthrika R L    | Task 3          |
 | Devangana V       | Task 1          |
 | Devika Varshney   | Task 0          |
 | Eshan Gupta       | Task 3          |
 | Harsh Bhardwaj    | Task 2          |
-| Harsh Rajpal      | Task 1          |
+| Harsh Rajpal      | Task 2          |
 | Ishaan C Saxena   | Task 0          |
 | Ishan Sati        | Task 2          |
 | Johann Kyle Pinto | Task 3          |
 | Kaushal Agrawal   | Task 2          |
-| Kavipriya.J       | Task 2          |
+| Kavipriya.J       | Task 3          |
 | Krina Panchal     | Task 2          |
 | Neha Valeti       | Task 2          |
 | Nimish Jain       | Task 3          |

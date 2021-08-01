@@ -7,7 +7,7 @@ function startTimer(duration, display) {
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
 
-        display.textContent = minutes + ":" + seconds;
+        display.textContent = minutes + ":" + seconds + " minutes left";
 
         if (--timer < 0) {
             timer = duration;
@@ -17,18 +17,19 @@ function startTimer(duration, display) {
 
 window.onload = function () {
     var tenMinutes = 60 * 10,
-        display = document.querySelector('#time');
+        display = document.getElementById('clock');
 
     fetch("https://task-3-api.herokuapp.com/questions")
         .then(res => res.json())
         .then(questions => {
-            obj = [questions]
-
+            obj = [
+                ...questions
+            ]
+            handler(questions);
             startTimer(tenMinutes, display);
+
         })
-        .catch((error) => {
-            console.error('Error:', error);
-        }
+
 
 };
 
@@ -44,3 +45,51 @@ function handler(arr) {
 }
 
 const ans = document.querySelectorAll(".ans1");
+
+document.getElementById("prev").addEventListener("click", (e) => {
+    if (c != 0) {
+        c -= 1;
+    }
+    ans.forEach((i) => {
+        i.checked = false;
+    })
+    handler(obj)
+
+})
+
+document.getElementById("next").addEventListener("click", (e) => {
+    c += 1;
+    if (c <= 9) {
+        ans.forEach((i) => {
+            i.checked = false;
+        })
+        handler(obj);
+    }
+    if (c == 9) {
+        console.log(c)
+        document.getElementById("next").innerText = "Submit";
+    } else if (c < 9) {
+        document.getElementById("next").innerText = "Next";
+    }
+
+    if (c == 10) {
+        result();
+    }
+})
+
+ans.forEach((i) => {
+    i.addEventListener("click", (e) => {
+        const qNum = document.getElementById("ques").innerText;
+        Check[Number(qNum.split("Question ")[1]) - 1] = e.target.id;
+    })
+});
+
+function result() {
+    var total = 0;
+    for (var i = 0; i < 10; i++) {
+        if (Check[i] == obj[i].correctOption) {
+            total++;
+        }
+    }
+
+}

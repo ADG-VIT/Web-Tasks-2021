@@ -102,7 +102,7 @@ function resultPage() {
   const container = document.querySelector(".quiz-container");
   container.innerHTML = "";
   const result = document.getElementsByTagName("body");
-  result[0].innerHTML = `<div class="res"><div class="scor"><h1>You Scored: <span>${score}</span> out of 10</h1></div><div class="res-end"><form action="/result" method="post"><button type="submit">I wanna try again</button></form></div></div>`;
+  result[0].innerHTML = `<div class="res"><div class="scor"><h1>You Scored: <span>${score}</span> out of 10</h1></div><div class="res-end"><form method="post"><button type="submit" href="quiz.html">Play again!</button></form></div></div>`;
 }
 
 var totaltime = 60 * 10 - 1,

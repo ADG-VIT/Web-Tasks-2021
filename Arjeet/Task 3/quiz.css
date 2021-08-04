@@ -97,7 +97,7 @@ label{
 
 #clock{
     position: relative;
-    right: 100px ;
+    left: 695px ;
       margin-right: 31px;
 }
 #line{
@@ -117,10 +117,4 @@ label{
 font-style: normal;
 font-weight: normal;
 font-size: 26px;
-  }
-
-  .box{
-    position: relative;
-    margin-left: 100px;
-    box-sizing: border-box;
   }

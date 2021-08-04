@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css"/>
+    <title>Register</title>
+    
+</head>
+<body>
+    <div class="register-heading">
+            <h1>Give us some details</h1>
+            <form id="register-form" action="/register" method="post"></form>
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                <span class="invalid-span" id="form-name">This is a required field</span>
+            </div>
+            <div class="form-group">
+                <label for="age">Your Age:</label>
+                <input type="text" name="age" id="age" placeholder="Enter Your Age">
+                <span class="invalid-span" id="form-text">This is a required field</span>
+            </div>
+            <div class="form-group">
+                <label for="Gender">Gender:</label>
+                <select name="gender" id="Gender" placeholder="Choose Gender">
+                    <option value=""><div class="span-gender">Choose Gender</div></option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <span class="invalid-span" id="select-span">This is a required field</span>
+            </div>
+            <div class="form-group">
+                <label for="name">Email Id:</label>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email Id">
+                <span class="invalid-span" id="form-email">This is a required field</span>
+            </div>
+            <div class="form-group btn">
+                <a href="quiz.html"><button type="submit" id="form-submit">Start The Quiz &#129046;</button></a>
+            </div>
+            </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Sedan";
+  src: url("sedan.ttf") format("ttf");
+}
+
+body {
+  background: #f2efeb;
+  font-family: "Sedan";
+}
+.quiz {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.heading {
+  font-size: 32px;
+  top: 226px;
+  font-weight: 400;
+}
+
+.quiz-subheading {
+  font-size: 36px;
+  font-weight: 400;
+  position: relative;
+  margin-top: 36px;
+  width: 439px;
+  text-align: center;
+}
+
+.line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  background-color: #2c2c2c;
+  margin-top: 6px;
+  height: 2px;
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.circle {
+  width: 6px;
+  height: 6px;
+  background-color: #2c2c2c;
+  border-radius: 100px;
+  position: absolute;
+}
+
+.quiz-body {
+  height: 75px;
+  width: 523px;
+  left: 459px;
+  top: 462px;
+  border-radius: nullpx;
+  text-align: center;
+  font-size: 18px;
+}
+
+.home-button {
+  height: 55px;
+  width: 375px;
+  left: 520px;
+  top: 619px;
+  border-radius: 12px;
+  background-color: #ff9900;
+  color: #fff;
+  margin-top: 82px;
+}
+
+.register-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: Sedan;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #2c2c2c;
+  margin-top: 170px;
+}
+
+.register-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.form-group {
+  width: 20rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+
+input::placeholder {
+  font-family: Sedan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 14px 21px;
+}
+
+.span-gender {
+  font-family: Sedan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 14px 21px;
+}
+
+input,
+select {
+  font-family: Sedan;
+  font-style: normal;
+  font-weight: normal;
+
+  background-color: rgba(128, 128, 128, 0.3);
+  height: 50px;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  padding: 0 0 0 0.5rem;
+}
+
+.btn button {
+  font-family: Sedan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  width: 100%;
+  background-color: #ff9900;
+  color: white;
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  border: none;
+}
+
+.btn button:hover {
+  box-shadow: 2px 2px 10px #ff9900;
+}
+
+.invalid-span{
+  transition: all 0.5s ease;
+  color: red;
+  display: none;
+}
+

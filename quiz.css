@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  @font-face {
+    font-family: "Sedan";
+    src: url("sedan.ttf") format("ttf");
+  }
+  
+  body {
+    background: #f2efeb;
+    font-family: "Sedan";
+}
+#quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+h3{
+font-family: Sedan;
+font-style: normal;
+font-weight: normal;
+font-size: 26px;
+line-height: 36px;
+/* identical to box height */
+letter-spacing: 0.01em;
+margin-top: 206px;
+margin-bottom: 13px;
+color: #2C2C2C;
+}
+
+.questions{
+    font-family: Sedan;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0.01em;
+text-align: left;
+width: 1070px;
+}
+
+
+input{
+    /* margin: 13px; */
+    background-color: #CCCBC9;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+     right: 350px;
+  }
+
+  
+
+label{
+      position: relative;
+      right: -70px;
+      bottom: 25px;
+       font-size: 26px;
+       width: 50rem;
+       display: flex;
+       flex-direction: row;
+       justify-content: left;
+       align-items: baseline;
+       top: -30px;
+       font-size: 22px;
+  }
+  
+  button{
+      width: 150px;
+      height: 55px;
+      border-radius: 12px;
+      font-size: 20px;
+      background-color: #FF9900;
+      color: #F2EFEB;
+      border: 0px;
+      position: relative;
+      left: 914px ;
+      margin-right: 31px;
+  }
+  
+  button:hover{
+    box-shadow: 2px 2px 10px rgb(233, 167, 44);
+  }
+.timer{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+
+#clock{
+    position: relative;
+    left: 695px ;
+      margin-right: 31px;
+}
+#line{
+    position: relative;
+    left: 680px ;
+      margin-right: 31px;
+    border-top: 2px solid black;
+    width: 9rem;
+    margin: 0.5rem auto 1rem;
+  }
+
+  .scor{
+    position: relative;
+    left: 100px;
+    top: 50px;
+    font-family: Sedan;
+font-style: normal;
+font-weight: normal;
+font-size: 26px;
+  }

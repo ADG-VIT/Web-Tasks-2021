@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/6484b97653.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <section id="q">
+      <div class="container">
+        <div class="head">
+          <h4 id="id">Question 1</h4>
+        </div>
+        <div class="question">
+          <h2 id="Question">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            ipsam harum nihil alias deleniti repellat dolorum tempore architecto
+            quidem quos!
+          </h2>
+        </div>
+        <div class="answer">
+          <form action="/quiz" method="post">
+            <div class="option">
+              <input type="radio" name="option" class="ans" id="A" />
+              <label for="option1Q" id="option1">Option 1</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="option"  class="ans" id="B" />
+              <label for="option2" id="option2">Option 2</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="option"  class="ans" id="C" />
+              <label for="option3" id="option3">Option 3</label>
+            </div>
+            <div class="option">
+              <input type="radio" name="option"  class="ans" id="D" />
+              <label for="option4" id="option4">Option 4</label>
+            </div>
+          </div>
+          <div class="footer">
+          <div class="footContainer">
+            <div class="timer">
+              <h3 id="time">10:00 minutes left</h3>
+            </div>
+            <hr id="ruler">
+            <div class="btn">
+              <button type="button" id="prev">Previous</button>
+              <button type="button" id="next">Next</button>
+            </div>
+          </div>
+        </form>
+        </div>
+      </div>
+    </section>
+    <div id="spinner">
+      <svg class="spinner" viewBox="0 0 50 50">
+        <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+      </svg>
+    </div>
+    <script src="quiz.js"></script>
+  </body>
+</html>

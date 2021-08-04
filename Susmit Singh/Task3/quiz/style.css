@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #F2EFEB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.btn {
+    background-color: #FF9900;
+    color: #F2EFEB;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+    transition: all 100ms ease-in-out;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #9c5e00;
+}
+
+.btn:active {
+    background-color: #1d1100;
+}
+
+.container {
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.container .heading {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.container .options div {
+    margin: 15px;
+}
+
+.container .options div label {
+    padding-left: 15px;
+}
+
+.container .footer {
+    align-self: flex-end;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container .footer .clock {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.container .score {
+    color: red;
+    font-size: 3rem;
+    display: block;
+    margin: 10px;
+    text-align: center;
+}
+
+.container .final {
+    width: 100%;
+    text-align: center;
+}

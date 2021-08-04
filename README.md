@@ -1,6 +1,63 @@
 # Web-Learners-2021
 #### Repository to maintain Tasks of ADG Web Developers Team 2021
 
+| Name              | Tasks Completed |
+|-------------------|-----------------|
+| Adhithan.c        | Task 2          |
+| Adwaita Raj Modak | Task 0          |
+| Aman Sharma       | Task 1          |
+| Anirudh Vadera    | Task 3          |
+| Anushka Bukkawar  | Task 1          |
+| Arjeet Anand      | Task 2          |
+| Arjun Sivaraman   | Task 3          |
+| Chanthrika R L    | Task 3          |
+| Devangana V       | Task 1          |
+| Devika Varshney   | Task 0          |
+| Eshan Gupta       | Task 3          |
+| Harsh Bhardwaj    | Task 2          |
+| Harsh Rajpal      | Task 2          |
+| Ishaan C Saxena   | Task 0          |
+| Ishan Sati        | Task 2          |
+| Johann Kyle Pinto | Task 3          |
+| Kaushal Agrawal   | Task 2          |
+| Kavipriya.J       | Task 3          |
+| Krina Panchal     | Task 2          |
+| Neha Valeti       | Task 2          |
+| Nimish Jain       | Task 3          |
+| Piyush Rana       | Task 0          |
+| Pranav desai      | Task 3          |
+| Pranit Modi       | Task 0          |
+| Pratyksh Gupta    | Task 0          |
+| Rehber Bin Moin   | Task 0          |
+| Rohan anand       | Task 0          |
+| Sanjana Ghose     | Task 1          |
+| Saswata Basu      | Task 3          |
+| Satyam Raj        | Task 0          |
+| Saumya Verma      | Task 1          |
+| Shalini Mishra    | Task 2          |
+| Sneha Jayshri     | Task 3          |
+| Srinivas Varanasi | Task 3          |
+| Susmit Singh      | Task 3          |
+
+
+
+## Task 3 *(Quiz with API)*
+Hi! You have to develop a Quiz Website where the questions will be fetched from an API.
+
+Functionality:
+1. A Registration Page where user enters the basic details.
+2. Questions (1 on each Page) with a Timer. Once the time is up, the quiz (or the question) ends and the result is shown.
+
+We would like you to design your website as an exact replica of the given design.
+<br><br>
+**API URL:** https://task-3-api.herokuapp.com/questions
+<br>
+**Figma Design:** https://www.figma.com/file/GpZYuLb1n1RZn0FDw1Zct0/Task-3?node-id=0%3A1
+<br><br>
+**Deadline:** 25 June 2021
+<br>
+<i>Happy Exploring!!</i>
+
 
 ## Task 2 *(Expense Tracker)*
 Hey! You have to develop an Expense Tracker using HTML (Forms), CSS (Flexbox) and JS (Event Listeners, DOM Manipulation). Make your website <b> responsive</b>.

@@ -1,0 +1,346 @@
+:root {
+    --dark: rgba(44, 44, 44, 1);
+    --back: rgba(242, 239, 235, 1);
+    --orange: rgba(255, 153, 0, 1);
+    --gray: rgba(242, 239, 235, 1);
+    --gray-dark: rgba(204, 203, 201, 1);
+
+}
+
+@font-face {
+font-family: 'Sedan';
+src: url('./assets/Sedan.ttf') format('ttf');
+}
+
+html {
+    font-family: 'Sedan';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--back);
+    text-decoration-color: var(--dark);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.home-container {
+    width: 530px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-heading {
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 36px;
+}
+
+.home-question {
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 6px;
+}
+
+.home-line {
+    display: flex;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+    height: 6px;
+    margin-bottom: 46px;
+}
+
+.home-line hr {
+    width: 200px;
+    height: 2px;
+    background: var(--dark);
+    border: none;
+    flex-shrink: 0;
+    margin: auto 0;
+}
+
+.home-line .circle {
+    position: absolute;
+    top: 0;
+    height: 6px;
+    width: 6px;
+    background: var(--dark);
+    border-radius: 6px;
+}
+
+.home-text {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 82px;
+    letter-spacing: 0.2px;
+}
+
+button {
+    width: 375px;
+    height: 55px;
+    border: none;
+    border-radius: 12px;
+    background: var(--orange);
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Sedan';
+    color: var(--gray);
+    transition: all 0.3s ease-in-out;
+}
+
+.lets-go i{
+    font-size: 16px;
+}
+
+button:hover  {
+    border: 3px solid var(--orange);
+    background: transparent;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+.form-container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-heading {
+    margin-bottom: 42px;
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--dark);
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Sedan';
+}
+
+.form-container form label {
+    align-self: flex-start;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 2px;
+    color: var(--dark);
+}
+
+.form-container form input,select {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    background: var(--gray-dark);
+    padding: 0px 20px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Sedan';
+    font-size: 16px;
+    color: rgba(44, 44, 44, 0.7);
+}
+
+.form-container form input::placeholder,select {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Sedan';
+    color: rgba(44, 44, 44, 0.7);
+}
+
+.form-container form select option {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Sedan';
+    color: var(--dark);
+}
+
+.form-container form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-image: url(./assets/down.svg);
+    background-position: right 20px top 15px;
+    background-size: 15px;
+}
+
+#form-submit {
+    width: 100%;
+    margin-top: 50px;
+    height: 55px;
+}
+
+.quiz-container {
+    width: 70%;
+    color: var(--dark);
+    font-family: 'Sedan';
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.question-number {
+    font-weight: 400;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.question-text {
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.quiz-option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.quiz-option input{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin: 0;
+    background: rgba(204, 203, 201, 1);
+    border: none;
+    border-radius: 50%;
+    align-self: flex-start;
+    margin-top: 3px;
+}
+
+.quiz-option input:checked {
+    background: var(--orange);
+}
+
+.quiz-option label {
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+.quiz-handler {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-self: flex-end;
+    align-items: center;
+}
+
+.time-left {
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 1%;
+}
+
+#quiz-line hr{
+    width: 150px;
+}
+
+.quiz-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.quiz-buttons button {
+    height: 55px;
+    width: 150px;
+    margin: 0px 10px;
+    letter-spacing: 10%;
+}
+
+.score-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-container h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 48px;
+    letter-spacing: 1%;
+    margin-bottom: 70px;
+}
+
+@media screen and (max-width: 530px) {
+    .home-container {
+        width: 95%;
+    }
+
+    button {
+        width: 90%;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .form-container {
+        width: 90%;
+    }
+
+    .form-container form input,select {
+        height: 40px;
+    }
+
+    .quiz-container {
+        width: 90%;
+    }
+
+    .quiz-handler {
+        align-self: center;
+    }
+
+    .quiz-buttons button {
+        width: 120px;
+        height: 40px;
+        margin: 0px 5px;
+    }
+
+    .quiz-option {
+        margin-left: 5px;
+    }
+
+    .quiz-option label {
+        margin-left: 10px;
+    }
+}

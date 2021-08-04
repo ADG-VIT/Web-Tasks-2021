@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="http://fonts.cdnfonts.com/css/sedan" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body onload="quiz()">
+        <div class="quiz">
+        <h3>Question <span id="qno">1</span></h3>
+        <p id="question">question</p>
+        <input type="radio" class="quizOptions" name="optionA" id="A">
+        <label class="quizOptions" id="optionA">A</label><br>
+        <input type="radio" class="quizOptions" name="optionB" id="B">
+        <label class="quizOptions" id="optionB">B</label><br>
+        <input type="radio" class="quizOptions" name="optionC" id="C">
+        <label class="quizOptions" id="optionC">C</label><br>
+        <input type="radio" class="quizOptions"  name="optionD" id="D">
+        <label class="quizOptions" id="optionD">D</label><br>
+
+        <div class="navigate">
+            <p id="timer"></p>
+            
+        </div>
+        <div class="navigate"><hr></div>
+        <div class="navigate">
+            <button class="nav" onclick="previous()">Previous</button>
+            <button class="nav" id="nextbtn" onclick="next()">Next</button>
+            </div>
+
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

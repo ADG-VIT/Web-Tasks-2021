@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Expense Tracker</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1 class="main-heading">Expense Tracker</h1>
+      <div class="add-task">
+        <form action="#total-expense" id="app-expense" name="add-expense" onsubmit="formSubmit()">
+          <input
+            id="description"
+            type="text"
+            name="Description"
+            placeholder="Description"
+            onfocus="(this.placeholder='')"
+            onblur="(this.placeholder='Description')"
+            required
+            autofocus
+          />
+          <input
+            id="expense"
+            type="number"
+            name="Expense"
+            placeholder="Expense Amount"
+            onfocus="(this.placeholder='')"
+            onblur="(this.placeholder='Expense Amount')"
+            required
+          />
+          <input id="date" type="date" name="Date" placeholder="dd/mm/yyyy" required />
+          <button type="submit">Add</button>
+        </form>
+      </div>
+      <div class="total-expense">
+        <p id="total-expense" class="total-expenditure">Rs 0</p>
+        <button class="delete-all" onclick="deleteAll()">
+          &#215
+          <span>Delete all</span>
+        </button>
+      </div>
+      <div class="display-task" id="all-tasks">
+        <!-- Skeleton of the elements
+        <div class="task-card" id="">
+          <button name="" class="close-button" onclick="deleteElement(event)" aria-label="Close">&#215</button>
+          <p>Description:</p>
+          <h1>Description of the expenditure</h1>
+          <h2><b>Expenditure:</b> Rs 100</h2>
+          <h2><b>Date:</b> 20/10/2020</h2>
+        </div>
+        -->
+      </div>
+      <div class="import-export">
+        <button type="button" onclick="exportExpenditure()">Export expenditure</button>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

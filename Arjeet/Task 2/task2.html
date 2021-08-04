@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="task2.css" />
+  </head>
+  <body>
+    <h1 class="title">Expense</h1>
+
+    <div class="imp">
+      <div id="total">
+        Total: Rs &nbsp;<span id="total-amt">0</span>
+      </div>
+      <div id="earn">
+        Total Earned: Rs &nbsp;<span id="earn-amt">0</span>
+      </div>
+      <div id="spend">
+        Total Spent: Rs &nbsp;<span id="spend-amt">0</span>
+      </div>
+    </div>
+
+    <form id="form">
+      <div class="forms">
+        <label for="Text">Description</label>
+        <input
+          type="text"
+          id="desc"
+          name=""
+          value=""
+          placeholder="Enter Description"
+        />
+      </div>
+      <div class="forms">
+        <label for="amount">Amount</label>
+        <input
+          type="number"
+          id="amount"
+          name=""
+          value=""
+          placeholder="Amount"
+        />
+      </div>
+      <div class="forms">
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" value="" />
+      </div>
+      <div class="msg"></div>
+      <button class="btn">Update Expense</button>
+    </form>
+
+<h2>History</h2>
+      <table id="list">
+        <tr>
+          <th>Description</th>
+          <th>Amount</th>
+          <th>Date</th>
+        </tr>
+      </table>
+
+    </div>
+    <script src="task2.js"></script>
+  </body>
+</html>

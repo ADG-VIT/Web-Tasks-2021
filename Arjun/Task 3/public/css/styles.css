@@ -1,0 +1,39 @@
+body {
+    background-color: beige;
+}
+
+h1 {
+    display: inline-block;
+}
+
+h3 {
+    height: 8px;
+    margin-bottom: 4%;
+}
+
+.holder {
+    text-align: center;
+    width: 40%;
+    margin: 8% auto;
+}
+
+.side-hr {
+    border-bottom: none;
+    border-top: solid black 2px;
+    display: inline-block; 
+    width: 64px;
+}
+
+.dot-hr {
+    border-bottom: none;
+    border-top: dotted black 8px;
+    display: inline-block; 
+    width: 8px;
+}
+
+.button {
+    display: block;
+    margin: 8% auto;
+    color: white;
+    width: 80%;
+}

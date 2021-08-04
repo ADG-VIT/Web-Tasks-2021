@@ -1,0 +1,16 @@
+body {
+    background-color: beige;
+    padding: 2%;
+    text-align: center;
+}
+
+.holder {
+    margin: 12% auto;
+}
+
+.button {
+    display: block;
+    margin: 4% auto;
+    color: white;
+    width: 50%;
+}

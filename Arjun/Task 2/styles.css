@@ -1,0 +1,50 @@
+body {
+    padding: 1%;
+    text-align: center;
+    background-color: #212124;
+}
+
+h1, h4 {
+    color: white
+}
+
+#expenseForm {
+    display: inline-block;
+    margin: 2%;
+    text-align: center;
+    width: 40%;
+}
+
+.button {
+    margin: 1% 0.5%;
+}
+
+#expenseTable {
+    color: white;
+    display: inline-block;
+    margin: 2%;
+    text-align: center;
+    width: 50%;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    body {
+        padding: 1%;
+        text-align: center;
+    }
+
+    #expenseForm {
+        display: block;
+        margin: 2%;
+        text-align: center;
+        width: 100%;
+    }
+
+    #expenseTable {
+        display: block;
+        margin: 2%;
+        text-align: center;
+        width: 100%;
+    }
+}

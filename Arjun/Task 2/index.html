@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Expense Tracker</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+      <div class="container">
+        <h1>Expense Tracker</h1>
+        <div class="row">
+          <div id="expenseForm" class="col-*-4">
+            <h4>Enter your expense details:</h4><br>
+            <form>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Expense Desc.</span>
+                    </div>
+                    <input id="desctxt" type="text" class="form-control" placeholder="Description" aria-label="Description" aria-describedby="basic-addon1">
+                    <div class="input-group-append">
+                        <button id="clrbtn" class="btn btn-outline-primary" type="button">Clear</button>
+                      </div>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">₹</span>
+                    </div>
+                    <input id="costtxt" type="number" class="form-control" placeholder="Cost per" aria-label="Cost per" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Quantity</span>
+                    </div>
+                    <input id="quantitytxt" type="number" class="form-control" placeholder="1 (default) or 2 or 3..." aria-label="1 (default) or 2 or 3..." aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Date</span>
+                    </div>
+                    <input id="datetxt" type="date" class="form-control" placeholder="dd/mm/yyyy" aria-label="dd/mm/yyyy" aria-describedby="basic-addon1">
+                </div>
+                <div style="color: white;" class="form-check">
+                    <input id="isnesschk" class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">Is it a necessary expense?</label>
+                </div>
+                <div style="text-align: center; margin: 1% auto;">
+                    <button id="addbtn" type="button" class="button btn btn-outline-success btn-lg">Add</button>
+                    <button id="clrallbtn" type="button" class="button btn btn-outline-primary btn-lg">Clear All</button>
+                </div>    
+            </form>
+          </div>
+          <div id="expenseTable" class="col-*-8">
+            <h4>Your expenses:</h4><br>
+            <table class="table table-bordered table-hover table-dark">
+                <caption>List of expenses (press del to delete the selected expense)</caption>
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Cost</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Necessary</th>
+                  </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+                <tfoot>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col"></th>
+                      <th scope="col"></th>
+                      <th scope="col">Grand Total</th>
+                      <th scope="col" id="grandTotal">0</th>
+                      <th><button id="delallbtn" type="button" class="button btn btn-outline-danger">Delete All</button></th>
+                    </tr>
+                  </tfoot>
+              </table>
+            <h6></h6>
+          </div>
+        </div>
+      </div>    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="index.js" charset="utf-8"></script>
+    </body>
+</html>

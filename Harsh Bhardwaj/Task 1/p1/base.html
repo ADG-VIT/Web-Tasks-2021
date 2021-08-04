@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sss.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="nav-main">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Survey</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="about">
+            <p>
+                <span class="heading">Hey, this is Harsh</span><span class="highlight">a web developer</span>
+            </p>
+        </div>
+
+        <div class="work">
+            <p><span class="heading">There are some of my projects</span></p>
+            <div class="portfolio">
+                <div>
+                    <div class="img">
+                        <img src="img/calc.png" alt="#">
+                    </div>
+                    <p>this is a test</p>
+                </div>
+                <div>
+                    <div class="img">
+                        <img src="img/map.jpg" alt="#">
+                    </div>
+                    <p>this is a test</p>
+                </div>
+                <div>
+                    <div class="img">
+                        <img src="img/rand-quote.png" alt="#">
+                    </div>
+                    <p>this is a test</p>
+                </div>
+                <div>
+                    <div class="img">
+                        <img src="img/tic-tac-toe.png" alt="#">
+                    </div>
+                    <p>this is a test</p>
+                </div>
+                <div>
+                    <div class="img">
+                        <img src="img/tribute.jpg" alt="#">
+                    </div>
+                    <p>this is a test</p>
+                </div>
+                <div>
+                    <div class="img">
+                        <img src="img/wiki.png" alt="#">
+                    </div>
+                    <p>this is a test</p>
+                </div>
+            </div>
+            <!-- 
+                <img src="resources/calc.png" alt="#">    
+                <img src="resources/map.jpg" alt="#">
+                <img src="resources/rand-quote.png" alt="#">
+                <img src="resources/tic-tac-toe.png" alt="#">
+                <img src="resources/tribute.jpg" alt="#">
+                <img src="resources/wiki.png" alt="#">
+                -->
+            <a href="#" class="btn">Show More</a>
+        </div>
+
+        <div class="survey">
+            <p>
+                <span>Survey Form</span> Thank you for taking the time to help us improve the platform
+                <form action="#" id="survey-form">
+                    <div class="input">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                    </div>
+
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+                    </div>
+
+                    <div class="input">
+                        <label for="age">Age (Optional)</label>
+                        <input type="text" name="age" id="age" placeholder="Age">
+                    </div>
+
+                    <div class="input">
+                        <label for="role">Which option describes your current role?</label>
+                        <select name="role" id="role" required>
+                        <option value="Advanced" selected>Advanced</option>
+                        <option value="Advanced">Experienced</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Novice</option>
+                        </select>
+                    </div>
+
+                    <div class="checker">
+                        <label for="improved">What would you like to see improved? (Check all that apply)</label>
+                        <div class="improved check">
+                            <input type="checkbox" name="improved" id="front">
+                            <label for="front">Front-end Projects</label>
+                        </div>
+
+                        <div class="improved check">
+                            <input type="checkbox" name="improved" id="back">
+                            <label for="front">Back-end Projects</label>
+                        </div>
+
+                        <div class="improved check">
+                            <input type="checkbox" name="improved" id="visual">
+                            <label for="front">Data Visualisation</label>
+                        </div>
+
+                        <div class="improved check">
+                            <input type="checkbox" name="improved" id="challenges">
+                            <label for="front">Challenges</label>
+                        </div>
+
+                        <div class="improved check">
+                            <input type="checkbox" name="improved" id="open">
+                            <label for="front">Open Source Community</label>
+                        </div>
+
+                        <div class="improved check">
+                            <input type="checkbox" name="improved" id="gitter">
+                            <label for="front">Gitter help rooms</label>
+                        </div>
+
+                        <div class="improved check">
+                            <input type="checkbox" name="improved" id="vids">
+                            <label for="front">Videos</label>
+                        </div>
+
+                        <div class="improved check">
+                            <input type="checkbox" name="improved" id="city">
+                            <label for="front">City Meetups</label>
+                        </div>
+
+                        <div class="improved check">
+                            <input type="checkbox" name="improved" id="wiki">
+                            <label for="front">Wiki</label>
+                        </div>
+
+                        <div class="improved check">
+                            <input type="checkbox" name="improved" id="forums">
+                            <label for="front">Forums</label>
+                        </div>
+
+                        <div class="improved check">
+                            <input type="checkbox" name="improved" id="additional">
+                            <label for="front">Additional Courses</label>
+                        </div>
+                    </div>
+
+                    <div class="input area">
+                        <label for="suggestions">Any comments or suggestions?</label>
+                        <input type="text" name="suggestions" id="suggestions">
+                    </div>
+
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </p>
+        </div>
+
+        <div class="contact">
+            <p><span class="heading">Let's Work Together</span><span class="highlight">How do you take your coffee?</span></p>
+            <div class="logo">
+                <div class="fb">
+                    <img src="https://img.icons8.com/material-outlined/24/000000/facebook-new.png" /> Facebook
+                </div>
+                <div class="gh">
+                    <img src="https://img.icons8.com/metro/26/000000/github.png" /> Github
+                </div>
+                <div class="tw">
+                    <img src="https://img.icons8.com/fluent-systems-filled/48/000000/twitter.png" /> Twitter
+                </div>
+                <div class="em">
+                    <img src="https://img.icons8.com/material-rounded/24/000000/filled-message.png" /> Send a Mail
+                </div>
+                <div class="cm">
+                    <img src="https://img.icons8.com/metro/24/000000/phone.png" /> Call Me
+                </div>
+            </div>
+        </div>
+        <div class="credits">
+            Harsh Bhardwaj &copy; 2021
+        </div>
+    </div>
+</body>
+
+</html>

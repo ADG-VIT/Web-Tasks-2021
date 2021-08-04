@@ -1,0 +1,61 @@
+input{
+  margin: 0.25rem 0 0.5rem 0;
+  background-color: rgba(128, 128, 128, 0.3);
+  height: -4.5rem;
+  width: 100%;
+  border-radius: 10px;
+  padding: 0 0 0 0.5rem;
+  border: 0px;
+}
+.con{
+    margin-top: 206px;
+    margin-left: 50px;
+  
+}
+
+.ans1{
+    position: relative;
+    right: 590px;
+   
+}
+
+
+label{
+    position: relative;
+    right: -170px;
+    bottom: 25px;
+     font-size: 26px;
+     
+}
+
+
+button{
+    width: 150px;
+    height: 55px;
+    border-radius: 12px;
+    font-size: 20px;
+    background-color: #FF9900;
+    color: #F2EFEB;
+    border: 0px;
+    position: relative;
+    left: 914px ;
+    margin-right: 31px;
+}
+
+button:hover{
+  box-shadow: 2px 2px 10px rgb(233, 167, 44);
+}
+.timer{
+    margin-left: 989px;
+  
+}
+#clock{
+    font-size: 26px;
+}
+#qNo{
+    font-size: 26px;
+}
+
+#q{
+     font-size: 26px;
+}

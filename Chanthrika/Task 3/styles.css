@@ -1,0 +1,99 @@
+body{
+    background-color: #F2EFEB;
+    font-family: "Sedan", Courier;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+h1, h2, h3{
+    font-weight: 400;
+}
+
+.homeRegdiv{
+    width: 30rem;
+    margin: auto;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.quiz{
+    width: 80%;
+    margin: auto;
+    padding: 0 15rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.Regdiv{
+    width: 25rem;
+}
+
+hr{
+    height: 2px;
+    background-color: #2C2C2C;
+    width: 50%;
+}
+
+
+button{
+    background-color: #FF9900;
+    border-radius: 12px;
+    border: none;
+    color: #F2EFEB;
+    font-size: 1rem;
+    font-family: "Sedan", Courier;
+    padding: 1rem 1.5rem;
+    margin: 2rem 0;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.reg{
+    width: 108%;
+}
+
+.nav{
+    width: 150px;
+    height: 50px;
+    margin: 15px;
+}
+
+.navigate{
+    display: flex;
+    justify-content: flex-end;
+    align-self:flex-end;
+    margin-top: 5rem;
+}
+
+input, select{
+    display: block;
+    cursor: pointer;
+    font-family: "Sedan", Courier;
+    background-color: #CCCBC9;
+    border: none;
+    border-radius: 12px;
+    color: #2C2C2C;
+    padding: 0.9rem 1rem;
+    width:100%;
+}
+
+select{
+    width: 108%;
+}
+
+label{
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    padding: 1rem 0.5rem 0 0.5rem;
+}
+
+.quizOptions{
+    display: inline;
+    width: min-content;
+}

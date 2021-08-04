@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>expense tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6de0330e5b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>EXPENSE TRACKER</h1>
+    <div class="container">
+        <div class="budget_numbers">
+            <div class="number" id="earned">
+                <small>Money Earned</small>
+                <div class="amount_container">
+                    <p id="earned_symbol">$</p>
+                    <span id="amount_earned"></span>
+                </div>
+            </div>
+            <div class="number" id="available">
+                <small>Money available</small>
+                <div class="amount_container">
+                    <p>$</p>
+                    <span id="amount_available"></span>
+                </div>
+            </div>
+            <div class="number" id="spent">
+                <small>Money spent</small>
+                <div class="amount_container">
+                    <p id="spent_symbol">$</p>
+                    <span id="amount_spent"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="input_area">
+            <input type="text" id="description" placeholder="Description">
+            <input type="number" id="amount" placeholder="amount">
+        </div>
+
+        <div class="buttons_area">
+            <button class="button1" id="add_income">ADD INCOME</button>
+            <button  class="button2" id="add_expense">ADD EXPENSE</button>
+        </div>
+
+        <div class="items_container">
+            <div id="income_container" class="container">
+                <h2>INCOME</h2>
+
+                <!--<div class="item income">
+                    <h4>STUFF SOLD</h4>
+                    <div class="item_income">
+                        <p class="symbol">$</p>
+                        <span class="income_amount">200</span>
+                    </div>
+                    <i class="fas fa-trash"></i>
+                </div>-->
+            </div>
+
+            <div id="expenses_container" class="container">
+                <h2>EXPENSES</h2>
+
+               <!-- <div class="item expense">
+                    <h4>STUFF BOUGHT</h4>
+                    <div class="item_expense">
+                        <p class="symbol">$</p>
+                        <span class="expense_amount">200</span>
+                    </div>
+                    <i class="fas fa-trash"></i>
+                </div>-->
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

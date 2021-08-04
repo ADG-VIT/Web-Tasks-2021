@@ -1,0 +1,97 @@
+.head1
+{
+position: absolute;
+width: 201px;
+height: 44px;
+left: 620px;
+top: 226px;
+
+font-family: Sedan;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 44px;
+letter-spacing: 0.01em;
+
+color: #2C2C2C;
+
+}
+.head2
+{
+position: absolute;
+width: 439px;
+height: 100px;
+left: 501px;
+top: 306px;
+
+font-family: Sedan;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 50px;
+text-align: center;
+letter-spacing: 0.01em;
+
+color: #2C2C2C;
+}
+.hrect{
+    position: absolute;
+width: 200px;
+height: 2px;
+left: 620px;
+top: 412px;
+
+background: #2C2C2C;
+}
+.text
+{
+    position: absolute;
+    width: 523px;
+    height: 75px;
+    left: 459px;
+    top: 462px;
+    
+    font-family: Sedan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    
+    color: #2C2C2C;
+}
+.button
+{
+position: absolute;
+width: 375px;
+height: 55px;
+left: 520px;
+top: 619px;
+
+background: #FF9900;
+border-radius: 12px;
+}
+.head3{
+ position: absolute;
+width: 289px;
+height: 44px;
+left: 576px;
+top: 170px;
+margin-top: 800px;
+
+font-family: Sedan;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 44px;
+letter-spacing: 0.01em;
+
+color: #2C2C2C;
+
+}
+.input-name{
+background: #4600c7;
+border-radius: 12px;
+margin-top: 800px;
+}

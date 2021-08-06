@@ -1,0 +1,108 @@
+.body {
+    background-color: tomato;
+    margin:0;
+    padding:0;
+}
+
+.container {
+    text-align: center;
+}
+.container1 {
+    text-align:center;
+    width:400px;
+    padding: 5rem 8rem 0 25rem;
+}
+
+hr {
+    width:100px;
+    height:2px;
+    background-color: rgb(44,44,44,1) ;
+    border:none;
+    flex-shrink:0;
+    margin:auto 0;
+
+}
+.divider {
+    padding:1rem 8rem 0 35rem;
+}
+.para {
+    text-align:center;
+    width:400px;
+    padding:2rem 0 2rem 25rem;
+}
+button {
+    width:375px;
+    height:55px;
+    border:none;
+    border-radius:12px;
+    background-color:rgba(255,153,0,1);
+    font-weight:400;
+    font-size:18px;
+    color:rgba(242,239,235,1);
+    transition:all 0.3s ease-in-out;
+}
+button:hover {
+    border:3px solid rgba(255,153,0,1);
+    background:transparent;
+    color:rgba(242,239,235,1);
+    cursor:pointer;
+}
+.container2 {
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width:350px;
+    padding-bottom: 2rem;
+}
+.container2 h2 {
+    font-size:25px;
+    text-align:center;
+    margin:40px 0;
+}
+.container2 p {
+    font-size:15px;
+    margin:15px 0;
+}
+.container2 input {
+    font-size:10px;
+    padding: 10px 10px;
+    width:100%;
+    border:0;
+    border-radius:5px;
+    
+}
+.input {
+    font-size:10px;
+    padding: 15px 10px;
+    width:100%;
+    border:0; 
+    border-radius:5px;
+    outline:none;
+}
+.container3 {
+    display:flex;
+    padding:10rem 0 6rem 2rem;
+}
+.choice-container {
+    display:flex;
+    margin-bottom:0.5rem;
+    width:100%;
+}
+
+.choice-container input:checked {
+   background-color: rgba(255,153,0,1);
+}
+.choice-container label {
+    font-weight:400;
+    font-size:22px;
+    margin-left:20px;
+}
+
+.timerBox {
+    margin-top : 1rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 1.2rem;
+}

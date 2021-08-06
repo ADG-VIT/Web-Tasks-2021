@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container3">
+       
+      <div id="game" class="justify-center flex-column">
+          <h2 >Question:<span id="question-number"></span></h2>
+          <div id="ques" class="justify-center flex-column">
+            <h2 id="question-box"></h2>
+          </div>
+          <h2 id="question-box"></h2>
+          <div class="choice-container">
+            <input type="radio" name="choice" id ="A" class="answer" value="A" >
+            <label  class="choice-text1" data-number="1" for="radio"><span id="op1"></span></label>
+          </div>
+          <div class="choice-container">
+            <input type="radio" name="choice" id="B" class="answer" value="B" >
+            <label  class="choice-text2" data-number="2" for="radio"><span id="op2"></span></label>
+          </div>
+          <div class="choice-container">
+            <input type="radio" name="choice" id="C" class="answer" value="C" >
+            <label  class="choice-text3" data-number="3" for="radio"><span id="op3"></span></label>
+          </div>
+          <div class="choice-container">
+            <input type="radio" name="choice" id="D" class="answer" value="D"  >
+            <label  class="choice-text4" data-number="4" for="radio"><span id="op4"></span></label>
+          </div>
+          <div class="footer">
+            <div class="timerBox">
+              <h3 id="time">10:00 minutes left</h3>
+            </div>
+            <button class="next">Next</button>
+            <button class="previous">Previous</button>
+          </div>
+      </div>
+   </div>
+   <script src="app.js"></script>
+</body>
+
+</html>
+

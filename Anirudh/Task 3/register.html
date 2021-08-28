@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Register</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/register.css">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    </head>
+    <body>
+        <div class="form">
+            <h1>Give us some details</h1>
+    
+            <div class="container">
+
+                <form action="">
+    
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+    
+                <label for="age">Age</label>
+                <input type="text" id="age" name="age" placeholder="Enter your Age" required>
+    
+                <label for="description">Gender</label>
+                <select id="gend" name="gend" required>
+                    <option value="" disabled selected hidden>Choose Gender</option>
+                    <option value="amateur">Male</option>
+                    <option value="semi-pro">Female</option>
+                </select>
+
+                <label for="email">Email-Id</label>
+                <input type="text" id="email" name="email" placeholder="Enter your Email-Id" required>
+                
+                <a href="./quiz.html">
+                    <button class="start" type="submit">START THE QUIZ &#8594;</button>
+                </a>
+                </form>
+            </div>
+        </div>
+
+        <script  src="./register.js" async defer></script>
+    </body>
+</html>
